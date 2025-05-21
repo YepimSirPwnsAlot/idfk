@@ -1,0 +1,222 @@
+-- Thx For Usin Mah Script Broski :D --
+Version = 0.5
+
+local c00lgui = Instance.new("ScreenGui")
+c00lgui.Name = ("c00lgui Reborn V"..Version)
+c00lgui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+c00lgui.ResetOnSpawn = false
+
+c00lguiFrame = Instance.new("Frame")
+c00lguiFrame.Parent = c00lgui
+c00lguiFrame.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
+c00lguiFrame.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
+c00lguiFrame.BorderSizePixel = 3
+c00lguiFrame.Position = UDim2.new(0, 3, 0.300000012, 0)
+c00lguiFrame.Size = UDim2.new(0, 300, 0, 400)
+c00lguiFrame.ZIndex = 2
+
+c00lguititle = Instance.new("TextLabel")
+c00lguititle.Parent = c00lguiFrame
+c00lguititle.Name = ("c00lgui Title")
+c00lguititle.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
+c00lguititle.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
+c00lguititle.BorderSizePixel = 3
+c00lguititle.Size = UDim2.new(1, 0, 0, 40)
+c00lguititle.ZIndex = 2
+c00lguititle.Font = ("SourceSans")
+c00lguititle.FontSize = ("Size24")
+c00lguititle.Text = ("c00lgui Reborn V0.5 by 007n7")
+c00lguititle.TextColor3 = Color3.new(255/255, 255/255, 255/255)
+
+leftbutton = Instance.new("TextButton")
+leftbutton.Parent = c00lguiFrame
+leftbutton.Name = ("Left Button")
+leftbutton.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
+leftbutton.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
+leftbutton.BorderSizePixel = 3
+leftbutton.Position = UDim2.new(0, 0, 0, 40)
+leftbutton.Size = UDim2.new(0.5, 0, 0, 40)
+leftbutton.ZIndex = 2
+leftbutton.Font = ("SourceSans")
+leftbutton.FontSize = ("Size48")
+leftbutton.Text = ("<")
+leftbutton.TextColor3 = Color3.new(255/255, 255/255, 255/255)
+
+function click()
+if Page1_2.Visible == true then
+Page1_2.Visible = false
+Page2_2.Visible = true
+elseif Page2_2.Visible == true then
+Page2_2.Visible = false
+Page3.Visible = true
+elseif Page3.Visible == true then
+Page3.Visible = false
+Page4.Visible = true
+elseif Page4.Visible == true then
+Page4.Visible = false
+Page5.Visible = true
+elseif Page5.Visible == true then
+Page5.Visible = false
+Page1_2.Visible = true
+end
+end
+
+leftbutton.MouseButton1Down:connect(click)
+
+rightbutton = Instance.new("TextButton")
+rightbutton.Parent = c00lguiFrame
+rightbutton.Name = ("Right Button")
+rightbutton.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
+rightbutton.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
+rightbutton.BorderSizePixel = 3
+rightbutton.Position = UDim2.new(0.5, 3, 0, 40)
+rightbutton.Size = UDim2.new(0.5, -3, 0, 40)
+rightbutton.ZIndex = 2
+rightbutton.Font = ("SourceSans")
+rightbutton.FontSize = ("Size48")
+rightbutton.Text = (">")
+rightbutton.TextColor3 = Color3.new(255/255, 255/255, 255/255)
+
+function click()
+if Page5.Visible == true then
+Page5.Visible = false
+Page4.Visible = true
+elseif Page4.Visible == true then
+Page4.Visible = false
+Page3.Visible = true
+elseif Page3.Visible == true then
+Page3.Visible = false
+Page2_2.Visible = true
+elseif Page2_2.Visible == true then
+Page2_2.Visible = false
+Page1_2.Visible = true
+elseif Page1_2.Visible == true then
+Page1_2.Visible = false
+Page5.Visible = true
+end
+end
+
+rightbutton.MouseButton1Down:connect(click)
+
+settings = Instance.new("Frame")
+settings.Parent = c00lguiFrame
+settings.Name = ("Settings")
+settings.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
+settings.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
+settings.BorderSizePixel = 3
+settings.Position = UDim2.new(1, 3, 0, 0)
+settings.Size = UDim2.new(1, 0, 1, 0)
+
+sbutton = Instance.new("Frame")
+sbutton.Parent = settings
+sbutton.Name = ("Settings Button")
+sbutton.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
+sbutton.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
+sbutton.BorderSizePixel = 3
+sbutton.Position = UDim2.new(1, 3, 0, 0)
+sbutton.Size = UDim2.new(0, 27, 1, 0)
+sbutton.Font = ("SourceSans")
+sbutton.FontSize = ("Size48")
+sbutton.Text = ("<")
+sbutton.TextColor3 = Color3.new(255/255, 255/255, 255/255)
+
+cango = true
+function click()
+if cango == true then
+if script.Parent.Text == "<" then
+script.Parent.Text = ">"
+cango = false
+repeat
+wait()
+script.Parent.Parent.Position = UDim2.new(1, script.Parent.Parent.Position.X.Offset - 10, 0, 0)
+until script.Parent.Parent.Position.X.Offset <= -293
+wait()
+script.Parent.Parent.Position = UDim2.new(1, -300, 0, 0)
+cango = true
+else
+script.Parent.Text = "<"
+cango = false
+repeat
+wait()
+script.Parent.Parent.Position = UDim2.new(1, Settings.Position.X.Offset + 10, 0, 0)
+until settings.Position.X.Offset >= -10
+wait()
+script.Parent.Parent.Position = UDim2.new(1, 3, 0, 0)
+end
+cango = true
+end
+end
+end
+
+script.Parent.MouseButton1Down:connect(click)
+
+settingsname = Instance.new("TextLabel")
+settingsname.Parent = settings
+settingsname.Name = ("Settings Name")
+settingsname.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
+settingsname.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
+settingsname.BorderSizePixel = 3
+settingsname.Size = UDim2.new(1, 0, 0, 40)
+settingsname.Font = ("SourceSans")
+settingsname.FontSize = ("Size24")
+settingsname.Text = ("Settings")
+settingsname.TextColor3 = Color3.new(255/255, 255/255, 255/255)
+
+lftbtn = Instance.new("TextButton")
+lftbtn.Name = ("Left Button")
+lftbtn.Parent = settings
+lftbtn.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
+lftbtn.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
+lftbtn.BorderSizePixel = 3
+lftbtn.Position = UDim2.new(0, 0, 0, 40)
+lftbtn.Size = UDim2.new(0.5, 0, 0, 40)
+lftbtn.Font = ("SourceSans")
+lftbtn.FontSize = ("Size48")
+lftbtn.Text = ("<")
+lftbtn.TextColor3 = Color3.new(255/255, 255/255, 255/255)
+
+function click()
+if script.Parent.Parent.Page1.Visible == true then
+script.Parent.Parent.Page1.Visible = false
+script.Parent.Parent.Page2.Visible = true
+elseif script.Parent.Parent.Page2.Visible == true then
+script.Parent.Parent.Page2.Visible = false
+script.Parent.Parent.Page1.Visible = true
+end
+end
+
+script.Parent.MouseButton1Down:connect(click)
+
+rghtbtn = Instance.new("TextButton")
+rghtbtn.Name = ("Right Button")
+rghtbtn.Parent = settings
+rghtbtn.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
+rghtbtn.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
+rghtbtn.BorderSizePixel = 3
+rghtbtn.Position = UDim2.new(0.5, 3, 0, 40)
+rghtbtn.Size = UDim2.new(0.5, -3, 0, 40)
+rghtbtn.Font = ("SourceSans")
+rghtbtn.FontSize = ("Size48")
+rghtbtn.Text = (">")
+rghtbtn.TextColor3 = Color3.new(255/255, 255/255, 255/255)
+
+function click()
+if script.Parent.Parent.Page1.Visible == true then
+script.Parent.Parent.Page1.Visible = false
+script.Parent.Parent.Page2.Visible = true
+elseif script.Parent.Parent.Page2.Visible == true then
+script.Parent.Parent.Page2.Visible = false
+script.Parent.Parent.Page1.Visible = true
+end
+end
+
+script.Parent.MouseButton1Down:connect(click)
+
+Page1 = Instance.new("Frame")
+Page1.Name = "Page1"
+Page1.Parent = settings
+Page1.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
+Page1.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
+Page1.BorderSizePixel = 3
+Page1.Position = UDim2.new(0, 0, 0, 83)
+Page1.Size = UDim2.new(1, 0, 1, -83)
