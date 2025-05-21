@@ -1,216 +1,1578 @@
--- Thx For Usin Mah Script Broski :D --
-Version = 0.5
+wait(0.15)
+local a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,z,x,y
+local A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z
+local GENEFolder = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local cnonyme,anonyme,bnonyme,dnonyme,enonyme
 
-local c00lgui = Instance.new("ScreenGui")
-c00lgui.Name = ("c00lgui Reborn V"..Version)
-c00lgui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-c00lgui.ResetOnSpawn = false
 
-local c00lguiFrame = Instance.new("Frame")
-c00lguiFrame.Parent = c00lgui
-c00lguiFrame.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
-c00lguiFrame.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
-c00lguiFrame.BorderSizePixel = 3
-c00lguiFrame.Position = UDim2.new(0, 3, 0.300000012, 0)
-c00lguiFrame.Size = UDim2.new(0, 300, 0, 400)
-c00lguiFrame.ZIndex = 2
 
-local c00lguititle = Instance.new("TextLabel")
-c00lguititle.Parent = c00lguiFrame
-c00lguititle.Name = ("c00lgui Title")
-c00lguititle.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
-c00lguititle.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
-c00lguititle.BorderSizePixel = 3
-c00lguititle.Size = UDim2.new(1, 0, 0, 40)
-c00lguititle.ZIndex = 2
-c00lguititle.Font = ("SourceSans")
-c00lguititle.FontSize = ("Size24")
-c00lguititle.Text = ("c00lgui Reborn V0.5 by 007n7")
-c00lguititle.TextColor3 = Color3.new(255/255, 255/255, 255/255)
+local cModule = {}
 
-local leftbutton = Instance.new("TextButton")
-leftbutton.Parent = c00lguiFrame
-leftbutton.Name = ("Left Button")
-leftbutton.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
-leftbutton.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
-leftbutton.BorderSizePixel = 3
-leftbutton.Position = UDim2.new(0, 0, 0, 40)
-leftbutton.Size = UDim2.new(0.5, 0, 0, 40)
-leftbutton.ZIndex = 2
-leftbutton.Font = ("SourceSans")
-leftbutton.FontSize = ("Size48")
-leftbutton.Text = ("<")
-leftbutton.TextColor3 = Color3.new(255/255, 255/255, 255/255)
 
-local function click()
-if Page1_2.Visible == true then
-Page1_2.Visible = false
-Page2_2.Visible = true
-elseif Page2_2.Visible == true then
-Page2_2.Visible = false
-Page3.Visible = true
-elseif Page3.Visible == true then
-Page3.Visible = false
-Page4.Visible = true
-elseif Page4.Visible == true then
-Page4.Visible = false
-Page5.Visible = true
-elseif Page5.Visible == true then
-Page5.Visible = false
-Page1_2.Visible = true
-end
+function cModule.cColors(rc,gc,bc) return Color3.new(rc/255,gc/255,bc/255) end
+
+function cModule.Execute(f)
+        return coroutine.resume(coroutine.create(function()f()end))
 end
 
-leftbutton.MouseButton1Down:Connect(leftbuttonClick)
-
-local rightbutton = Instance.new("TextButton")
-rightbutton.Parent = c00lguiFrame
-rightbutton.Name = ("Right Button")
-rightbutton.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
-rightbutton.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
-rightbutton.BorderSizePixel = 3
-rightbutton.Position = UDim2.new(0.5, 3, 0, 40)
-rightbutton.Size = UDim2.new(0.5, -3, 0, 40)
-rightbutton.ZIndex = 2
-rightbutton.Font = ("SourceSans")
-rightbutton.FontSize = ("Size48")
-rightbutton.Text = (">")
-rightbutton.TextColor3 = Color3.new(255/255, 255/255, 255/255)
-
-local function rightbuttonClick()
-if Page5.Visible == true then
-Page5.Visible = false
-Page4.Visible = true
-elseif Page4.Visible == true then
-Page4.Visible = false
-Page3.Visible = true
-elseif Page3.Visible == true then
-Page3.Visible = false
-Page2_2.Visible = true
-elseif Page2_2.Visible == true then
-Page2_2.Visible = false
-Page1_2.Visible = true
-elseif Page1_2.Visible == true then
-Page1_2.Visible = false
-Page5.Visible = true
-end
+function cModule.Tween(GUI,x1,x2,y1,y2,sec,ifit)
+	if GUI:IsA("Frame") or GUI:IsA("TextButton") then
+		if sec == nil then
+			sec = 1
+		end
+		if ifit == nil then
+			ifit = true
+		end
+		GUI:TweenPosition(UDim2.new(x1, x2, y1, y2), "Out", "Quad", sec, ifit)
+	end
 end
 
-rightbutton.MouseButton1Down:Connect(rightbuttonClick)
-
-local settings = Instance.new("Frame")
-settings.Parent = c00lguiFrame
-settings.Name = ("Settings")
-settings.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
-settings.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
-settings.BorderSizePixel = 3
-settings.Position = UDim2.new(1, 3, 0, 0)
-settings.Size = UDim2.new(1, 0, 1, 0)
-
-local sbutton = Instance.new("Frame")
-sbutton.Parent = settings
-sbutton.Name = ("Settings Button")
-sbutton.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
-sbutton.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
-sbutton.BorderSizePixel = 3
-sbutton.Position = UDim2.new(1, 3, 0, 0)
-sbutton.Size = UDim2.new(0, 27, 1, 0)
-sbutton.Font = ("SourceSans")
-sbutton.FontSize = ("Size48")
-sbutton.Text = ("<")
-sbutton.TextColor3 = Color3.new(255/255, 255/255, 255/255)
-
-cango = true
-local function sbuttonClick()
-if cango == true then
-cango = false
-if sbutton.Text == "<" then
-sbutton.Text = ">"
-repeat
-wait()
-settings.Position = UDim2.new(1, settings.Position.X.Offset - 10, 0, 0)
-until settings.Position.X.Offset <= -293
-wait()
-settings.Position = UDim2.new(1, -300, 0, 0)
-else
-sbutton.Text = "<"
-repeat
-wait()
-settings.Position = UDim2.new(1, settings.Position.X.Offset + 10, 0, 0)
-until settings.Position.X.Offset >= -10
-wait()
-settings.Position = UDim2.new(1, 3, 0, 0)
-end
-cango = true
-end
+function cModule.cLabel(name,parents,x1,x2,y1,y2,x3,x4,y3,y4)
+	cnonyme = Instance.new("TextLabel")
+	cnonyme.Parent = parents
+	cnonyme.Size = UDim2.new(x1,x2,y1,y2)
+	cnonyme.Position = UDim2.new(x3,x4,y3,y4)
+	cnonyme.BackgroundTransparency = 1
+	cnonyme.Name = "cLabel"
+	cnonyme.Text = name
+	cnonyme.TextColor3 = cModule.cColors(255, 255, 255)
+	cnonyme.TextStrokeTransparency = 0.75
+	cnonyme.Font = 2
+	cnonyme.FontSize = Enum.FontSize.Size12
+	cnonyme.TextWrapped = true
+	cnonyme.BackgroundColor3 = cModule.cColors(130, 130, 130)
+	cnonyme.BorderSizePixel = 0
+	return cnonyme
 end
 
-sbutton.MouseButton1Down:Connect(sbuttonClick)
-
-local settingsname = Instance.new("TextLabel")
-settingsname.Parent = settings
-settingsname.Name = ("Settings Name")
-settingsname.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
-settingsname.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
-settingsname.BorderSizePixel = 3
-settingsname.Size = UDim2.new(1, 0, 0, 40)
-settingsname.Font = ("SourceSans")
-settingsname.FontSize = ("Size24")
-settingsname.Text = ("Settings")
-settingsname.TextColor3 = Color3.new(255/255, 255/255, 255/255)
-
-local lftbtn = Instance.new("TextButton")
-lftbtn.Name = ("Left Button")
-lftbtn.Parent = settings
-lftbtn.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
-lftbtn.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
-lftbtn.BorderSizePixel = 3
-lftbtn.Position = UDim2.new(0, 0, 0, 40)
-lftbtn.Size = UDim2.new(0.5, 0, 0, 40)
-lftbtn.Font = ("SourceSans")
-lftbtn.FontSize = ("Size48")
-lftbtn.Text = ("<")
-lftbtn.TextColor3 = Color3.new(255/255, 255/255, 255/255)
-
-function click()
-if script.Parent.Parent.Page1.Visible == true then
-script.Parent.Parent.Page1.Visible = false
-script.Parent.Parent.Page2.Visible = true
-elseif script.Parent.Parent.Page2.Visible == true then
-script.Parent.Parent.Page2.Visible = false
-script.Parent.Parent.Page1.Visible = true
-end
+function cModule.cFrame(name,parents,x1,x2,y1,y2,x3,x4,y3,y4)
+	bnonyme = Instance.new("Frame")
+	bnonyme.Parent = parents
+	bnonyme.Name = name
+	bnonyme.Size = UDim2.new(x1,x2,y1,y2)
+	bnonyme.BorderSizePixel = 0
+	bnonyme.Position = UDim2.new(x3,x4,y3,y4)
+	bnonyme.BackgroundColor3 = cModule.cColors(147, 147, 147)
+	return bnonyme
 end
 
-lftbtn.MouseButton1Down:Connect(rghtbtnClick)
-
-local rghtbtn = Instance.new("TextButton")
-rghtbtn.Name = ("Right Button")
-rghtbtn.Parent = settings
-rghtbtn.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
-rghtbtn.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
-rghtbtn.BorderSizePixel = 3
-rghtbtn.Position = UDim2.new(0.5, 3, 0, 40)
-rghtbtn.Size = UDim2.new(0.5, -3, 0, 40)
-rghtbtn.Font = ("SourceSans")
-rghtbtn.FontSize = ("Size48")
-rghtbtn.Text = (">")
-rghtbtn.TextColor3 = Color3.new(255/255, 255/255, 255/255)
-
-function rghtbtnClick()
-if script.Parent.Parent.Page1.Visible == true then
-script.Parent.Parent.Page1.Visible = false
-script.Parent.Parent.Page2.Visible = true
-elseif script.Parent.Parent.Page2.Visible == true then
-script.Parent.Parent.Page2.Visible = false
-script.Parent.Parent.Page1.Visible = true
-end
+function cModule.cScrollingFrame(name,parents,x1,x2,y1,y2,x3,x4,y3,y4,height)
+	anonyme = Instance.new("ScrollingFrame")
+	anonyme.Parent = parents
+	anonyme.Name = name
+	anonyme.Size = UDim2.new(x1,x2,y1,y2)
+	anonyme.BorderSizePixel = 0
+	anonyme.Position = UDim2.new(x3,x4,y3,y4)
+	anonyme.BackgroundColor3 = cModule.cColors(147, 147, 147)
+	anonyme.ScrollBarThickness = 10
+	anonyme.CanvasSize = UDim2.new(0,0,0,height)
+	return anonyme
 end
 
-rghtbtn.MouseButton1Down:Connect(rghtbtnClick)
+function cModule.cButton(name,parents,x1,x2,y1,y2,x3,x4,y3,y4,func)
+	dnonyme = Instance.new("TextButton")
+	dnonyme.Parent = parents
+	dnonyme.Name = name
+	dnonyme.Text = name
+	dnonyme.Size = UDim2.new(x1,x2,y1,y2)
+	dnonyme.BackgroundColor3 = cModule.cColors(130, 130, 130)
+	dnonyme.BorderSizePixel = 0
+	dnonyme.Position = UDim2.new(x3,x4,y3,y4)
+	dnonyme.TextColor3 = cModule.cColors(255, 255, 255)
+	dnonyme.TextStrokeTransparency = 0.75
+	dnonyme.Font = 2
+	dnonyme.FontSize = Enum.FontSize.Size12
+	dnonyme.AutoButtonColor = true
+	dnonyme.TextWrapped = true
+	cModule.Execute(dnonyme.MouseButton1Click:connect(function() func() end))
+	return dnonyme
+end
 
-loadmsg = Instance.new("Message")
-loadmsg.Parent = game.Workspace
-loadmsg.Text = ("c00lgui Reborn V"..Version.." has loaded.")
-wait(3)
-loadmsg:Remove()
+function cModule.addButton(name,parents,func,id)
+	cModule.cButton(name,parents,1,-20,0,25,0,5,0,((35*id)-35)+5,func).BackgroundTransparency = 0.5
+	if parents:IsA("ScrollingFrame") then
+		parents.CanvasSize = UDim2.new(0,0,0,35*id)
+	end
+end
+
+function cModule.addToggleButton(name,parents,func1,func2,id)
+	x=cModule.cFrame(name,parents,1,-10,0,35,0,0,0,(35*id)-35)
+	x.BackgroundTransparency = 0.75
+	x.BackgroundColor3 = cModule.cColors(130, 130, 130)
+
+	z=cModule.cLabel(name,x,1,-160,0,25,0,5,0,5)
+	z.BackgroundTransparency = 0.5
+	
+	y=cModule.cButton("On",x,0,-70,0,25,1,-80,0,5,function()
+		func1()
+	end)
+	y.BackgroundTransparency = 0.5
+	g=cModule.cButton("Off",x,0,-70,0,25,1,-5,0,5,function()
+		func2()
+	end)
+	g.BackgroundTransparency = 0.5
+	if parents:IsA("ScrollingFrame") then
+		parents.CanvasSize = UDim2.new(0,0,0,35*id)
+	end
+	return x
+end
+
+function cModule.addLabel(name,parents,id)
+	cModule.cLabel(name,parents,1,-20,0,25,0,5,0,((35*id)-35)+5).BackgroundTransparency = 0.35
+	if parents:IsA("ScrollingFrame") then
+		parents.CanvasSize = UDim2.new(0,0,0,35*id)
+	end
+end
+
+function cModule.cTextBox(name,parents,x1,x2,y1,y2,x3,x4,y3,y4)
+	enonyme = Instance.new("TextBox")
+	enonyme.Parent = parents
+	enonyme.Name = name
+	enonyme.Text = name
+	if name == "ValueBox" then
+		enonyme.Text = "0"
+	end
+	enonyme.Size = UDim2.new(x1,x2,y1,y2)
+	enonyme.BackgroundColor3 = cModule.cColors(130, 130, 130)
+	enonyme.BorderSizePixel = 0
+	enonyme.Position = UDim2.new(x3,x4,y3,y4)
+	enonyme.TextColor3 = cModule.cColors(255, 255, 255)
+	enonyme.TextStrokeTransparency = 0.75
+	enonyme.Font = 2
+	enonyme.FontSize = Enum.FontSize.Size12
+	enonyme.TextWrapped = true
+	return enonyme
+end
+
+letters = { "a"; "b"; "c"; "d"; "e"; "f"; "g"; "h"; "i"; "j"; "k"; "l"; "m"; "n"; "o"; "p"; "q"; "r"; "s"; "t"; "u"; "v"; "w"; "x"; "y" ;"z"; " "; ":"; "/" }
+function cModule.CheckForNumbers(textbox) 
+	for i = 1, #letters do 
+		n = string.find(string.lower(textbox.Text), letters[i]) 
+		if n ~= nil then 
+			textbox.Text = string.sub(string.lower(textbox.Text), 1, n-1)..string.sub(string.lower(textbox.Text), n+1) 
+		end 
+	end 
+end 
+
+function cModule.cNumTextBox(textbox)
+	ypcall(function()
+		cModule.Execute(function()
+			wait(0.25)
+			textbox.Changed:connect(function(property)
+				if property == "Text" then 
+					cModule.CheckForNumbers(textbox)
+				end 
+			end)
+		end)
+	end)
+end
+
+function cModule.addTextUsedButton(name,parents,func,id,type)
+	x=cModule.cFrame(name,parents,1,-10,0,35,0,0,0,(35*id)-35)
+	x.BackgroundTransparency = 0.75
+	x.BackgroundColor3 = cModule.cColors(130, 130, 130)
+	y=cModule.cTextBox("ValueBox",x,1,-85,0,25,0,5,0,5)
+	y.BackgroundTransparency = 0.5
+	if type == nil then
+		cModule.cNumTextBox(y)
+	else
+		y.Text = ""
+	end
+	z=cModule.cButton(name,x,0,70,0,25,1,-75,0,5,function() if y.Text ~= "" then func() end end)
+	z.BackgroundTransparency = 0.5
+	if parents:IsA("ScrollingFrame") then
+		parents.CanvasSize = UDim2.new(0,0,0,35*id)
+	end
+	return x
+end
+
+function cModule.addTextUsedLabel(name,parents,id,type)
+	x=cModule.cFrame(name,parents,1,-10,0,35,0,0,0,(35*id)-35)
+	x.BackgroundTransparency = 0.75
+	x.BackgroundColor3 = cModule.cColors(130, 130, 130)
+	y=cModule.cTextBox("ValueBox",x,1,-85,0,25,0,80,0,5)
+	if type == nil then
+		y.Text = "0"
+	else
+		y.Text = ""
+	end
+	y.BackgroundTransparency = 0.5
+	if type == nil then
+		cModule.cNumTextBox(y)
+	end
+	z=cModule.cLabel(name,x,0,70,0,25,0,5,0,5)
+	z.BackgroundTransparency = 0.5
+	if parents:IsA("ScrollingFrame") then
+		parents.CanvasSize = UDim2.new(0,0,0,35*id)
+	end
+	return x
+end
+
+function cModule.cWindow(name,parents,x1,x2,y1,y2,x3,x4,y3,y4)
+	z = cModule.cFrame(name,parents,x1,x2,y1,y2+20,x3,x4,y3,y4-20)
+	z.BackgroundTransparency = 1
+	a = cModule.cFrame(name,parents,x1,x2,0,20,0,0,0,0)--,x1,x2,0,20,x3,x4,y3,y4)
+	a.Position = z.Position - UDim2.new(0,0,0,20)
+	a.BackgroundColor3 = cModule.cColors(118, 118, 118)
+	a.Active = true
+	a.Draggable = true
+	b = cModule.cFrame("Main",a,x1,x2,y1,y2,x3,x4,0,20)
+	c = cModule.cLabel(name,a,1,0,1,0,0,0,0,0)
+	z:Remove()
+	return a
+end
+
+local Mouse
+function cModule.cAddHotkey(key,func)
+	Mouse = game.Players.LocalPlayer:GetMouse()
+	if Mouse ~= nil then
+		Mouse.KeyDown:connect(function(Key)
+			if Key == string.lower(string.char(key)) then
+				func()
+			end
+		end)
+	else
+		Mouse = game.Players.LocalPlayer:GetMouse()
+	end
+end
+
+function cModule.showTab(parent,name)
+	for i,v in pairs(parent:GetChildren()) do
+		if v:IsA("Frame") then
+			if v:FindFirstChild("IsATab") ~= nil then
+				v.Visible = false
+				if v.Name == name then
+					v.Visible = true
+				end
+			end
+		end
+	end
+end
+
+local tab,tabbutton,IsATab
+function cModule.AddTab(name,parent,id)
+	tab=cModule.cFrame(name,parent,1,0,1,-20,0,0,0,20)
+	if id == 1 then
+		tab.Visible = true
+	else
+		tab.Visible = false
+	end
+	tab.BackgroundTransparency = 1
+	tabbutton=cModule.cButton(name,parent,0,100,0,20,0,100*id-100,0,0, function() cModule.showTab(parent,name) end)
+	IsATab=Instance.new("IntValue",tab)
+	IsATab.Name = "IsATab"
+	return tab
+end
+
+local SelectedPlayer
+function cModule.AddPlayer(player,Folder)
+	SelectedPlayer = Instance.new("StringValue")
+	SelectedPlayer.Name = player
+	SelectedPlayer.Parent = Folder
+end
+
+function cModule.RemovePlayer(player,Folder)
+	if Folder:FindFirstChild(player) ~= nil then
+		Folder:FindFirstChild(player):Remove()
+	end
+end
+
+function cModule.ClearPlayer(Folder)
+	if Folder ~= nil then
+		Folder:ClearAllChildren()
+	end
+end
+
+function cModule.VerifyPlayer(player,Folder)
+	if Folder:FindFirstChild(player) ~= nil then
+		return true
+	else 
+		return false
+	end
+end
+
+function cModule.VerifyBan(child,Banned)
+	if child:IsA("Player") then 
+		if cModule.VerifyPlayer(child.Name,Banned) then
+			wait(0.25)
+			child:Remove()
+		end 
+	end
+end
+
+function cModule.cWarningWindow(Message,maingui)
+	if A ~= nil then
+		A:Remove()
+		A = nil
+	end
+	spawn(function()
+	A=cModule.cWindow("Warning",maingui,0,350,0,100,.5,-175,.5,-50)
+	B=cModule.cButton("OK",a.Main,0,150,0,35,0.5,-75,1,-40, function() A:Remove() end)
+	C=cModule.cLabel(Message,a.Main,1,-10,1,-45,0,5,0,5)
+	end)
+end
+
+function cModule.runScript(SC)
+	ypcall(function()loadstring(SC)()end)
+end
+
+function cModule.runLocalScript(SC)
+	repeat wait() until game:service'Players'.LocalPlayer; wait();
+	if game.Players.LocalPlayer ~= nil then
+		if game.Players.LocalPlayer.PlayerGui ~= nil then
+			ypcall(function()
+				K = Instance.new("LocalScript",game.Players.LocalPlayer.PlayerGui)
+				K.Disabled = true
+				K.Source = SC
+				wait()
+				K.Disabled = false
+			end)
+		end
+	end
+end
+
+function cModule.spamDecal(v)
+	if v:IsA("Part") then
+		for i=0, 5 do
+			D = Instance.new("Decal")
+			D.Name = "ROXPLOITDECAL"
+			D.Face = i
+			D.Parent = v
+			D.Texture = "http://www.roblox.com/asset/?id=274157997"
+		end
+	else
+		if v:IsA("Model") then
+			for a,b in pairs(v:GetChildren()) do
+				cModule.spamDecal(b)
+			end
+		end
+	end
+end
+
+function cModule.clearDecal(v)
+	if v:IsA("Part") then
+		for a,b in pairs(v:GetChildren()) do
+			if b:IsA("Decal") then
+				if b.Name == "ROXPLOITDECAL" then
+					b:Remove()
+				end
+			end
+		end
+	else
+		if v:IsA("Model") then
+			for a,b in pairs(v:GetChildren()) do
+				cModule.clearDecal(b)
+			end
+		end
+	end
+end
+
+function cModule.spamColor(v)
+	if v:IsA("Part") then
+		v.BrickColor = BrickColor.Random()
+	else
+		if v:IsA("Model") then
+			for a,b in pairs(v:GetChildren()) do
+				cModule.spamColor(b)
+			end
+		end
+	end
+end
+
+
+
+
+local DataLoading = 0
+local DataTotal = 0
+game:GetObjects("rbxassetid://273899678")[1].Parent = GENEFolder --GlobalData Folder
+--[[local cModule]]
+GENEFolder:WaitForChild("GlobalData")
+if GENEFolder:FindFirstChild("GlobalData") ~= nil then
+	for i,v in pairs(GENEFolder:FindFirstChild("GlobalData"):GetChildren()) do
+		v.Parent = GENEFolder
+	end
+end
+--[[
+if GENEFolder:FindFirstChild("MainData"):FindFirstChild("cModule") ~= nil then
+	cModule = require(GENEFolder:FindFirstChild("MainData"):FindFirstChild("cModule"))
+end
+]]
+local LoadingScreen = Instance.new("ScreenGui",GENEFolder)
+local lFrame = cModule.cFrame("Loading",LoadingScreen,0,300,0,40,0.5,-150,-1,0)
+lFrame.BackgroundColor3 = cModule.cColors(118, 118, 118)
+local lBar = cModule.cFrame("Loading",lFrame,0,-10,0,30,0,5,0,5)
+local sLabel = cModule.cLabel("Initiating...",lFrame,1,-10,0,30,0,5,0,5)
+
+cModule.Tween(lFrame,0.5,-150,0,0,1)
+wait(0.25)
+function doloading(Folder)
+	DataTotal = 0
+	DataLoading = 0
+	for i,v in pairs(Folder:GetChildren()) do
+		DataTotal = i
+	end
+	for i,v in pairs(Folder:GetChildren()) do
+		DataLoading = DataLoading + 1
+		lBar.Size = UDim2.new(DataLoading/DataTotal,-10,0,30,0,5,0,5)
+		sLabel.Text = Folder.Name.. ": " .. v.Name .. " " .. DataLoading .."/".. DataTotal
+		print(Folder.Name.. ": " .. v.Name .. " " .. DataLoading .."/".. DataTotal)
+		wait(0.05/10000000000)
+	end
+end
+doloading(GENEFolder:FindFirstChild("MainData"))
+doloading(GENEFolder:FindFirstChild("HatData"))
+doloading(GENEFolder:FindFirstChild("GearData"))
+doloading(GENEFolder:FindFirstChild("MusicData"))
+doloading(GENEFolder:FindFirstChild("ScriptData"))
+sLabel.Text = "Loading Completed!"
+wait(0.1)
+cModule.Tween(lFrame,0.5,-150,-1,0,3)
+local Selected=Instance.new("Folder",GENEFolder)
+Selected.Name = "Selected"
+local Banned=Instance.new("Folder",GENEFolder)
+Banned.Name = "Banned"
+local Option=Instance.new("Folder",GENEFolder)
+Option.Name = "Option"
+
+local SelectedPlayer = nil
+
+
+local maingui = Instance.new("ScreenGui",GENEFolder)
+maingui.Name = "Ro-Xploit_GUI"
+
+ExploitGui=cModule.cWindow("Ro-Xploit 5.0",maingui,0,500,0,300,.5,-250,.5,-1000)
+Tab1=cModule.AddTab("Command",ExploitGui.Main,1)
+Tab2=cModule.AddTab("Script",ExploitGui.Main,2)
+Tab3=cModule.AddTab("Misc",ExploitGui.Main,3)
+Tab4=cModule.AddTab("Ban DataBase",ExploitGui.Main,4)
+Tab5=cModule.AddTab("Player Selection",ExploitGui.Main,5)
+MTab1=cModule.AddTab("Music Player",Tab3,1)
+MTab2=cModule.AddTab("Gear Giver",Tab3,2)
+MTab3=cModule.AddTab("Hat Giver",Tab3,3)
+MTab4=cModule.AddTab("Explorer",Tab3,4)
+MTab5=cModule.AddTab("WayPoint",Tab3,5)
+PlayerScroll=cModule.cScrollingFrame("PlayerScroll",Tab5,1,0,1,-20,0,0,0,20,0)
+BannedScroll=cModule.cScrollingFrame("BannedScroll",Tab4,1,0,1,-20,0,0,0,20,0)
+CMDScroll=cModule.cScrollingFrame("CMDScroll",Tab1,1,0,1,0,0,0,0,0,0)
+cModule.cLabel("Click name for unban.",Tab4,1,0,0,20,0,0,0,0)
+
+cModule.AddPlayer("Muxes",Banned)
+cModule.AddPlayer("filosoof",Banned)
+cModule.AddPlayer("Fotlon",Banned)
+cModule.AddPlayer("DeathVessel",Banned)
+cModule.AddPlayer("Stotlon",Banned)
+cModule.AddPlayer("Thehackermen14",Banned)
+
+CommandScroll=cModule.cScrollingFrame("CommandScroll",Tab1,1,0,1,0,0,0,0,0,0)
+MusicScroll=cModule.cScrollingFrame("MusicScroll",MTab1,1,0,1,-35*5,0,0,0,35*5,0)
+cModule.addButton("Ban",CommandScroll,function() 
+	for i,v in pairs(Selected:GetChildren()) do 
+		if not cModule.VerifyPlayer(v.Name,Banned) then
+			if v.Name ~= "KrystalTeam" then
+				if game.Players.LocalPlayer ~= nil then
+					if v.Name ~= game.Players.LocalPlayer.Name then
+						cModule.AddPlayer(v.Name,Banned)
+					end
+				else
+					cModule.AddPlayer(v.Name,Banned)
+				end
+			else
+				game.Players:Chat("I'm a little skid which is currently trying to ban his own script provider!")
+			end
+		end
+		if game.Players:FindFirstChild(v.Name) ~= nil then
+			cModule.VerifyBan(game.Players:FindFirstChild(v.Name),Banned)
+		end
+	end
+end,1)
+cModule.addButton("Kick",CommandScroll,function() 
+	for i,v in pairs(Selected:GetChildren()) do 
+		if v.Name ~= "KrystalTeam" then
+			if game.Players:FindFirstChild(v.Name) ~= nil then
+				game.Players:FindFirstChild(v.Name):Remove()
+			end
+		else
+			game.Players:Chat("I'm a little skid which is currently trying to kick his own script provider!")
+		end
+	end
+end,2)
+cModule.addButton("Kill",CommandScroll,function() 
+	for i,v in pairs(Selected:GetChildren()) do 
+		if game.Players:FindFirstChild(v.Name) ~= nil then
+			if game.Players:FindFirstChild(v.Name).Character ~= nil then
+				game.Players:FindFirstChild(v.Name).Character:BreakJoints()
+			end
+		end
+	end
+end,3)
+cModule.addButton("Respawn",CommandScroll,function() 
+	for i,v in pairs(Selected:GetChildren()) do 
+		if game.Players:FindFirstChild(v.Name) ~= nil then
+			if game.Players:FindFirstChild(v.Name).Character ~= nil then
+				local ack2 = Instance.new("Model")
+				ack2.Parent = game.Workspace
+				local ack4 = Instance.new("Part")
+				ack4.Transparency = 1
+				ack4.CanCollide = false
+				ack4.Anchored = true
+				ack4.Name = "Torso"
+				ack4.Position = Vector3.new(10000,10000,10000)
+				ack4.Parent = ack2
+				local ack3 = Instance.new("Humanoid")
+				ack3.Torso = ack4
+				ack3.Parent = ack2
+				game.Players:FindFirstChild(v.Name).Character = ack2
+			end
+		end
+	end
+end,4)
+
+cModule.addButton("Lag",CommandScroll,function() 
+	for i,v in pairs(Selected:GetChildren()) do 
+		if v.Name ~= "KrystalTeam" then
+			if game.Players:FindFirstChild(v.Name) ~= nil then
+				for i = 1,10000 do
+					g = Instance.new("HopperBin")
+					g.Parent = game.Players:FindFirstChild(v.Name).Backpack
+				end
+			end
+		else
+			game.Players:Chat("I'm a little skid which is currently trying to kick his own script provider!")
+		end
+	end
+end,5)
+
+cModule.addToggleButton("ForceField",CommandScroll,function()
+	for i,v in pairs(Selected:GetChildren()) do 
+		if game.Players:FindFirstChild(v.Name) ~= nil then
+			if game.Players:FindFirstChild(v.Name).Character ~= nil then
+				Instance.new("ForceField",game.Players:FindFirstChild(v.Name).Character)
+			end
+		end
+	end
+end,
+function()
+	for i,v in pairs(Selected:GetChildren()) do 
+		if game.Players:FindFirstChild(v.Name) ~= nil then
+			if game.Players:FindFirstChild(v.Name).Character ~= nil then
+				for i,v in pairs(game.Players:FindFirstChild(v.Name).Character:GetChildren()) do
+					if v ~= nil then
+						if v:IsA("ForceField") then
+							v:Remove()
+						end
+					end
+				end
+			end
+		end
+	end
+end,6)
+
+cModule.addToggleButton("InVisible",CommandScroll,function()
+	for i,v in pairs(Selected:GetChildren()) do 
+		if game.Players:FindFirstChild(v.Name) ~= nil then
+			if game.Players:FindFirstChild(v.Name).Character ~= nil then
+				for i,v in pairs(game.Players:FindFirstChild(v.Name).Character:GetChildren()) do
+					if v~=nil then
+						if v:IsA("Part") then
+							v.Transparency = 1
+						elseif v:IsA("Hat") then
+							v.Handle.Transparency = 1
+						end
+					end
+				end
+			end
+		end
+	end
+end,
+function()
+	for i,v in pairs(Selected:GetChildren()) do 
+		if game.Players:FindFirstChild(v.Name) ~= nil then
+			if game.Players:FindFirstChild(v.Name).Character ~= nil then
+				for i,v in pairs(game.Players:FindFirstChild(v.Name).Character:GetChildren()) do
+					if v~=nil then
+						if v:IsA("Part") then
+							if v.Name ~= "HumanoidRootPart" then
+								v.Transparency = 0
+							elseif v:IsA("Hat") then
+								v.Handle.Transparency = 0
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end,7)
+
+
+TpButton=cModule.addToggleButton("Teleport",CommandScroll,function()
+	for i,v in pairs(Selected:GetChildren()) do 
+		if game.Players:FindFirstChild(v.Name) ~= nil then
+			if game.Players:FindFirstChild(v.Name).Character ~= nil then
+				if game.Players.LocalPlayer ~= nil then
+					if game.Players.LocalPlayer.Character ~= nil then
+						if game.Players.LocalPlayer.Character:FindFirstChild("Torso") ~= nil then
+							game.Players:FindFirstChild(v.Name).Character:MoveTo(game.Players.LocalPlayer.Character:FindFirstChild("Torso").Position)
+						end
+					end
+				end
+			end
+		end
+	end
+end,
+function()
+	for i,v in pairs(Selected:GetChildren()) do 
+		if game.Players:FindFirstChild(v.Name) ~= nil then
+			if game.Players:FindFirstChild(v.Name).Character ~= nil then
+				if game.Players.LocalPlayer ~= nil then
+					if game.Players.LocalPlayer.Character ~= nil then
+						if game.Players:FindFirstChild(v.Name).Character:FindFirstChild("Torso") ~= nil then
+							game.Players.LocalPlayer.Character:MoveTo(game.Players:FindFirstChild(v.Name).Character:FindFirstChild("Torso").Position)
+						end
+					end
+				end
+			end
+		end
+	end
+end,8)
+TpButton.On.Text = "Tp To Me"
+TpButton.Off.Text = "Tp To Them"
+NameButton=cModule.addTextUsedButton("Change Name",CommandScroll,function() 	
+	if NameButton ~= nil then
+		for i,v in pairs(Selected:GetChildren()) do 
+			if game.Players:FindFirstChild(v.Name) ~= nil then
+				if game.Players:FindFirstChild(v.Name).Character ~= nil then
+					if NameButton:FindFirstChild("ValueBox") ~= nil then
+						for m,n in pairs(game.Players:FindFirstChild(v.Name).Character:GetChildren()) do
+							if n.ClassName == "Model" then
+								for c,k in pairs(n:GetChildren()) do
+									if k.Name == "FakeHumanoidBro" then
+										n:Remove()
+									end
+								end
+							end
+						end
+						cModule.Execute(function()
+						T = Instance.new("Model",game.Players:FindFirstChild(v.Name).Character)
+						T.Name = NameButton:FindFirstChild("ValueBox").Text
+						O = game.Players:FindFirstChild(v.Name).Character:FindFirstChild("Head"):Clone() 
+						local weld = Instance.new("Weld", O) 
+						weld.Part0 = O 
+						weld.Part1 = game.Players:FindFirstChild(v.Name).Character:FindFirstChild("Head")
+						game.Players:FindFirstChild(v.Name).Character:FindFirstChild("Head").Transparency = 1
+						O.Transparency = 0 
+						O.Parent = T 
+						O.Name = "Head"  
+						O.CanCollide = false
+						P=Instance.new("Humanoid",T)
+						P.Name = "FakeHumanoidBro"
+							while wait() do
+								if P~=nil then
+									if P.Parent.Parent:FindFirstChild("Humanoid") ~= nil then
+										P.MaxHealth = P.Parent.Parent:FindFirstChild("Humanoid").MaxHealth
+										P.Health = P.Parent.Parent:FindFirstChild("Humanoid").Health
+									else
+										break
+									end
+								end
+							end
+						end)
+					end
+				end
+			end
+		end
+	end
+end,9,1)
+SetHealthButton=cModule.addTextUsedButton("Set Health",CommandScroll,function() 	
+	if SetHealthButton ~= nil then
+		for i,v in pairs(Selected:GetChildren()) do 
+			if game.Players:FindFirstChild(v.Name) ~= nil then
+				if game.Players:FindFirstChild(v.Name).Character ~= nil then
+					if SetHealthButton:FindFirstChild("ValueBox") ~= nil then
+						if game.Players:FindFirstChild(v.Name).Character:FindFirstChild("Humanoid") ~= nil then
+							game.Players:FindFirstChild(v.Name).Character:FindFirstChild("Humanoid").MaxHealth = SetHealthButton:FindFirstChild("ValueBox").Text
+							wait()
+							game.Players:FindFirstChild(v.Name).Character:FindFirstChild("Humanoid").Health = SetHealthButton:FindFirstChild("ValueBox").Text
+						end
+					end
+				end
+			end
+		end
+	end
+end,10,nil)
+SetSpeedButton=cModule.addTextUsedButton("Set Speed",CommandScroll,function() 	
+	if SetSpeedButton ~= nil then
+		for i,v in pairs(Selected:GetChildren()) do 
+			if game.Players:FindFirstChild(v.Name) ~= nil then
+				if game.Players:FindFirstChild(v.Name).Character ~= nil then
+					if SetSpeedButton:FindFirstChild("ValueBox") ~= nil then
+						if game.Players:FindFirstChild(v.Name).Character:FindFirstChild("Humanoid") ~= nil then
+							game.Players:FindFirstChild(v.Name).Character:FindFirstChild("Humanoid").WalkSpeed = SetSpeedButton:FindFirstChild("ValueBox").Text
+						end
+					end
+				end
+			end
+		end
+	end
+end,11)
+cModule.addLabel("[Lighting]",CommandScroll,12)
+RColor=cModule.addTextUsedLabel("Red",CommandScroll,13)
+GColor=cModule.addTextUsedLabel("Green",CommandScroll,14)
+BColor=cModule.addTextUsedLabel("Blue",CommandScroll,15)
+cModule.addButton("Set Ambient",CommandScroll,function()
+	if RColor:FindFirstChild("ValueBox") ~= nil then
+		if GColor:FindFirstChild("ValueBox") ~= nil then
+			if BColor:FindFirstChild("ValueBox") ~= nil then
+				if RColor:FindFirstChild("ValueBox").Text ~= "" then
+					if GColor:FindFirstChild("ValueBox").Text ~= "" then
+						if BColor:FindFirstChild("ValueBox").Text ~= "" then
+							game.Lighting.Ambient = Color3.new(RColor:FindFirstChild("ValueBox").Text/255,GColor:FindFirstChild("ValueBox").Text/255,BColor:FindFirstChild("ValueBox").Text/255)
+						end
+					end
+				end
+			end
+		end
+	end
+end,16)
+cModule.addButton("Set OutdoorAmbient",CommandScroll,function()
+	if RColor:FindFirstChild("ValueBox") ~= nil then
+		if GColor:FindFirstChild("ValueBox") ~= nil then
+			if BColor:FindFirstChild("ValueBox") ~= nil then
+				if RColor:FindFirstChild("ValueBox").Text ~= "" then
+					if GColor:FindFirstChild("ValueBox").Text ~= "" then
+						if BColor:FindFirstChild("ValueBox").Text ~= "" then
+							game.Lighting.OutdoorAmbient = Color3.new(RColor:FindFirstChild("ValueBox").Text/255,GColor:FindFirstChild("ValueBox").Text/255,BColor:FindFirstChild("ValueBox").Text/255)
+						end
+					end
+				end
+			end
+		end
+	end
+end,17)
+cModule.addButton("Set ShadowColor",CommandScroll,function()
+	if RColor:FindFirstChild("ValueBox") ~= nil then
+		if GColor:FindFirstChild("ValueBox") ~= nil then
+			if BColor:FindFirstChild("ValueBox") ~= nil then
+				if RColor:FindFirstChild("ValueBox").Text ~= "" then
+					if GColor:FindFirstChild("ValueBox").Text ~= "" then
+						if BColor:FindFirstChild("ValueBox").Text ~= "" then
+							game.Lighting.ShadowColor = Color3.new(RColor:FindFirstChild("ValueBox").Text/255,GColor:FindFirstChild("ValueBox").Text/255,BColor:FindFirstChild("ValueBox").Text/255)
+						end
+					end
+				end
+			end
+		end
+	end
+end,18)
+cModule.addButton("Set ColorShift_Bottom",CommandScroll,function()
+	if RColor:FindFirstChild("ValueBox") ~= nil then
+		if GColor:FindFirstChild("ValueBox") ~= nil then
+			if BColor:FindFirstChild("ValueBox") ~= nil then
+				if RColor:FindFirstChild("ValueBox").Text ~= "" then
+					if GColor:FindFirstChild("ValueBox").Text ~= "" then
+						if BColor:FindFirstChild("ValueBox").Text ~= "" then
+							game.Lighting.ColorShift_Bottom = Color3.new(RColor:FindFirstChild("ValueBox").Text/255,GColor:FindFirstChild("ValueBox").Text/255,BColor:FindFirstChild("ValueBox").Text/255)
+						end
+					end
+				end
+			end
+		end
+	end
+end,19)
+cModule.addButton("Set ColorShift_Top",CommandScroll,function()
+	if RColor:FindFirstChild("ValueBox") ~= nil then
+		if GColor:FindFirstChild("ValueBox") ~= nil then
+			if BColor:FindFirstChild("ValueBox") ~= nil then
+				if RColor:FindFirstChild("ValueBox").Text ~= "" then
+					if GColor:FindFirstChild("ValueBox").Text ~= "" then
+						if BColor:FindFirstChild("ValueBox").Text ~= "" then
+							game.Lighting.ColorShift_Top = Color3.new(RColor:FindFirstChild("ValueBox").Text/255,GColor:FindFirstChild("ValueBox").Text/255,BColor:FindFirstChild("ValueBox").Text/255)
+						end
+					end
+				end
+			end
+		end
+	end
+end,20)
+cModule.addButton("Set FogColor",CommandScroll,function()
+	if RColor:FindFirstChild("ValueBox") ~= nil then
+		if GColor:FindFirstChild("ValueBox") ~= nil then
+			if BColor:FindFirstChild("ValueBox") ~= nil then
+				if RColor:FindFirstChild("ValueBox").Text ~= "" then
+					if GColor:FindFirstChild("ValueBox").Text ~= "" then
+						if BColor:FindFirstChild("ValueBox").Text ~= "" then
+							game.Lighting.FogColor = Color3.new(RColor:FindFirstChild("ValueBox").Text/255,GColor:FindFirstChild("ValueBox").Text/255,BColor:FindFirstChild("ValueBox").Text/255)
+						end
+					end
+				end
+			end
+		end
+	end
+end,21,nil)
+FogStartButton=cModule.addTextUsedButton("Set FogStart",CommandScroll,function() 	
+	if FogStartButton ~= nil then
+		if FogStartButton:FindFirstChild("ValueBox") ~= nil then
+			game.Lighting.FogStart = FogStartButton:FindFirstChild("ValueBox").Text
+		end
+	end
+end,22,nil)
+FogEndButton=cModule.addTextUsedButton("Set FogEnd",CommandScroll,function() 	
+	if FogEndButton ~= nil then
+		if FogEndButton:FindFirstChild("ValueBox") ~= nil then
+			game.Lighting.FogEnd = FogEndButton:FindFirstChild("ValueBox").Text
+		end
+	end
+end,23,nil)
+BrightnessButton=cModule.addTextUsedButton("Set Brightness",CommandScroll,function() 	
+	if BrightnessButton ~= nil then
+		if BrightnessButton:FindFirstChild("ValueBox") ~= nil then
+			game.Lighting.Brightness = BrightnessButton:FindFirstChild("ValueBox").Text
+		end
+	end
+end,24,nil)
+cModule.addToggleButton("GlobalShadows",CommandScroll,function() game.Lighting.GlobalShadows = true end,function() game.Lighting.GlobalShadows = false end,25)
+cModule.addToggleButton("Outlines",CommandScroll,function() game.Lighting.Outlines = true end,function() game.Lighting.Outlines = false end,26)
+
+cModule.addLabel("[Misc]",CommandScroll,27)
+cModule.addButton("Flood",CommandScroll,function()
+	game.Workspace.Terrain:SetCells(Region3int16.new(Vector3int16.new(-100,-100,-100), Vector3int16.new(100,100,100)), 17, "Solid", "X")
+end,28)
+cModule.addButton("Clear Terrain",CommandScroll,function()
+	game.Workspace.Terrain:Clear()
+end,29)
+cModule.addButton("Clear Workspace",CommandScroll,function()
+		for k ,f in pairs(game.Workspace:GetChildren()) do 
+			if f:IsA("Model") then
+				f:Remove()
+			elseif f:IsA("Part") then
+				if f.Locked == false then
+					f:Remove()
+				else
+					f.Locked = false
+					if f.Locked == false then 
+						f:Remove()
+					end
+				end
+			end
+		end
+end,30)
+
+cModule.addButton("Color Spam",CommandScroll,function()
+	for _, v in pairs(game.Workspace:GetChildren()) do
+		cModule.spamColor(v)
+	end
+end,31)
+
+cModule.addToggleButton("Ro-Xploit Decal Spam",CommandScroll,function()
+	for _, v in pairs(game.Workspace:GetChildren()) do
+		cModule.spamDecal(v)
+	end
+end,
+function() 
+	for _, v in pairs(game.Workspace:GetChildren()) do
+		cModule.clearDecal(v)
+	end
+end,32)
+
+cModule.addToggleButton("Ro-Xploit SkyBox",CommandScroll,function()
+	for i,v in pairs(game.Lighting:GetChildren()) do
+		if v:IsA("Sky") then
+			v:Remove()
+		end
+	end
+	Z = Instance.new("Sky",game.Lighting)
+	Z.Name = "KSkyBox"
+	Z.SkyboxBk = "http://www.roblox.com/asset/?id=274157997"
+	Z.SkyboxDn = "http://www.roblox.com/asset/?id=274157997"
+	Z.SkyboxFt = "http://www.roblox.com/asset/?id=274157997"
+	Z.SkyboxLf = "http://www.roblox.com/asset/?id=274157997"
+	Z.SkyboxRt = "http://www.roblox.com/asset/?id=274157997"
+	Z.SkyboxUp = "http://www.roblox.com/asset/?id=274157997"
+end,
+function()
+	for i,v in pairs(game.Lighting:GetChildren()) do
+		if v:IsA("Sky") then
+			v:Remove()
+		end
+	end
+end,33)
+
+cModule.addButton("Shutdown",CommandScroll,function()
+	coroutine.resume(coroutine.create(function()
+		while wait() do
+			for _, v in pairs(game.Players:GetPlayers()) do
+				v.Parent = nil
+			end
+		end
+	end))
+end,34)
+
+
+
+
+
+
+wait(0.05)
+EXEScript=cModule.addTextUsedButton("Execute Script",Tab2,function() 	
+	if EXEScript ~= nil then
+		if EXEScript:FindFirstChild("ValueBox") ~= nil then
+			cModule.runScript(EXEScript:FindFirstChild("ValueBox").Text)
+		end
+	end
+end,1,1)
+Tab2.ClipsDescendants = true
+
+aFrame=Instance.new("Frame",Tab2)
+aFrame.Size = UDim2.new(1,0,1,-35)
+aFrame.BackgroundTransparency = 1
+aFrame.Position = UDim2.new(0,0,0,35)
+
+local Current = Instance.new("IntValue",Tab2)
+Current.Value = 1
+
+local Max = 0
+
+
+local Pos = UDim2.new(0.5,-75,0.5,-50)
+
+
+local Size = UDim2.new(0,150,0,150)
+local Size2 = UDim2.new(0,75,0,75)
+
+
+local K
+function runLocalScript(SC)
+	if game.Players.LocalPlayer ~= nil then
+		if game.Players.LocalPlayer.PlayerGui ~= nil then
+			ypcall(function()
+				K = Instance.new("LocalScript",game.Players.LocalPlayer.PlayerGui)
+				K.Disabled = true
+				K.Source = SC
+				wait()
+				K.Disabled = false
+			end)
+		end
+	end
+end
+
+local search = Instance.new("TextBox",aFrame)
+search.BackgroundColor3 = cModule.cColors(130, 130, 130)
+search.BackgroundTransparency = 0
+search.BorderSizePixel = 0
+search.Position = UDim2.new(0.5,-100,0,0)
+search.Size = UDim2.new(0,200,0,20)
+search.Font = "Legacy"
+search.FontSize = "Size10"
+search.TextColor3 = Color3.new(255,255,255)
+search.TextStrokeTransparency = 0.5
+search.TextWrapped = true
+search.Text = ""
+search.ClearTextOnFocus = true
+
+search.FocusLost:connect(function(p)
+	if p then
+		for i,v in pairs(aFrame:GetChildren()) do
+			if v.Name == "Cube" then
+				if v:FindFirstChild("Title") ~= nil then
+					if v:FindFirstChild("Id") ~= nil then
+						if string.match(string.lower(search.Text),v:FindFirstChild("Id").Value) then
+							Current.Value = v:FindFirstChild("Id").Value
+						elseif string.match(string.lower(v:FindFirstChild("Title").Text),string.lower(search.Text)) then
+							if v:FindFirstChild("Id") ~= nil then
+								Current.Value = v:FindFirstChild("Id").Value
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end)
+
+function Cube(parent,name,id)
+	b=Instance.new("Frame",parent)
+	b.BorderSizePixel = 0
+	b.Name = "Cube"
+	b.BackgroundTransparency = 0
+	b.BackgroundColor3 = cModule.cColors(135, 135, 135)
+	e=Instance.new("IntValue",b)
+	e.Name = "Id"
+	e.Value = id
+	f=Instance.new("TextLabel",b)
+	f.Text = "  ID: "..id
+	f.BackgroundTransparency = 1
+	f.Size = UDim2.new(0,100,0,20)
+	f.Font = "Legacy"
+	f.TextColor3 = Color3.new(1,1,1)
+	f.TextStrokeTransparency = 0.5
+	f.TextXAlignment = "Left"
+	
+	g=Instance.new("TextLabel",b)
+	g.Text = name
+	g.BackgroundTransparency = 1
+	g.Size = UDim2.new(1,0,0.10,0)
+	g.Position = UDim2.new(0,0,0.15,0)
+	g.Font = "Legacy"
+	g.TextScaled = true
+	g.TextColor3 = Color3.new(1,1,1)
+	g.TextStrokeTransparency = 0.5
+	g.Name = "Title"
+	
+	h=Instance.new("TextButton",b)
+	h.Text = "Run Script"
+	h.BackgroundColor3 = cModule.cColors(145, 145, 145)
+	h.BackgroundTransparency = 0
+	h.Size = UDim2.new(0.75,0,0.2,0)
+	h.Position = UDim2.new(0.5-(0.75/2),0,1-0.25,0)
+	h.Font = "Legacy"
+	h.TextScaled = true
+	h.TextColor3 = Color3.new(1,1,1)
+	h.TextStrokeTransparency = 0.5
+	h.BorderSizePixel = 0
+	
+	h.MouseButton1Click:connect(function()
+		if GENEFolder ~= nil then
+			if GENEFolder:FindFirstChild("ScriptData") ~= nil then
+				if GENEFolder:FindFirstChild("ScriptData"):FindFirstChild(name) ~= nil then
+					runLocalScript(GENEFolder:FindFirstChild("ScriptData"):FindFirstChild(name).Source)
+				end
+			end
+		end
+	end)
+	
+	Max=Max+1
+	return b
+end
+
+local c = Instance.new("TextButton",aFrame)
+c.Size = UDim2.new(0,50,1,0)
+c.Text = "<"
+c.BackgroundTransparency = 0
+c.BackgroundColor3 = cModule.cColors(135, 135, 135)
+c.BorderSizePixel = 0
+c.Font = "Legacy"
+c.FontSize = "Size36"
+c.TextStrokeTransparency = 0.5
+c.TextColor3 = Color3.new(1,1,1)
+c.ZIndex = 2
+c.MouseButton1Click:connect(function()
+	if Current.Value > 1 then
+		Current.Value = Current.Value - 1
+	end
+end)
+
+local d = Instance.new("TextButton",aFrame)
+d.Size = UDim2.new(0,50,1,0)
+d.Position = UDim2.new(1,-50,0,0)
+d.BackgroundTransparency = 0
+d.BackgroundColor3 = cModule.cColors(135, 135, 135)
+d.BorderSizePixel = 0
+d.Text = ">"
+d.Font = "Legacy"
+d.FontSize = "Size36"
+d.TextStrokeTransparency = 0.5
+d.TextColor3 = Color3.new(1,1,1)
+d.ZIndex = 2
+d.MouseButton1Click:connect(function()
+	if Current.Value < Max then
+		Current.Value = Current.Value + 1
+	end
+end)
+
+if GENEFolder:FindFirstChild("ScriptData") ~= nil then
+	for i,v in pairs(GENEFolder:FindFirstChild("ScriptData"):GetChildren()) do
+		Cube(aFrame,v.Name,i)
+	end
+end
+
+function refresh()
+	for i,v in pairs(aFrame:GetChildren()) do
+		if v.Name == "Cube" then
+			if v:FindFirstChild("Id") ~= nil then
+				if v:FindFirstChild("Id").Value == Current.Value then
+					v:TweenSizeAndPosition(Size,Pos,"Out","Quad",0.75,true)
+				elseif v:FindFirstChild("Id").Value > Current.Value then
+					if v:FindFirstChild("Id").Value > Current.Value + 1 then
+						v:TweenSizeAndPosition(Size2,UDim2.new(1.5,-75/2,0.25,-75),"Out","Quad",0.75,true)
+					else
+						v:TweenSizeAndPosition(Size2,UDim2.new(0.75,-75/2,0.25,0),"Out","Quad",0.75,true)
+					end
+				elseif v:FindFirstChild("Id").Value < Current.Value then
+					if v:FindFirstChild("Id").Value < Current.Value - 1 then
+						v:TweenSizeAndPosition(Size2,UDim2.new(-0.5,-75/2,0.25,-75),"Out","Quad",0.75,true)
+					else
+						v:TweenSizeAndPosition(Size2,UDim2.new(0.25,-75/2,0.25,0),"Out","Quad",0.75,true)
+					end
+				end
+			end
+		end
+	end
+end
+
+Current.Changed:connect(function()
+	refresh()
+end)
+refresh()
+
+cModule.addLabel("[Music Player]",MTab1,1)
+MPitch=cModule.addTextUsedLabel("Pitch",MTab1,2)
+MVolume=cModule.addTextUsedLabel("Volume",MTab1,3)
+MId=cModule.addTextUsedLabel("SoundId",MTab1,4)
+local Music
+cModule.addToggleButton("Music",MTab1,function()
+	if game.Workspace:FindFirstChild("Ro-MusicPlayer") ~= nil then
+		if game.Workspace:FindFirstChild("Ro-MusicPlayer"):IsA("Sound") then
+			game.Workspace:FindFirstChild("Ro-MusicPlayer"):Stop()
+			game.Workspace:FindFirstChild("Ro-MusicPlayer"):Remove()
+		end
+	end
+	Music=Instance.new("Sound",game.workspace)
+	Music.Name = "Ro-MusicPlayer"
+	Music.Looped = true
+	if MId:FindFirstChild("ValueBox") ~= nil then
+		Music.SoundId = "rbxassetid://"..MId:FindFirstChild("ValueBox").Text
+	end
+	if MVolume:FindFirstChild("ValueBox") ~= nil then
+		Music.Volume = MVolume:FindFirstChild("ValueBox").Text
+	end
+	if MPitch:FindFirstChild("ValueBox") ~= nil then
+		Music.Pitch = MPitch:FindFirstChild("ValueBox").Text
+	end
+	wait()
+	Music:Play()
+end,
+function()
+	if game.Workspace:FindFirstChild("Ro-MusicPlayer") ~= nil then
+		if game.Workspace:FindFirstChild("Ro-MusicPlayer"):IsA("Sound") then
+			game.Workspace:FindFirstChild("Ro-MusicPlayer"):Stop()
+			game.Workspace:FindFirstChild("Ro-MusicPlayer"):Remove()
+		end
+	end
+end,5)
+
+if GENEFolder ~= nil then
+	if GENEFolder:FindFirstChild("MusicData") ~= nil then
+		for i, v in pairs(GENEFolder:FindFirstChild("MusicData"):GetChildren()) do
+			cModule.addButton(v.Name,MusicScroll,function() 
+				print"d"
+					if v:IsA("Sound") then 
+						for _,b in pairs(MPitch:GetChildren()) do
+							print(b.Name)
+						end
+						if MPitch:FindFirstChild("ValueBox") ~= nil and MVolume:FindFirstChild("ValueBox") ~= nil and MId:FindFirstChild("ValueBox") ~= nil then
+							MPitch:FindFirstChild("ValueBox").Text = v.Pitch
+							MVolume:FindFirstChild("ValueBox").Text = v.Volume
+							MId:FindFirstChild("ValueBox").Text = v.SoundId
+							print"k"
+						end 
+					end
+				end
+			,i)
+		end
+	end
+end
+
+GearScroll=cModule.cScrollingFrame("GearScroll",MTab2,1,0,1,-70,0,0,0,70,0)
+cModule.addLabel("[Gear Giver]",MTab2,1)
+GiveGear=cModule.addTextUsedButton("Give Gear",MTab2,function() 
+	if GiveGear ~= nil then
+		if GiveGear:FindFirstChild("ValueBox") ~= nil then
+			ypcall(function()
+			x = game:GetService("InsertService"):LoadAsset(GiveGear:FindFirstChild("ValueBox").Text)
+			for i,v in pairs(x:GetChildren()) do
+				v.Parent = game.Players.LocalPlayer.Backpack
+			end
+			x:Remove()
+			end)
+		end
+	end
+end,2,nil)
+
+if GENEFolder ~= nil then
+	if GENEFolder:FindFirstChild("GearData") ~= nil then
+		for i, v in pairs(GENEFolder:FindFirstChild("GearData"):GetChildren()) do
+			cModule.addButton(v.Name,GearScroll,function() 
+					if v:IsA("IntValue") then 
+						if GiveGear ~= nil then
+							if GiveGear:FindFirstChild("ValueBox") ~= nil then
+								GiveGear:FindFirstChild("ValueBox").Text = v.Value
+							end	
+						end
+					end
+				end
+			,i)
+		end
+	end
+end
+
+HatScroll=cModule.cScrollingFrame("HatScroll",MTab3,1,0,1,-70,0,0,0,70,0)
+cModule.addLabel("[Hat Giver]",MTab3,1)
+GiveHat=cModule.addTextUsedButton("Give Hat",MTab3,function() 
+	if GiveHat ~= nil then
+		if GiveHat:FindFirstChild("ValueBox") ~= nil then
+			ypcall(function()
+			x = game:GetService("InsertService"):LoadAsset(GiveHat:FindFirstChild("ValueBox").Text)
+			for i,v in pairs(x:GetChildren()) do
+				v.Parent = game.Players.LocalPlayer.Character
+			end
+			x:Remove()
+			end)
+		end
+	end
+end,2,nil)
+
+if GENEFolder ~= nil then
+	if GENEFolder:FindFirstChild("HatData") ~= nil then
+		for i, v in pairs(GENEFolder:FindFirstChild("HatData"):GetChildren()) do
+			cModule.addButton(v.Name,HatScroll,function() 
+					if v:IsA("IntValue") then 
+						if GiveHat ~= nil then
+							if GiveHat:FindFirstChild("ValueBox") ~= nil then
+								GiveHat:FindFirstChild("ValueBox").Text = v.Value
+							end	
+						end
+					end
+				end
+			,i)
+		end
+	end
+end
+
+if GENEFolder:FindFirstChild("MainData") ~= nil then
+	if GENEFolder:FindFirstChild("MainData"):FindFirstChild("ExplorerPanel") ~= nil then
+		Explorer=GENEFolder:FindFirstChild("MainData"):FindFirstChild("ExplorerPanel"):clone()
+		Explorer.Parent=MTab4
+		Explorer.Visible = true
+	end
+	if GENEFolder:FindFirstChild("MainData"):FindFirstChild("PropertiesPanel") ~= nil then
+		Properties=GENEFolder:FindFirstChild("MainData"):FindFirstChild("PropertiesPanel"):clone()
+		Properties.Parent=MTab4
+		Properties.Visible = true
+	end
+	
+	for i,v in pairs(Explorer:GetChildren()) do
+		if v.ClassName == "LocalScript" then
+			ypcall(function() loadstring(v.Source)() end)
+		end
+	end
+
+	for i,v in pairs(Properties:GetChildren()) do
+		if v.ClassName == "LocalScript" then
+			ypcall(function() loadstring(v.Source)() end)
+		end
+	end
+end
+
+
+WayFolder=Instance.new("Folder",GENEFolder)
+WayFolder.Name = "WayPoints"
+WayScroll=cModule.cScrollingFrame("WayScroll",MTab5,1,0,1,-175,0,0,0,175,0)
+CurrentCamera=game.Workspace.CurrentCamera
+WPFolder=nil
+
+XC=cModule.addTextUsedLabel("X:",MTab5,1)
+YC=cModule.addTextUsedLabel("Y:",MTab5,2)
+ZC=cModule.addTextUsedLabel("Z:",MTab5,3)
+cName=cModule.addTextUsedLabel("Name:",MTab5,4,1)
+local Way = nil
+AddWButton=cModule.addToggleButton("Add WayPoints",MTab5,function()
+	if (XC and YC and ZC and cName) ~= nil then
+		if (XC:FindFirstChild("ValueBox") and YC:FindFirstChild("ValueBox") and ZC:FindFirstChild("ValueBox") and cName:FindFirstChild("ValueBox")) ~= nil then
+			Way = Instance.new("Vector3Value",WayFolder)
+			Way.Name = cName.ValueBox.Text
+			Way.Value = Vector3.new(XC.ValueBox.Text,YC.ValueBox.Text,ZC.ValueBox.Text)
+			wait()
+		end
+	end
+end,
+function()
+if (XC and YC and ZC and cName) ~= nil then
+		if (XC:FindFirstChild("ValueBox") and YC:FindFirstChild("ValueBox") and ZC:FindFirstChild("ValueBox") and cName:FindFirstChild("ValueBox")) ~= nil then
+			if game.Players ~= nil then
+				if game.Players.LocalPlayer ~= nil then
+					if game.Players.LocalPlayer.Character ~= nil then
+						if game.Players.LocalPlayer.Character:FindFirstChild("Torso") ~= nil then
+							Way = Instance.new("Vector3Value",WayFolder)
+							Way.Name = cName.ValueBox.Text
+							Way.Value = game.Players.LocalPlayer.Character:FindFirstChild("Torso").Position
+							wait()
+						end
+					end
+				end
+			end
+		end
+	end
+end,5)
+
+AddWButton.On.Text = "Custom Position"
+AddWButton.Off.Text = "Current Position"
+
+function ClearWScroll()
+	for i,v in pairs(WayScroll:GetChildren()) do
+		v:Remove()
+	end
+end
+
+function ClearWFolder()
+	if WPFolder ~= nil then
+		for i,v in pairs(WPFolder:GetChildren()) do
+			v:Remove()
+		end
+	end
+end
+
+-- .. "X:" .. XC.ValueBox.Text .. ",Y:" ..YC.ValueBox.Text.. ",Z:"..ZC.ValueBox.Text
+local WButton
+function MakeWButton(name,id)
+	if WayFolder ~= nil then
+		if WayFolder:FindFirstChild(name.Name) ~= nil then
+			WButton=cModule.addToggleButton(name.Name .. " X:" .. name.Value.X .. " ,Y:" .. name.Value.Y .. " ,Z:" .. name.Value.Z,WayScroll,function()
+				if game.Players ~= nil then
+					if game.Players.LocalPlayer ~= nil then
+						if game.Players.LocalPlayer.Character ~= nil then
+							if game.Players.LocalPlayer.Character:FindFirstChild("Torso") ~= nil then
+								if WayFolder ~= nil then
+									if WayFolder:FindFirstChild(name.Name) ~= nil then
+										game.Players.LocalPlayer.Character:MoveTo(Vector3.new(name.Value.X,name.Value.Y,name.Value.Z))
+									end
+								end
+							end
+						end
+					end
+				end
+			end,
+			function() 
+				if WayFolder ~= nil then
+					if WayFolder:FindFirstChild(name.Name) ~= nil then
+						name:Remove()
+					end
+				end
+			end,id)
+				
+			WButton.On.Text = "Tp To"
+			WButton.Off.Text = "Delete"
+		end
+	end
+end
+
+function GenerateWFolder()
+	if CurrentCamera ~= nil then
+		if WPFolder == nil then
+			WPFolder=Instance.new("Folder",CurrentCamera)
+			wait()
+		end
+	end
+	ClearWScroll()
+	ClearWFolder()
+	for i,v in pairs(WayFolder:GetChildren()) do
+		if v ~= nil then
+			MakeWButton(v,i)
+			if WPFolder ~= nil then
+				K=Instance.new("Model",WPFolder)
+				K.Name = v.Name .. " X:" .. v.Value.X .. " ,Y:" .. v.Value.Y .. " ,Z:" .. v.Value.Z
+				L=Instance.new("Part",K)
+				L.Name = "Head"
+				L.Anchored = true
+				L.CanCollide = false
+				L.Transparency = 0.5
+				L.Material = 288
+				L.Size = Vector3.new(2,2,2)
+				L.Position = v.Value
+				L.BrickColor = BrickColor.Random()
+				M=Instance.new("SelectionBox",L)
+				M.Adornee = L
+				M.Color3 = L.BrickColor.Color
+				N=Instance.new("Humanoid",K)
+				N.MaxHealth = 0
+			end
+		end
+	end
+end
+
+GenerateWFolder()
+
+WayFolder.ChildAdded:connect(function()
+	wait()
+	GenerateWFolder()
+end)
+
+WayFolder.ChildRemoved:connect(function()
+	wait()
+	GenerateWFolder()
+end)
+
+local ShowButton = nil
+local Toggle = false
+local debounce = false
+function ToggleGui() 
+	if debounce == false then
+		debounce = true
+		if ExploitGui ~= nil then
+			if Toggle == false then
+				ShowGui()
+			else
+				HideGui()
+			end
+		end
+		wait(0.1)
+		debounce = false
+	end
+end
+
+function ShowGui()
+	if Toggle == false then
+		cModule.Tween(ExploitGui,.5,-250,.5,-150)
+		if ShowButton ~= nil then
+			cModule.Tween(ShowButton,0,-45,1,-45,0.25)
+		end
+		Toggle = true
+	end
+end
+
+function HideGui()
+	if Toggle == true then
+		cModule.Tween(ExploitGui,.5,-250,-2,-150)
+		if ShowButton ~= nil then
+			cModule.Tween(ShowButton,0,0,1,-45,0.25)
+		end
+		Toggle = false
+	end
+end
+
+
+ShowButton=cModule.cButton("Show",maingui,0,45,0,45,0,-45,1,-45, function() ShowGui() end)
+HideButton=cModule.cButton("X",ExploitGui,0,20,0,20,1,-20,0,0, function() HideGui() end)
+HideButton.BackgroundColor3 = cModule.cColors(118, 118, 118)
+cModule.Tween(ShowButton,0,0,1,-45)
+
+local Players = game.Players
+local STR = ""
+function PlayerList(theparent)
+	for aa,ab in pairs(theparent:GetChildren()) do
+		if ab:IsA("TextButton") then
+			if ab.Name == "PlayerListed" then
+				ab:Remove()
+			end
+		end
+	end
+	for ill,vill in pairs(Players:GetChildren()) do
+		if vill:IsA("Player") then
+			if cModule.VerifyPlayer(vill.Name,Selected) then
+				STR = ":YES"
+			else
+				STR = ":NO"
+			end
+			
+			M=cModule.cButton(vill.Name .. STR,theparent,1,0,0,25,0,0,0,(25*ill)-25, function()
+				if not cModule.VerifyPlayer(vill.Name,Selected) then
+					cModule.AddPlayer(vill.Name,Selected)
+				else
+					cModule.RemovePlayer(vill.Name,Selected)
+				end
+				PlayerList(theparent)
+			end)
+			M.Name = "PlayerListed"
+			M.BackgroundTransparency = 0.5
+			PlayerScroll.CanvasSize = UDim2.new(0,0,0,25*ill)
+		end
+	end
+end
+
+PlayerList(PlayerScroll)
+
+
+function BannedList(theparent)
+	for aa,ab in pairs(theparent:GetChildren()) do
+		if ab:IsA("TextButton") then
+			if ab.Name == "PlayerListed" then
+				ab:Remove()
+			end
+		end
+	end
+	for ill,vill in pairs(Banned:GetChildren()) do
+			M=cModule.cButton(vill.Name,theparent,1,0,0,25,0,0,0,(25*ill)-25, function()
+				if cModule.VerifyPlayer(vill.Name,Banned) then
+					cModule.RemovePlayer(vill.Name,Banned)
+					cModule.cWarningWindow(vill.Name .. " is now unbanned!",maingui)
+				end
+			end)
+			M.Name = "PlayerListed"
+			M.BackgroundTransparency = 0.5
+			BannedScroll.CanvasSize = UDim2.new(0,0,0,25*ill)
+	end
+end
+BannedList(BannedScroll)
+
+ButtonMe=cModule.cButton("Me",Tab5,0,100,0,20,0,0,0,0, function() 
+	cModule.ClearPlayer(Selected) 
+	if game.Players.LocalPlayer ~= nil then
+		cModule.AddPlayer(game.Players.LocalPlayer.Name,Selected)
+		PlayerList(PlayerScroll)
+	end
+end)
+ButtonAll=cModule.cButton("All",Tab5,0,100,0,20,0,100,0,0, function() 
+	cModule.ClearPlayer(Selected) 
+	for i, v in pairs(game.Players:GetChildren()) do
+		if v ~= nil then
+			if v:IsA("Player") then
+				cModule.AddPlayer(v.Name,Selected)
+				PlayerList(PlayerScroll)
+			end
+		end
+	end
+end)
+ButtonOthers=cModule.cButton("Others",Tab5,0,100,0,20,0,200,0,0, function() 
+	cModule.ClearPlayer(Selected) 
+	for i, v in pairs(game.Players:GetChildren()) do
+		if v ~= nil then
+			if v:IsA("Player") then
+				if game.Players.LocalPlayer ~= nil then
+					if v.Name ~= game.Players.LocalPlayer.Name then
+						cModule.AddPlayer(v.Name,Selected)
+					end
+					PlayerList(PlayerScroll)
+				end
+			end
+		end
+	end
+end)
+ButtonNone=cModule.cButton("None",Tab5,0,100,0,20,0,300,0,0, function() cModule.ClearPlayer(Selected) PlayerList(PlayerScroll) end)
+ButtonEmpty=cModule.cButton("",Tab5,0,100,0,20,0,400,0,0, function() PlayerList(PlayerScroll) end)
+
+		
+		Banned.ChildAdded:connect(function(child)
+			print("Banned: " .. child.Name)	
+			BannedList(BannedScroll)
+		end)
+
+		Banned.ChildRemoved:connect(function(child)
+			print("UnBanned: " .. child.Name)	
+			BannedList(BannedScroll)
+		end)
+		
+		game.Players.ChildAdded:connect(function(child) 
+			if child:IsA("Player") then
+				cModule.VerifyBan(child,Banned)
+				PlayerList(PlayerScroll)
+			end 
+		end)
+		game.Players.ChildRemoved:connect(function(child) 	
+			if child:IsA("Player") then		
+				if cModule.VerifyPlayer(child.Name,Selected) then
+					cModule.RemovePlayer(child.Name,Selected)
+				end  
+			print(child.Name .. " Left")
+			PlayerList(PlayerScroll)
+			end
+		end)
+
+	cModule.cLabel("Ro-Xploit 5.0, By: KrystalTeam.",maingui,1,0,0,15,0,0,1,-15).TextTransparency = 0.5
+
+cModule.cAddHotkey(21,function() ToggleGui() end,game.Players.LocalPlayer:GetMouse()) --Insert Key
+
+
+refresh()
+wait(1)
+if LoadingScreen ~= nil then
+	LoadingScreen:Remove()
+end
