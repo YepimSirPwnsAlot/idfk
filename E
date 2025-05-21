@@ -146,7 +146,6 @@ end
 cango = true
 end
 end
-end
 
 script.Parent.MouseButton1Down:connect(click)
 
@@ -212,11 +211,8 @@ end
 
 script.Parent.MouseButton1Down:connect(click)
 
-Page1 = Instance.new("Frame")
-Page1.Name = "Page1"
-Page1.Parent = settings
-Page1.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
-Page1.BorderColor3 = Color3.new(255/255, 0/255, 0/255)
-Page1.BorderSizePixel = 3
-Page1.Position = UDim2.new(0, 0, 0, 83)
-Page1.Size = UDim2.new(1, 0, 1, -83)
+loadmsg = Instance.new("Message")
+loadmsg.Parent = game.Workspace
+loadmsg.Text = ("c00lgui Reborn V"..Version.." has loaded.")
+wait(3)
+loadmsg:Remove()
