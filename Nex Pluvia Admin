@@ -1,461 +1,292 @@
-version="Pluvia"
-Selection=1
-TextBoxInUse=false
-Player=nil
-ColorSelection=BrickColor.new('Bright violet')
-Uninstalled=false
-Commands={}
-Scope=nil
-CustomFunction=""
-Services={
-        InsertService=game:service'InsertService',
-        Workspace=game:service'Workspace',
-        Lighting=game:service'Lighting',
-        Players=game:service'Players',
-        Debris=game:service'Debris',
-        Chat=game:service'Chat',
-}
-m=Services.Players.LocalPlayer:GetMouse()
-SGUI=Instance.new('ScreenGui',Services.Players.LocalPlayer.PlayerGui)
-BAR=Instance.new('Frame',SGUI)
-BAR.Size=UDim2.new(1,0,0,20)
-BAR.Position=UDim2.new(0,0,0,20)
-BAR.BorderSizePixel=0
-BAR.BackgroundColor3=Color3.new(0,0,0)
-TEXTBOX=Instance.new('TextLabel',BAR)
-TEXTBOX.Size=UDim2.new(1,0,1,0)
-TEXTBOX.BackgroundTransparency=1
-TEXTBOX.TextColor3=Color3.new(453,0,435)
-TEXTBOX.FontSize="Size12"
-PlayerCheck=function()
-        if m.Target ~= nil then
-                for i,v in ipairs(Services.Players:GetPlayers())do
-                        if(v.Character and m.Target:IsDescendantOf(v.Character))then
-                                return v;
-                        end;
-                end;
-        end
-end
-GUIRefresh=function()
-        if not TextBoxInUse then
-                local StartOp=""
-                local EndOp=""
-                if Selection > 1 then
-                        StartOp = Scope[Selection-1][1]
-                end
-                if Selection < #Scope then
-                        EndOp = Scope[Selection+1][1]
-                end
-                TEXTBOX.Text = "<-- "..StartOp.." | ["..Selection.."]: ["..Scope[Selection][1].."] | "..EndOp.." -->"
-        end
-end
-GUIDisplay=function(string)
-        TextBoxInUse=true
-        for i = 1,string.len(string) do
-                TEXTBOX.Text = string.sub(string,1,i).."_"
-                wait(.05)
-        end
-        wait(string.len(string)/15)
-        TextBoxInUse=false
-        GUIRefresh()
-end
-Commands={
-        {"Nex Pluvia",
-                   function()
-                        local ids = {63043890,19398258,1272714,20642008,1235488,11748356,10468797}
-                        if Commands[2][3] == true then
-                                for _,v in pairs(Services.Players.LocalPlayer.Character:GetChildren()) do
-                                        for _,x in pairs(ids) do
-                                                if v.Name == "ExtraAsset" then
-                                                        v.Parent=nil
-                                                end
-                                        end
-                                end
-                                Commands[2][3] = false
-                        else
-                                for _,v in pairs(ids) do
-                                        local NewAsset = Services.InsertService:LoadAsset(v):GetChildren()[1]
-                                        NewAsset.Parent=Services.Players.LocalPlayer.Character
-                                        NewAsset.Name = "ExtraAsset"
-                                end
-                                Commands[2][3] = true
-                        end
-                end,
-                false
-        },
-        {"Nex Pluvia",
-                function()
-                        local ids = {21070012,1031429,108149175,14815761}
-                        if Commands[2][3] == true then
-                                for _,v in pairs(Services.Players.LocalPlayer.Character:GetChildren()) do
-                                        for _,x in pairs(ids) do
-                                                if v.Name == "ExtraAsset" then
-                                                        v.Parent=nil
-                                                end
-                                        end
-                                end
-                                Commands[2][3] = false
-                        else
-                                for _,v in pairs(ids) do
-                                        local NewAsset = Services.InsertService:LoadAsset(v):GetChildren()[1]
-                                        NewAsset.Parent=Services.Players.LocalPlayer.Character
-                                        NewAsset.Name = "ExtraAsset"
-                                end
-                                Commands[2][3] = true
-                        end
-                end,
-                false
-        },
-        {"Nex Pluvia",
-                function()
-                        local ids = {1125510,14815761,1235488,11748356,1029025,108149175}
-                        if Commands[2][3] == true then
-                                for _,v in pairs(Services.Players.LocalPlayer.Character:GetChildren()) do
-                                        for _,x in pairs(ids) do
-                                                if v.Name == "ExtraAsset" then
-                                                        v.Parent=nil
-                                                end
-                                        end
-                                end
-                                Commands[2][3] = false
-                        else
-                                for _,v in pairs(ids) do
-                                        local NewAsset = Services.InsertService:LoadAsset(v):GetChildren()[1]
-                                        NewAsset.Parent=Services.Players.LocalPlayer.Character
-                                        NewAsset.Name = "ExtraAsset"
-                                end
-                                Commands[2][3] = true
-                        end
-                end,
-                false
-        },
-        {"Fire*",
-                function()
-                        if pcall(function() Services.Players.LocalPlayer.Character.Head.Fire.Parent=nil end) then
-                        else
-                                pcall(function()
-                                        fire=Instance.new('Fire',Services.Players.LocalPlayer.Character.Head)
-                                        fire.Size=3
-                                        fire.Color=Color3.new(453,0,435)
-                                        fire.SecondaryColor=Color3.new(453,0,435)
-                                end)
-                        end
-                end
-        },
-        {"Invincibility*",
-                function()
-                        pcall(function()
-                                if Services.Players.LocalPlayer.Character.Humanoid.MaxHealth==100 then
-                                        Services.Players.LocalPlayer.Character.Humanoid.MaxHealth=math.huge
-                                else
-                                        Services.Players.LocalPlayer.Character.Humanoid.MaxHealth=100
-                                end
-                        end)
-                end
-        },
-        {"Teleport*",
-                function()
-                        if m.Target ~= nil then
-                                pcall(function() Services.Players.LocalPlayer.Character:MoveTo(m.Hit.p) end)
-                        end
-                end
-        },
-        {"Teleport",
-                function()
-                        if Player == nil and m.Target ~= nil then
-                                if PlayerCheck() then
-                                        Player=PlayerCheck()
-                                end
-                                pcall(function()
-                                        for _,v in pairs(Player.Character:GetChildren()) do
-                                                if v:IsA('Part') then
-                                                        local sb = Instance.new('SelectionBox',Services.Workspace.CurrentCamera)
-                                                        sb.Adornee = v
-                                                        sb.Name = "sb"
-                                                        sb.Color = BrickColor.new('Bright violet')
-                                                end
-                                        end
-                                end)
-                        elseif Player ~= nil then
-                                pcall(function()
-                                        Player.Character:MoveTo(m.Hit.p)
-                                end)
-                                Player = nil
-                                for _,v in pairs(Services.Workspace.CurrentCamera:GetChildren()) do
-                                        if v:IsA('SelectionBox') and v.Name == "sb" then
-                                                v.Parent=nil
-                                        end
-                                end
-                        end
-                end
-        },
-        {"Kill",
-                function()
-                        pcall(function() PlayerCheck().Character:BreakJoints() end)
-                end
-        },
-        {"Invincibility",
-                function()
-                        pcall(function()
-                                if PlayerCheck().Character.Humanoid.MaxHealth==100 then
-                                        PlayerCheck().Character.Humanoid.MaxHealth=math.huge
-                                else
-                                        PlayerCheck().Character.Humanoid.MaxHealth=100
-                                end
-                        end)
-                end
-        },
-        {":BreakJoints()",
-                function()
-                        pcall(function() m.Target:BreakJoints() end)
-                end
-        },
-        {"Kick",
-                function()
-                        pcall(function() PlayerCheck().Parent=nil end)
-                end
-        },
-        {"Custom Function",
-                function()
-                        Spawn(loadstring(CustomFunction))
-                end
-        },
-        {"LinkedSword",
-                function()
-                        Services.InsertService:LoadAsset(47433):GetChildren()[1].Parent=Services.Players.LocalPlayer.Backpack
-                end
-        },
-        {":GetFullName()",
-                function()
-                        if m.Target then
-                                local string = m.Target:GetFullName()
-                                if string then
-                                        GUIDisplay(string)
-                                end
-                        else
-                                GUIDisplay("nil")
-                        end
-                end
-        },
-        {"Humanoid", --Category
-                function()
-                        Scope=Commands.Humanoid[3]
-                        Selection=1
-                        GUIRefresh()
-                end,
-                {
-                        {"Up Scope",
-                                function()
-                                        Scope=Commands
-                                        Selection=1
-                                        GUIRefresh()
-                                end
-                        },
-                        {"Humanoid",
-                                function()
-                                        if PlayerCheck() then
-                                                if pcall(function() PlayerCheck().Character.Humanoid.Parent=nil end) then
-                                                else
-                                                        pcall(function() Instance.new('Humanoid',PlayerCheck().Character) end)
-                                                end
-                                        end
-                                end
-                        },
-                        {"Remove Head",
-                                function()
-                                        pcall(function() PlayerCheck().Character.Head.Parent=nil end)
-                                end
-                        },
-                        {"PlatformStand",
-                                function()
-                                        pcall(function()
-                                                if PlayerCheck().Character.Humanoid.PlatformStand==true then
-                                                        PlayerCheck().Character.Humanoid.PlatformStand=false
-                                                else
-                                                        PlayerCheck().Character.Humanoid.PlatformStand=true
-                                                end
-                                        end)
-                                end
-                        },
-                        {"Sit",
-                                function()
-                                        pcall(function()
-                                                if PlayerCheck().Character.Humanoid.Sit==true then
-                                                        PlayerCheck().Character.Humanoid.Sit=false
-                                                else
-                                                        PlayerCheck().Character.Humanoid.Sit=true
-                                                end
-                                        end)
-                                end
-                        },
-                        {"WalkSpeed",
-                                function()
-                                        pcall(function()
-                                                if PlayerCheck().Character.Humanoid.WalkSpeed==16 then
-                                                        PlayerCheck().Character.Humanoid.WalkSpeed=0
-                                                else
-                                                        PlayerCheck().Character.Humanoid.WalkSpeed=16
-                                                end
-                                        end)
-                                end
-                        },
-                }
-        },
-        {"Building", --Category
-                function()
-                        Scope=Commands.Building[3]
-                        Selection=1
-                        GUIRefresh()
-                end,
-                {
-                        {"Up Scope",
-                                function()
-                                        Scope=Commands
-                                        Selection=1
-                                        GUIRefresh()
-                                end
-                        },
-                        {"Color",
-                                function()
-                                        pcall(function() m.Target.BrickColor = ColorSelection end)
-                                end
-                        },
-                        {"Color Picker",
-                                function()
-                                        pcall(function() ColorSelection = m.Target.BrickColor end)
-                                end
-                        },
-                        {"Anchor",
-                                function()
-                                        pcall(function() m.Target.Anchored=true end)
-                                end
-                        },
-                        {"Unanchor",
-                                function()
-                                        pcall(function() m.Target.Anchored=false end)
-                                end
-                        },
-                        {"Decal",
-                                function()
-                                        pcall(function()
-                                                decal = Instance.new('Decal',m.Target)
-                                                decal.Face = m.TargetSurface
-                                                decal.Texture = "http://roblox.com/asset/?id=123659742"
-                                        end)
-                                end
-                        },
-                        {"Decal2",
-                                function()
-                                        pcall(function()
-                                                decal = Instance.new('Decal',m.Target)
-                                                decal.Face = m.TargetSurface
-                                                decal.Texture = "http://roblox.com/asset/?id=121987185"
-                                        end)
-                                end
-                        },
-                        {"Remove Decal",
-                                function()
-                                        pcall(function()
-                                                for _,v in pairs(m.Target:GetChildren()) do
-                                                        if v:IsA('Decal') then
-                                                                if v.Face == m.TargetSurface then
-                                                                        v.Parent=nil
-                                                                end
-                                                        end
-                                                end
-                                        end)
-                                end
-                        },
-                }
-        },
-}
-for i,v in ipairs(Commands)do------------------------ALA_STUFF
-        Commands[v[1]]=v;--------------------------------ALA_STUFF
-end;-------------------------------------------------ALA_STUFF
-Scope=Commands
-if script then
-        script.Parent=Services.Players.LocalPlayer.PlayerGui
-        script.Name="[Nex v"..version.."]"
-end
-coroutine.wrap(function() repeat wait() until Services.Players.LocalPlayer.Character
-Services.Chat:Chat(Services.Players.LocalPlayer.Character.Head,"Nex "..version.." Installed",Enum.ChatColor.Blue)
-end)()
-GUIDisplay("..Nex Loaded - Made by Nex Pluvia...")
-QDown=false
-EDown=false
-m.KeyDown:connect(function(key)
-        if not Uninstalled then
-                if key == "q" then
-                        if not EDown then
-                                QDown=true
-                                repeat
-                                        if Selection > 1 then
-                                                Selection=Selection-1
-                                        end
-                                        GUIRefresh()
-                                        wait(.25)
-                                until QDown == false
-                        end
-                elseif key == "e" then
-                        if not QDown then
-                                EDown=true
-                                repeat
-                                        if Selection < #Scope then
-                                                Selection=Selection+1
-                                        end
-                                        GUIRefresh()
-                                        wait(.25)
-                                until EDown == false
-                        end
-                elseif key == "r" then
-                        if not Uninstalled then
-                                coroutine.wrap(function()
-                                        if m.Target then
-                                                sb = Instance.new('SelectionBox',Services.Workspace.CurrentCamera)
-                                                sb.Adornee = m.Target
-                                                sb.Name = "sb"
-                                                sb.Color = BrickColor.new('Bright violet')
-                                                wait(.25)
-                                                for _,v in pairs(Services.Workspace.CurrentCamera:GetChildren()) do
-                                                        if v:IsA('SelectionBox') and v.Name == "sb" then
-                                                                v.Parent=nil
-                                                        end
-                                                end
-                                        end
-                                end)()
-                                Scope[Selection][2]()
-                        end
-                end
-        end
+-- Creating the main GUI
+local gui = Instance.new("ScreenGui")
+gui.Name = "CommandsGUI_V2"
+gui.Parent = game.Players.LocalPlayer.PlayerGui
+
+-- Creating the Admin Frame
+local frame = Instance.new("Frame")
+frame.Name = "AdminFrame"
+frame.Size = UDim2.new(0, 300, 0, 400)
+frame.Position = UDim2.new(1, -310, 0.5, -200) -- Positioned at the right corner
+frame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+frame.Active = true
+frame.Draggable = true
+frame.Parent = gui
+
+-- Creating the top label
+local topLabel = Instance.new("TextLabel")
+topLabel.Size = UDim2.new(1, 0, 0, 50)
+topLabel.Position = UDim2.new(0, 0, 0, 0)
+topLabel.Text = "Command GUI V2"
+topLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+topLabel.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+topLabel.TextSize = 20 -- Changed to 20
+topLabel.Parent = frame
+
+-- Creating the close button (X)
+local closeButton = Instance.new("TextButton")
+closeButton.Size = UDim2.new(0, 40, 0, 40)
+closeButton.Position = UDim2.new(1, -45, 0, 5) -- Positioned at the top-right corner
+closeButton.Text = "X"
+closeButton.TextColor3 = Color3.fromRGB(0, 0, 0) -- Black text
+closeButton.TextSize = 21 -- Text size set to 21
+closeButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Red background
+closeButton.Parent = frame
+
+-- Close button functionality
+closeButton.MouseButton1Click:Connect(function()
+    gui:Destroy() -- Closes the entire GUI
 end)
-m.KeyUp:connect(function(key)
-        if not Uninstalled then
-                if key == "q" then
-                        QDown=false
-                elseif key == "e" then
-                        EDown=false
-                end
+
+-- Creating the command box
+local commandBox = Instance.new("TextBox")
+commandBox.Size = UDim2.new(1, -20, 0, 50)
+commandBox.Position = UDim2.new(0, 10, 0, 60)
+commandBox.PlaceholderText = "Type your command"
+commandBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+commandBox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+commandBox.TextSize = 20
+commandBox.Parent = frame
+
+-- Creating the status label
+local statusLabel = Instance.new("TextLabel")
+statusLabel.Size = UDim2.new(1, -20, 0, 40)
+statusLabel.Position = UDim2.new(0, 10, 0, 120)
+statusLabel.Text = "Status: Nothing"
+statusLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+statusLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+statusLabel.TextSize = 20 -- Changed to 20
+statusLabel.Parent = frame
+
+-- Function to reset the status label after 5 seconds
+local function resetStatusLabel()
+    wait(5)
+    statusLabel.Text = "Status: Nothing"
+end
+
+-- Function to find a player by name or handle the "me" command
+local function findPlayerByName(name)
+    if name == "me" then
+        return game.Players.LocalPlayer
+    end
+    for _, player in ipairs(game.Players:GetPlayers()) do
+        if player.Name == name or player.DisplayName == name then
+            return player
         end
+    end
+    return nil
+end
+
+-- Function to apply a command to all players in the server
+local function allPlayers(action)
+    for _, player in ipairs(game.Players:GetPlayers()) do
+        action(player)
+    end
+end
+
+-- Command Functions
+
+-- Ban function for a specific target or "me"
+local function banPlayer(targetName)
+    local target = findPlayerByName(targetName)
+    if target then
+        target:Kick("You have been banned by an admin!")
+        statusLabel.Text = "Status: " .. targetName .. " has been banned."
+    else
+        statusLabel.Text = "Status: Player not found."
+    end
+    resetStatusLabel()
+end
+
+-- Ban all players function
+local function banAllPlayers()
+    allPlayers(function(player)
+        player:Kick("You have been banned by an admin!")
+    end)
+    statusLabel.Text = "Status: All players have been banned."
+    resetStatusLabel()
+end
+
+-- Kick function for a specific target or "me"
+local function kickPlayer(targetName)
+    local target = findPlayerByName(targetName)
+    if target then
+        target:Kick("You have been kicked by an admin!")
+        statusLabel.Text = "Status: " .. targetName .. " has been kicked."
+    else
+        statusLabel.Text = "Status: Player not found."
+    end
+    resetStatusLabel()
+end
+
+-- Kill a player or "me" by removing their Humanoid
+local function killPlayer(targetName)
+    local target = findPlayerByName(targetName)
+    if target and target.Character and target.Character:FindFirstChild("Humanoid") then
+        target.Character.Humanoid.Health = 0
+        statusLabel.Text = "Status: " .. targetName .. " has been killed."
+    else
+        statusLabel.Text = "Status: Player or Humanoid not found."
+    end
+    resetStatusLabel()
+end
+
+-- Kill all players function
+local function killAllPlayers()
+    allPlayers(function(player)
+        if player.Character and player.Character:FindFirstChild("Humanoid") then
+            player.Character.Humanoid.Health = 0
+        end
+    end)
+    statusLabel.Text = "Status: All players have been killed."
+    resetStatusLabel()
+end
+
+-- Jail function to trap a player or "me" in a cell
+local function jailPlayer(targetName)
+    local target = findPlayerByName(targetName)
+    if target and target.Character then
+        -- Create a "jail cell" around the player
+        local jailCell = Instance.new("Part")
+        jailCell.Size = Vector3.new(10, 10, 10)
+        jailCell.Anchored = true
+        jailCell.Position = target.Character.PrimaryPart.Position
+        jailCell.Parent = workspace
+
+        statusLabel.Text = "Status: " .. targetName .. " has been jailed."
+    else
+        statusLabel.Text = "Status: Player not found."
+    end
+    resetStatusLabel()
+end
+
+-- Unjail function to free a jailed player or "me"
+local function unjailPlayer(targetName)
+    local target = findPlayerByName(targetName)
+    if target then
+        -- Remove the jail (Assume it's a part named "Jail")
+        for _, part in ipairs(workspace:GetChildren()) do
+            if part:IsA("Part") and part.Name == "Jail" then
+                part:Destroy()
+            end
+        end
+        statusLabel.Text = "Status: " .. targetName .. " has been unjailed."
+    else
+        statusLabel.Text = "Status: Player not found."
+    end
+    resetStatusLabel()
+end
+
+-- Teleport to a target player or "me"
+local function gotoPlayer(targetName)
+    local target = findPlayerByName(targetName)
+    if target and target.Character then
+        game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(target.Character.PrimaryPart.CFrame)
+        statusLabel.Text = "Status: Teleported to " .. targetName
+    else
+        statusLabel.Text = "Status: Player not found."
+    end
+    resetStatusLabel()
+end
+
+-- Teleport all players to one target or "me"
+local function teleportAllToPlayer(targetName)
+    local target = findPlayerByName(targetName)
+    if target and target.Character then
+        local targetPosition = target.Character.PrimaryPart.Position
+        allPlayers(function(player)
+            player.Character:SetPrimaryPartCFrame(CFrame.new(targetPosition))
+        end)
+        statusLabel.Text = "Status: All players teleported to " .. targetName
+    else
+        statusLabel.Text = "Status: Target player not found."
+    end
+    resetStatusLabel()
+end
+
+-- Command Parsing
+commandBox.FocusLost:Connect(function(enterPressed)
+    if enterPressed then
+        local input = commandBox.Text
+        local split = string.split(input, " ")
+
+        if split[1] == "!ban" then
+            banPlayer(split[2])
+        elseif split[1] == "!banall" then
+            banAllPlayers()
+        elseif split[1] == "!kick" then
+            kickPlayer(split[2])
+        elseif split[1] == "!kill" then
+            killPlayer(split[2])
+        elseif split[1] == "!killall" then
+            killAllPlayers()
+        elseif split[1] == "!jail" then
+            jailPlayer(split[2])
+        elseif split[1] == "!unjail" then
+            unjailPlayer(split[2])
+        elseif split[1] == "!goto" then
+            gotoPlayer(split[2])
+        elseif split[1] == "!tpall" then
+            teleportAllToPlayer(split[2])
+        else
+            statusLabel.Text = "Status: Unknown command."
+        end
+
+        commandBox.Text = ""
+    end
 end)
-Services.Players.LocalPlayer.Chatted:connect(function(msg)
-        if not Uninstalled then
-                if string.lower(msg) == "uninstall Nex" then
-                        Uninstalled = true
-                        Services.Chat:Chat(Services.Players.LocalPlayer.Character.Head,"Nex "..version.." UNINSTALLED",Enum.ChatColor.Blue)
-                        SGUI.Parent=nil
-                        if script then
-                                script.Parent=nil
-                        end
-                elseif string.sub(string.lower(msg),1,2) == "c/" then
-                        pcall(function() ColorSelection = BrickColor.new(string.sub(msg,3)) end)
-                elseif string.sub(string.lower(msg),1,2) == "m/" then
-                        for _,v in pairs(Services.Players:GetChildren()) do
-                                if v.Name ~= Services.Players.LocalPlayer.Name then
-                                        Services.Chat:Chat(v.Character.Head,string.sub(msg,3),Enum.ChatColor.Green)
-                                end
-                        end
-                elseif string.sub(string.lower(msg),1,3) == "cf/" then
-                        CustomFunction=string.sub(msg,4)
-                end
+
+-- Function to give a Boombox tool to the player
+local function giveBoombox(player)
+    local tool = Instance.new("Tool")
+    tool.Name = "Boombox"
+    tool.RequiresHandle = false
+    tool.CanBeDropped = false
+    
+    local remote = Instance.new("RemoteEvent")
+    remote.Name = "PlaySound"
+    remote.Parent = tool
+    
+    tool.Activated:Connect(function()
+        local soundId = "rbxassetid://" .. player.Input -- Assuming the player inputs the sound ID
+        if soundId then
+            local sound = Instance.new("Sound", workspace)
+            sound.SoundId = soundId
+            sound:Play()
         end
+    end)
+    
+    tool.Parent = player.Backpack
+    statusLabel.Text = "Status: " .. player.Name .. " received a Boombox."
+    resetStatusLabel()
+end
+
+-- Command to give Boombox to player or all
+local function giveBoomboxCommand(targetName)
+    if targetName == "all" then
+        allPlayers(function(player)
+            giveBoombox(player)
+        end)
+        statusLabel.Text = "Status: All players received a Boombox."
+    else
+        local target = findPlayerByName(targetName)
+        if target then
+            giveBoombox(target)
+        else
+            statusLabel.Text = "Status: Player not found."
+        end
+    end
+    resetStatusLabel()
+end
+
+-- Handle !boombox command
+commandBox.FocusLost:Connect(function(enterPressed)
+    if enterPressed then
+        local input = commandBox.Text
+        local split = string.split(input, " ")
+        
+        if split[1] == "!boombox" then
+            giveBoomboxCommand(split[2])
+        end
+    end
 end)
