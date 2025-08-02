@@ -6,7 +6,7 @@ local Welcome2 = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
 local ScrollSizer = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local Updated = Instance.new("TextButton")
+local Banzai = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local Cleetus = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
@@ -14,7 +14,7 @@ local JohnDoe = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local TheDankEngine = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local Banisher = Instance.new("TextButton")
+local Splatterhouse = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local Illuminati = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
@@ -24,25 +24,25 @@ local ChopChop = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local HolyWrench = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
-local Baseplate = Instance.new("TextButton")
+local Solario = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
-local FlingGUI = Instance.new("TextButton")
+local FlamingCube = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
 local Techno = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
 local M60 = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local Characters = Instance.new("TextButton")
+local Neptunion = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
 local ChainSaw = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
-local FixedStuff = Instance.new("TextButton")
+local Spider = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
 local InfGaunt = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
 local DemonClaws = Instance.new("TextButton")
 local UICorner_20 = Instance.new("UICorner")
-local chopchop = Instance.new("TextButton")
+local Fraud = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
 local Nuke = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
@@ -86,19 +86,19 @@ local Chrono = Instance.new("TextButton")
 local UICorner_41 = Instance.new("UICorner")
 local Disasters = Instance.new("TextButton")
 local UICorner_42 = Instance.new("UICorner")
-local Misc = Instance.new("TextButton")
+local GUI = Instance.new("TextButton")
 local UICorner_43 = Instance.new("UICorner")
 local Zeroith = Instance.new("TextButton")
 local UICorner_44 = Instance.new("UICorner")
-local FencingRestore = Instance.new("TextButton")
+local ChatHax = Instance.new("TextButton")
 local UICorner_45 = Instance.new("UICorner")
 local InsanityPowers = Instance.new("TextButton")
 local UICorner_46 = Instance.new("UICorner")
-local Floss = Instance.new("TextButton")
+local ModelInserter = Instance.new("TextButton")
 local UICorner_47 = Instance.new("UICorner")
 local Rokudayne = Instance.new("TextButton")
 local UICorner_48 = Instance.new("UICorner")
-local RussainKick = Instance.new("TextButton")
+local AnimationGUI = Instance.new("TextButton")
 local UICorner_49 = Instance.new("UICorner")
 local Pillow = Instance.new("TextButton")
 local UICorner_50 = Instance.new("UICorner")
@@ -140,8 +140,6 @@ local Credits = Instance.new("TextLabel")
 local UICorner_68 = Instance.new("UICorner")
 local Respawn = Instance.new("TextButton")
 local UICorner_69 = Instance.new("UICorner")
-local Netless = Instance.new("TextButton")
-local UICorner_70 = Instance.new("UICorner")
 local AntiFling = Instance.new("TextBox")
 local UICorner_71 = Instance.new("UICorner")
 local X = Instance.new("TextButton")
@@ -163,7 +161,7 @@ Main.BackgroundColor3 = Color3.fromRGB(137, 0, 254)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.382268965, 0, 1.18099999, 0)
 Main.Size = UDim2.new(0, 451, 0, 525)
-Main.Visible = false
+Main.Visible = true
 
 UICorner.Parent = Main
 UICorner.CornerRadius = UDim.new(0, 18)
@@ -188,9 +186,9 @@ Welcome2.BorderSizePixel = 0
 Welcome2.Position = UDim2.new(0.0245891828, 0, 0.114000015, 0)
 Welcome2.Size = UDim2.new(0, 428, 0, 36)
 Welcome2.Font = Enum.Font.SourceSans
-Welcome2.Text = "Gonna add more things soon."
+Welcome2.Text = "Added to much new things! Enjoy guys :)"
 Welcome2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Welcome2.TextSize = 14
+Welcome2.TextSize = 10
 Welcome2.TextWrapped = true
 Welcome2.TextScaled = true
 
@@ -207,7 +205,7 @@ ScrollSizer.Size = UDim2.new(0, 428, 2, 333)
 
 local UICorner = Instance.new("UICorner")
 UICorner.Parent = ScrollSizer
-UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.CornerRadius = UDim.new(0, 13)
 
 ScrollingFrame.Name = "E"
 ScrollingFrame.Parent = ScrollSizer
@@ -219,26 +217,26 @@ ScrollingFrame.ScrollBarThickness = 0
 
 local UICorner = Instance.new("UICorner")
 UICorner.Parent = ScrollingFrame
-UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.CornerRadius = UDim.new(0, 13)
 
-Updated.Name = "Updated"
-Updated.Parent = ScrollingFrame
-Updated.BackgroundColor3 = Color3.fromRGB(235, 190, 77)
-Updated.Position = UDim2.new(0.0093457941, 0, 0.0022281385, 0)
-Updated.Size = UDim2.new(0, 419, 0, 36)
-Updated.Font = Enum.Font.SourceSansBold
-Updated.Text = "    Updated Stuff"
-Updated.TextColor3 = Color3.fromRGB(255, 255, 255)
-Updated.TextSize = 20.000
-Updated.TextWrapped = true
-Updated.TextXAlignment = Enum.TextXAlignment.Left
+Banzai.Name = "Banzai"
+Banzai.Parent = ScrollingFrame
+Banzai.BackgroundColor3 = Color3.fromRGB(87, 185, 255)
+Banzai.Position = UDim2.new(0.0093457941, 0, 0.0022281385, 0)
+Banzai.Size = UDim2.new(0, 419, 0, 36)
+Banzai.Font = Enum.Font.SourceSansBold
+Banzai.Text = "    Banzai Bazooka"
+Banzai.TextColor3 = Color3.fromRGB(255, 255, 255)
+Banzai.TextSize = 20.000
+Banzai.TextWrapped = true
+Banzai.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_3.Parent = Updated
+UICorner_3.Parent = Banzai
 
 local newTag = Instance.new("TextLabel")
 newTag.Name = "NewTag"
-newTag.Parent = Updated
-newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
+newTag.Parent = Banzai
+newTag.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
 newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
 newTag.Size = UDim2.new(0, 60, 0, 30)
 newTag.Text = "UPDATED"
@@ -249,7 +247,7 @@ newTag.BorderSizePixel = 0
 
 Cleetus.Name = "Cleetus"
 Cleetus.Parent = ScrollingFrame
-Cleetus.BackgroundColor3 = Color3.fromRGB(235, 190, 77)
+Cleetus.BackgroundColor3 = Color3.fromRGB(87, 185, 255)
 Cleetus.Position = UDim2.new(0.0093457941, 0, 0.0175743196, 0)
 Cleetus.Size = UDim2.new(0, 419, 0, 36)
 Cleetus.Font = Enum.Font.SourceSansBold
@@ -264,7 +262,7 @@ UICorner_4.Parent = Cleetus
 local newTag = Instance.new("TextLabel")
 newTag.Name = "NewTag"
 newTag.Parent = Cleetus
-newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
+newTag.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
 newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
 newTag.Size = UDim2.new(0, 60, 0, 30)
 newTag.Text = "UPDATED"
@@ -292,11 +290,11 @@ newTag.Name = "NewTag"
 newTag.Parent = JohnDoe
 newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
 newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 60, 0, 30)
-newTag.Text = "UPDATED"
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "FIXED"
 newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
 newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 18
+newTag.TextSize = 20
 newTag.BorderSizePixel = 0
 
 TheDankEngine.Name = "TheDankEngine"
@@ -318,42 +316,42 @@ newTag.Name = "NewTag"
 newTag.Parent = TheDankEngine
 newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
 newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 60, 0, 30)
-newTag.Text = "UPDATED"
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "FIXED"
 newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
 newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 18
+newTag.TextSize = 20
 newTag.BorderSizePixel = 0
 
-Banisher.Name = "Banisher"
-Banisher.Parent = ScrollingFrame
-Banisher.BackgroundColor3 = Color3.fromRGB(235, 190, 77)
-Banisher.Position = UDim2.new(0.0093457941, 0, 0.077888377, 0)
-Banisher.Size = UDim2.new(0, 419, 0, 36)
-Banisher.Font = Enum.Font.SourceSansBold
-Banisher.Text = "    Banisher"
-Banisher.TextColor3 = Color3.fromRGB(255, 255, 255)
-Banisher.TextSize = 20.000
-Banisher.TextWrapped = true
-Banisher.TextXAlignment = Enum.TextXAlignment.Left
+Splatterhouse.Name = "Splatterhouse"
+Splatterhouse.Parent = ScrollingFrame
+Splatterhouse.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+Splatterhouse.Position = UDim2.new(0.0093457941, 0, 0.0625422001, 0)
+Splatterhouse.Size = UDim2.new(0, 419, 0, 36)
+Splatterhouse.Font = Enum.Font.SourceSansBold
+Splatterhouse.Text = "    Rick's Retribution"
+Splatterhouse.TextColor3 = Color3.fromRGB(255, 255, 255)
+Splatterhouse.TextSize = 20.000
+Splatterhouse.TextWrapped = true
+Splatterhouse.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_7.Parent = Banisher
+UICorner_7.Parent = Splatterhouse
 
 local newTag = Instance.new("TextLabel")
 newTag.Name = "NewTag"
-newTag.Parent = Banisher
-newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
+newTag.Parent = Splatterhouse
+newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 60, 0, 30)
-newTag.Text = "UPDATED"
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "NEW"
 newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
 newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 18
+newTag.TextSize = 20
 newTag.BorderSizePixel = 0
 
 Illuminati.Name = "Illuminati"
 Illuminati.Parent = ScrollingFrame
-Illuminati.BackgroundColor3 = Color3.fromRGB(235, 190, 77)
+Illuminati.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
 Illuminati.Position = UDim2.new(0.0093457941, 0, 0.0932345614, 0)
 Illuminati.Size = UDim2.new(0, 419, 0, 36)
 Illuminati.Font = Enum.Font.SourceSansBold
@@ -365,21 +363,9 @@ Illuminati.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_8.Parent = Illuminati
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Illuminati
-newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 60, 0, 30)
-newTag.Text = "UPDATED"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 18
-newTag.BorderSizePixel = 0
-
 MineCraftSteve.Name = "MineCraftSteve"
 MineCraftSteve.Parent = ScrollingFrame
-MineCraftSteve.BackgroundColor3 = Color3.fromRGB(235, 190, 77)
+MineCraftSteve.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
 MineCraftSteve.Position = UDim2.new(0.0093457941, 0, 0.108580746, 0)
 MineCraftSteve.Size = UDim2.new(0, 419, 0, 36)
 MineCraftSteve.Font = Enum.Font.SourceSansBold
@@ -391,22 +377,10 @@ MineCraftSteve.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_9.Parent = MineCraftSteve
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = MineCraftSteve
-newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 60, 0, 30)
-newTag.Text = "UPDATED"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 18
-newTag.BorderSizePixel = 0
-
 ChopChop.Name = "ChopChop"
 ChopChop.Parent = ScrollingFrame
-ChopChop.BackgroundColor3 = Color3.fromRGB(235, 190, 77)
-ChopChop.Position = UDim2.new(0.0093457941, 0, 0.0625422001, 0)
+ChopChop.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+ChopChop.Position = UDim2.new(0.0093457941, 0, 0.077888377, 0)
 ChopChop.Size = UDim2.new(0, 419, 0, 36)
 ChopChop.Font = Enum.Font.SourceSansBold
 ChopChop.Text = "    Chop Chop"
@@ -417,21 +391,9 @@ ChopChop.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_10.Parent = ChopChop
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = ChopChop
-newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 60, 0, 30)
-newTag.Text = "UPDATED"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 18
-newTag.BorderSizePixel = 0
-
 HolyWrench.Name = "HolyWrench"
 HolyWrench.Parent = ScrollingFrame
-HolyWrench.BackgroundColor3 = Color3.fromRGB(87, 185, 255)
+HolyWrench.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
 HolyWrench.Position = UDim2.new(0.0093457941, 0, 0.139630005, 0)
 HolyWrench.Size = UDim2.new(0, 419, 0, 36)
 HolyWrench.Font = Enum.Font.SourceSansBold
@@ -443,79 +405,33 @@ HolyWrench.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_11.Parent = HolyWrench
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = HolyWrench
-newTag.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "FIXED"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+Solario.Name = "Solario"
+Solario.Parent = ScrollingFrame
+Solario.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+Solario.Position = UDim2.new(0.0093457941, 0, 0.154976189, 0)
+Solario.Size = UDim2.new(0, 419, 0, 36)
+Solario.Font = Enum.Font.SourceSansBold
+Solario.Text = "    Solario"
+Solario.TextColor3 = Color3.fromRGB(255, 255, 255)
+Solario.TextSize = 20.000
+Solario.TextWrapped = true
+Solario.TextXAlignment = Enum.TextXAlignment.Left
 
-Baseplate.Name = "Baseplate"
-Baseplate.Parent = ScrollingFrame
-Baseplate.BackgroundColor3 = Color3.fromRGB(87, 185, 255)
-Baseplate.Position = UDim2.new(0.0093457941, 0, 0.154976189, 0)
-Baseplate.Size = UDim2.new(0, 419, 0, 36)
-Baseplate.Font = Enum.Font.SourceSansBold
-Baseplate.Text = "    Create Baseplate"
-Baseplate.TextColor3 = Color3.fromRGB(255, 255, 255)
-Baseplate.TextSize = 20.000
-Baseplate.TextWrapped = true
-Baseplate.TextXAlignment = Enum.TextXAlignment.Left
-Baseplate.MouseButton1Down:Connect(function()
-	local pt = Instance.new("Part")
-	pt.BrickColor = BrickColor.new("Silver")
-	pt.Anchored = true
-	pt.CanCollide = true
-	pt.BottomSurface = "Weld"
-	pt.Parent = workspace
-	pt.Name = (math.random(1,1000000))
-	pt.Size = Vector3.new(1000, 1, 1000)
-end)
+UICorner_12.Parent = Solario
 
-UICorner_12.Parent = Baseplate
+FlamingCube.Name = "FlamingCube"
+FlamingCube.Parent = ScrollingFrame
+FlamingCube.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+FlamingCube.Position = UDim2.new(0.0093457941, 0, 0.170322359, 0)
+FlamingCube.Size = UDim2.new(0, 419, 0, 36)
+FlamingCube.Font = Enum.Font.SourceSansBold
+FlamingCube.Text = "    Flaming Cube"
+FlamingCube.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlamingCube.TextSize = 20.000
+FlamingCube.TextWrapped = true
+FlamingCube.TextXAlignment = Enum.TextXAlignment.Left
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Baseplate
-newTag.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "FIXED"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
-FlingGUI.Name = "FlingGUI"
-FlingGUI.Parent = ScrollingFrame
-FlingGUI.BackgroundColor3 = Color3.fromRGB(87, 185, 255)
-FlingGUI.Position = UDim2.new(0.0093457941, 0, 0.170322359, 0)
-FlingGUI.Size = UDim2.new(0, 419, 0, 36)
-FlingGUI.Font = Enum.Font.SourceSansBold
-FlingGUI.Text = "    Yeet Gui"
-FlingGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
-FlingGUI.TextSize = 20.000
-FlingGUI.TextWrapped = true
-FlingGUI.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_13.Parent = FlingGUI
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = FlingGUI
-newTag.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "FIXED"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+UICorner_13.Parent = FlamingCube
 
 Techno.Name = "Techno"
 Techno.Parent = ScrollingFrame
@@ -531,18 +447,6 @@ Techno.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_14.Parent = Techno
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Techno
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 M60.Name = "M60"
 M60.Parent = ScrollingFrame
 M60.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -557,43 +461,19 @@ M60.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_15.Parent = M60
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = M60
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+Neptunion.Name = "Neptunion"
+Neptunion.Parent = ScrollingFrame
+Neptunion.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+Neptunion.Position = UDim2.new(0.0093457941, 0, 0.18459788, 0)
+Neptunion.Size = UDim2.new(0, 419, 0, 36)
+Neptunion.Font = Enum.Font.SourceSansBold
+Neptunion.Text = "    Neptunion V"
+Neptunion.TextColor3 = Color3.fromRGB(255, 255, 255)
+Neptunion.TextSize = 20.000
+Neptunion.TextWrapped = true
+Neptunion.TextXAlignment = Enum.TextXAlignment.Left
 
-Characters.Name = "Characters"
-Characters.Parent = ScrollingFrame
-Characters.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
-Characters.Position = UDim2.new(0.0093457941, 0, 0.18459788, 0)
-Characters.Size = UDim2.new(0, 419, 0, 36)
-Characters.Font = Enum.Font.SourceSansBold
-Characters.Text = "    Characters"
-Characters.TextColor3 = Color3.fromRGB(255, 255, 255)
-Characters.TextSize = 20.000
-Characters.TextWrapped = true
-Characters.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_16.Parent = Characters
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Characters
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+UICorner_16.Parent = Neptunion
 
 ChainSaw.Name = "ChainSaw"
 ChainSaw.Parent = ScrollingFrame
@@ -1147,43 +1027,19 @@ end)
 
 UICorner_17.Parent = ChainSaw
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = ChainSaw
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+Spider.Name = "Spider"
+Spider.Parent = ScrollingFrame
+Spider.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+Spider.Position = UDim2.new(0.0093457941, 0, 0.124283813, 0)
+Spider.Size = UDim2.new(0, 419, 0, 36)
+Spider.Font = Enum.Font.SourceSansBold
+Spider.Text = "   Spiderbot"
+Spider.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spider.TextSize = 20.000
+Spider.TextWrapped = true
+Spider.TextXAlignment = Enum.TextXAlignment.Left
 
-FixedStuff.Name = "FixedStuff"
-FixedStuff.Parent = ScrollingFrame
-FixedStuff.BackgroundColor3 = Color3.fromRGB(87, 185, 255)
-FixedStuff.Position = UDim2.new(0.0093457941, 0, 0.124283813, 0)
-FixedStuff.Size = UDim2.new(0, 419, 0, 36)
-FixedStuff.Font = Enum.Font.SourceSansBold
-FixedStuff.Text = "   Fixed Stuff"
-FixedStuff.TextColor3 = Color3.fromRGB(255, 255, 255)
-FixedStuff.TextSize = 20.000
-FixedStuff.TextWrapped = true
-FixedStuff.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_18.Parent = FixedStuff
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = FixedStuff
-newTag.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+UICorner_18.Parent = Spider
 
 InfGaunt.Name = "Inf Gaunt"
 InfGaunt.Parent = ScrollingFrame
@@ -1202,18 +1058,6 @@ end)
 
 UICorner_19.Parent = InfGaunt
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = InfGaunt
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 DemonClaws.Name = "DemonClaws"
 DemonClaws.Parent = ScrollingFrame
 DemonClaws.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1228,43 +1072,19 @@ DemonClaws.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_20.Parent = DemonClaws
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = DemonClaws
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+Fraud.Name = "Fraud"
+Fraud.Parent = ScrollingFrame
+Fraud.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+Fraud.Position = UDim2.new(0.00934579596, 0, 0.292021126, 0)
+Fraud.Size = UDim2.new(0, 419, 0, 36)
+Fraud.Font = Enum.Font.SourceSansBold
+Fraud.Text = "	Fraud"
+Fraud.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fraud.TextSize = 20.000
+Fraud.TextWrapped = true
+Fraud.TextXAlignment = Enum.TextXAlignment.Left
 
-chopchop.Name = "Chop Chop"
-chopchop.Parent = ScrollingFrame
-chopchop.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
-chopchop.Position = UDim2.new(0.00934579596, 0, 0.292021126, 0)
-chopchop.Size = UDim2.new(0, 419, 0, 36)
-chopchop.Font = Enum.Font.SourceSansBold
-chopchop.Text = "	Chop Chop"
-chopchop.TextColor3 = Color3.fromRGB(255, 255, 255)
-chopchop.TextSize = 20.000
-chopchop.TextWrapped = true
-chopchop.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_21.Parent = chopchop
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = chopchop
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+UICorner_21.Parent = Fraud
 
 Nuke.Name = "Nuke"
 Nuke.Parent = ScrollingFrame
@@ -1315,18 +1135,6 @@ end)
 
 UICorner_22.Parent = Nuke
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Nuke
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 Stand.Name = "Stand"
 Stand.Parent = ScrollingFrame
 Stand.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1341,25 +1149,13 @@ Stand.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_23.Parent = Stand
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Stand
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 KJ.Name = "KJ"
 KJ.Parent = ScrollingFrame
 KJ.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
 KJ.Position = UDim2.new(0.00934579596, 0, 0.306296647, 0)
 KJ.Size = UDim2.new(0, 419, 0, 36)
 KJ.Font = Enum.Font.SourceSansBold
-KJ.Text = "    KJ (Crappy)"
+KJ.Text = "    KJ (Warning: Very Shitty)"
 KJ.TextColor3 = Color3.fromRGB(255, 255, 255)
 KJ.TextSize = 20.000
 KJ.TextWrapped = true
@@ -1369,18 +1165,6 @@ KJ.MouseButton1Down:Connect(function()
 end)
 
 UICorner_24.Parent = KJ
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = KJ
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 clownvan.Name = "clown van"
 clownvan.Parent = ScrollingFrame
@@ -1395,18 +1179,6 @@ clownvan.TextWrapped = true
 clownvan.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_25.Parent = clownvan
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = clownvan
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 Felipe.Name = "Felipe"
 Felipe.Parent = ScrollingFrame
@@ -1425,18 +1197,6 @@ end)
 
 UICorner_26.Parent = Felipe
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Felipe
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 AmongUs.Name = "AmongUs"
 AmongUs.Parent = ScrollingFrame
 AmongUs.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1448,43 +1208,8 @@ AmongUs.TextColor3 = Color3.fromRGB(255, 255, 255)
 AmongUs.TextSize = 20.000
 AmongUs.TextWrapped = true
 AmongUs.TextXAlignment = Enum.TextXAlignment.Left
-AmongUs.MouseButton1Down:Connect(function()
-if game.Players.LocalPlayer.Character.Head:FindFirstChild("BillboardGui") then
-game.Players.LocalPlayer.Character.Head:FindFirstChild("BillboardGui"):Remove()	
-end
-plr = game.Players.LocalPlayer.Name
-y = Instance.new("BillboardGui")
-y.Size = UDim2.new(0,100,0,150)
-y.StudsOffset = Vector3.new(0,1,0)
-y.Parent = game.Players[plr].Character.Head
-y.Adornee = game.Players[plr].Character.Head
-f = Instance.new("TextLabel")
-f.Parent = y
-f.BackgroundTransparency = 1
-f.Position = UDim2.new(0,0,0,-50)
-f.Size = UDim2.new(0,100,0,100)
-f.Font = ("Arial")
-f.FontSize = ("Size48")
-f.Text = game.Players.LocalPlayer.Name
-f.TextStrokeColor3 = Color3.new(0,0,0)
-f.TextColor3 = Color3.new(90/255, 90/255, 90/255)
-f.TextStrokeTransparency = 0
-f.TextYAlignment = "Bottom"
-end)
 
 UICorner_27.Parent = AmongUs
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = AmongUs
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 ServerAdmin.Name = "ServerAdmin"
 ServerAdmin.Parent = ScrollingFrame
@@ -1503,18 +1228,6 @@ end)
 
 UICorner_28.Parent = ServerAdmin
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = ServerAdmin
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 Sniper.Name = "Sniper"
 Sniper.Parent = ScrollingFrame
 Sniper.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1528,18 +1241,6 @@ Sniper.TextWrapped = true
 Sniper.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_29.Parent = Sniper
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Sniper
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 ElioBlasio.Name = "ElioBlasio"
 ElioBlasio.Parent = ScrollingFrame
@@ -1558,18 +1259,6 @@ end)
 
 UICorner_30.Parent = ElioBlasio
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = ElioBlasio
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 DarthVader.Name = "Darth Vader"
 DarthVader.Parent = ScrollingFrame
 DarthVader.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1587,18 +1276,6 @@ end)
 
 UICorner_31.Parent = DarthVader
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = DarthVader
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 BanHammer.Name = "BanHammer"
 BanHammer.Parent = ScrollingFrame
 BanHammer.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1612,18 +1289,6 @@ BanHammer.TextWrapped = true
 BanHammer.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_32.Parent = BanHammer
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = BanHammer
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 Caducus.Name = "Caducus"
 Caducus.Parent = ScrollingFrame
@@ -1639,18 +1304,6 @@ Caducus.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_33.Parent = Caducus
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Caducus
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 AK47.Name = "AK47"
 AK47.Parent = ScrollingFrame
 AK47.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1664,18 +1317,6 @@ AK47.TextWrapped = true
 AK47.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_34.Parent = AK47
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = AK47
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 Car.Name = "Car"
 Car.Parent = ScrollingFrame
@@ -1691,18 +1332,6 @@ Car.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_35.Parent = Car
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Car
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 Chillingo.Name = "Chillingo"
 Chillingo.Parent = ScrollingFrame
 Chillingo.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1716,18 +1345,6 @@ Chillingo.TextWrapped = true
 Chillingo.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_36.Parent = Chillingo
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Chillingo
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 MLG.Name = "MLG"
 MLG.Parent = ScrollingFrame
@@ -1743,18 +1360,6 @@ MLG.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_37.Parent = MLG
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = MLG
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 Demon.Name = "Pen"
 Demon.Parent = ScrollingFrame
 Demon.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1768,18 +1373,6 @@ Demon.TextWrapped = true
 Demon.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_38.Parent = Demon
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Demon
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 FZ.Name = "FZ"
 FZ.Parent = ScrollingFrame
@@ -1795,18 +1388,6 @@ FZ.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_39.Parent = FZ
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = FZ
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 Memeus.Name = "Memeus"
 Memeus.Parent = ScrollingFrame
 Memeus.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1820,18 +1401,6 @@ Memeus.TextWrapped = true
 Memeus.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_40.Parent = Memeus
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Memeus
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 Chrono.Name = "Chrono"
 Chrono.Parent = ScrollingFrame
@@ -1847,21 +1416,9 @@ Chrono.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_41.Parent = Chrono
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Chrono
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 Disasters.Name = "Disasters"
 Disasters.Parent = ScrollingFrame
-Disasters.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+Disasters.BackgroundColor3 = Color3.fromRGB(119, 221, 119)
 Disasters.Position = UDim2.new(0.00934579782, 0, 0.687452972, 0)
 Disasters.Size = UDim2.new(0, 419, 0, 36)
 Disasters.Font = Enum.Font.SourceSansBold
@@ -2015,19 +1572,43 @@ end)
 
 UICorner_42.Parent = Disasters
 
-Misc.Name = "Misc"
-Misc.Parent = ScrollingFrame
-Misc.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
-Misc.Position = UDim2.new(0.00934579782, 0, 0.642485082, 0)
-Misc.Size = UDim2.new(0, 419, 0, 36)
-Misc.Font = Enum.Font.SourceSansBold
-Misc.Text = "    Misc."
-Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
-Misc.TextSize = 20.000
-Misc.TextWrapped = true
-Misc.TextXAlignment = Enum.TextXAlignment.Left
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = Disasters
+newTag.BackgroundColor3 = Color3.fromRGB(4, 179, 7)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "GUI"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 25
+newTag.BorderSizePixel = 0
 
-UICorner_43.Parent = Misc
+GUI.Name = "GUI's"
+GUI.Parent = ScrollingFrame
+GUI.BackgroundColor3 = Color3.fromRGB(119, 221, 119)
+GUI.Position = UDim2.new(0.00934579782, 0, 0.642485082, 0)
+GUI.Size = UDim2.new(0, 419, 0, 36)
+GUI.Font = Enum.Font.SourceSansBold
+GUI.Text = "    Graphical User Interface"
+GUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+GUI.TextSize = 20.000
+GUI.TextWrapped = true
+GUI.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_43.Parent = GUI
+
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = GUI
+newTag.BackgroundColor3 = Color3.fromRGB(4, 179, 7)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "GUI"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 25
+newTag.BorderSizePixel = 0
 
 Zeroith.Name = "Zeroith"
 Zeroith.Parent = ScrollingFrame
@@ -2043,84 +1624,201 @@ Zeroith.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_44.Parent = Zeroith
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Zeroith
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+ChatHax.Name = "ChatHax"
+ChatHax.Parent = ScrollingFrame
+ChatHax.BackgroundColor3 = Color3.fromRGB(119, 221, 119)
+ChatHax.Position = UDim2.new(0.00934579782, 0, 0.657831252, 0)
+ChatHax.Size = UDim2.new(0, 419, 0, 36)
+ChatHax.Font = Enum.Font.SourceSansBold
+ChatHax.Text = "    Chat Hax"
+ChatHax.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatHax.TextSize = 20.000
+ChatHax.TextWrapped = true
+ChatHax.TextXAlignment = Enum.TextXAlignment.Left
+ChatHax.MouseButton1Down:Connect(function()
+local UTGDisasters = Instance.new("ScreenGui")
+UTGDisasters.Name = "UTGDisasters"
+UTGDisasters.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UTGDisasters.ResetOnSpawn = true
 
-FencingRestore.Name = "Fencing Restore"
-FencingRestore.Parent = ScrollingFrame
-FencingRestore.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
-FencingRestore.Position = UDim2.new(0.00934579782, 0, 0.657831252, 0)
-FencingRestore.Size = UDim2.new(0, 419, 0, 36)
-FencingRestore.Font = Enum.Font.SourceSansBold
-FencingRestore.Text = "    Fencing Restore"
-FencingRestore.TextColor3 = Color3.fromRGB(255, 255, 255)
-FencingRestore.TextSize = 20.000
-FencingRestore.TextWrapped = true
-FencingRestore.TextXAlignment = Enum.TextXAlignment.Left
-FencingRestore.MouseButton1Down:Connect(function()
-function X(ws)
-for _, v in pairs(ws:GetChildren()) do
-v.Archivable = true
-if v.Name ~= "UClear" and v.Name ~= "Terrain" and game.Players:GetPlayerFromCharacter(v)==nil and v~=game.Workspace.CurrentCamera then
-if v:IsA("Script") or v:IsA("LocalScript") then
-v.Disabled = true
-v:remove()
-else
-v:remove()
+local Frame = Instance.new("Frame")
+Frame.Name = "MainFrame"
+Frame.Parent = UTGDisasters
+Frame.Size = UDim2.new(0, 410, 0, 310)
+Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.BorderSizePixel = 0
+Frame.BackgroundTransparency = 0
+
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(0, 18)
+UICorner.Parent = Frame
+
+local UIGradient = Instance.new("UIGradient")
+UIGradient.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(137, 0, 254)),
+    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(223, 0, 255))
+}
+UIGradient.Parent = Frame
+
+local TitleShadow = Instance.new("TextLabel")
+TitleShadow.Name = "TitleShadow"
+TitleShadow.Parent = Frame
+TitleShadow.Position = UDim2.new(0, 1, 0, 1)
+TitleShadow.Size = UDim2.new(1, 0, 0, 50)
+TitleShadow.BackgroundTransparency = 1
+TitleShadow.Text = "UTG CHAT HAX"
+TitleShadow.TextSize = 42
+TitleShadow.Font = Enum.Font.SourceSansBold
+TitleShadow.TextColor3 = Color3.fromRGB(0, 0, 0)
+TitleShadow.TextTransparency = 0.4
+TitleShadow.TextStrokeTransparency = 1
+TitleShadow.ZIndex = 1
+
+local Title = Instance.new("TextLabel")
+Title.Name = "Title"
+Title.Parent = Frame
+Title.Position = UDim2.new(0, 0, 0, 0)
+Title.Size = UDim2.new(1, 0, 0, 50)
+Title.BackgroundTransparency = 1
+Title.Text = "UTG CHAT HAX"
+Title.TextSize = 40
+Title.Font = Enum.Font.SourceSansBold
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextWrapped = true
+Title.ZIndex = 2
+
+local TextBox = Instance.new("TextBox", Frame)
+TextBox.Name = "DisasterList"
+TextBox.Size = UDim2.new(0, 270, 0, 70)
+TextBox.AnchorPoint = Vector2.new(0.5, 0)
+TextBox.Position = UDim2.new(0.5, 0, 0, 55)
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextColor3 = Color3.new(0, 0, 0)
+TextBox.TextSize = 18
+TextBox.ClearTextOnFocus = true
+TextBox.Text = "Chat"
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.BorderSizePixel = 0
+
+Instance.new("UICorner", TextBox).CornerRadius = UDim.new(0, 15)
+
+local TextBox2 = Instance.new("TextBox", Frame)
+TextBox2.Name = "DisasterList"
+TextBox2.Size = UDim2.new(0, 270, 0, 70)
+TextBox2.AnchorPoint = Vector2.new(0.5, 0)
+TextBox2.Position = UDim2.new(0.5, 0, 0, 130)
+TextBox2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox2.TextColor3 = Color3.new(0, 0, 0)
+TextBox2.TextSize = 18
+TextBox2.ClearTextOnFocus = true
+TextBox2.Text = "Player"
+TextBox2.Font = Enum.Font.SourceSansBold
+TextBox2.BorderSizePixel = 0
+
+Instance.new("UICorner", TextBox2).CornerRadius = UDim.new(0, 15)
+
+local ChatButton = Instance.new("TextButton", Frame)
+ChatButton.Name = "DisasterList"
+ChatButton.Size = UDim2.new(0, 230, 0, 70)
+ChatButton.AnchorPoint = Vector2.new(0.5, 0)
+ChatButton.Position = UDim2.new(0.5, 0, 0, 210)
+ChatButton.BackgroundColor3 = Color3.fromRGB(137, 0, 254)
+ChatButton.TextColor3 = Color3.new(0, 0, 0)
+ChatButton.TextSize = 18
+ChatButton.Text = "Chat Player"
+ChatButton.Font = Enum.Font.SourceSansBold
+ChatButton.BorderSizePixel = 0
+ChatButton.MouseButton1Click:Connect(function()
+local targetName = "SomePlayerName"
+local player = Players:FindFirstChild(targetName)
+
+if player and player.Character and player.Character:FindFirstChild("Head") then
+	for i, msg in ipairs(messages) do
+		local color = colors[(i - 1) % #colors + 1]
+		ChatService:Chat(player.Character.Head, msg, color)
+		wait(1)
+	end
 end
-end
-if game.Workspace:findFirstChild("Base") ~= nil then
-else
-local Base=Instance.new("Part",game.Workspace) 
-Base.Name="Base" 
-Base.Size=Vector3.new(1000,1,1000) 
-Base.BrickColor=BrickColor.new("Earth green") 
-Base.Anchored=true 
-Base.Locked=true 
-Base.TopSurface="Universal" 
-Base.CFrame=CFrame.new(Vector3.new(0,0,0)) 
-local Spawn=Instance.new("SpawnLocation",game.Workspace)
-Spawn.Name="lol"
-Spawn.Size=Vector3.new(6,1,6)
-Spawn.Transparency=1
-Spawn.CanCollide=false
-Spawn.Anchored=true
-Spawn.Locked=true
-Spawn.CFrame=CFrame.new(Vector3.new(0,1,0))
-end
-end
-end
-X(game.Workspace)
-X(game.Teams)
-X(game.StarterGui)
-wait()
-game.Workspace:InsertContent("rbxassetid://118791953")
-wait()
-game.workspace.Base:Destroy()
-wait()
-game.workspace.lol:Destroy()
-wait()
-game.Lighting.Ambient = Color3.new(255,255,255)
-game.Lighting.TimeOfDay = 12
-game.Lighting.Brightness = 0.5
-game.Lighting.FogEnd = 100000
-game.Lighting.GlobalShadows = false
-game.Lighting.Sky:Destroy()
-game.Lighting.FogEnd = 100000
-game.Lighting.Brightness = 1
-game.Workspace.Terrain:clear()
 end)
 
-UICorner_45.Parent = FencingRestore
+Instance.new("UICorner", ChatButton).CornerRadius = UDim.new(0, 15)
+
+local X = Instance.new("TextButton")
+X.Name = "X"
+X.Parent = Frame
+X.BackgroundColor3 = Color3.fromRGB(247, 114, 99)
+X.Position = UDim2.new(0.93569845, 0, -0.0337078646, 0)
+X.Size = UDim2.new(0, 50, 0, 50)
+X.Font = Enum.Font.SourceSansBold
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 255, 255)
+X.TextScaled = true
+X.TextSize = 14
+X.TextWrapped = true
+X.MouseButton1Down:Connect(function()
+	UTGDisasters:Destroy()
+end)
+
+local UICorner2 = Instance.new("UICorner")
+UICorner2.CornerRadius = UDim.new(1, 0)
+UICorner2.Parent = X
+
+local UIS = game:GetService("UserInputService")
+local dragging
+local dragInput
+local dragStart
+local startPos
+
+local function update(input)
+	local delta = input.Position - dragStart
+	Frame.Position = UDim2.new(
+		startPos.X.Scale, startPos.X.Offset + delta.X,
+		startPos.Y.Scale, startPos.Y.Offset + delta.Y
+	)
+end
+
+Title.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = Frame.Position
+
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+Title.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+
+UIS.InputChanged:Connect(function(input)
+	if input == dragInput and dragging then
+		update(input)
+	end
+end)
+end)
+
+UICorner_45.Parent = ChatHax
+
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = ChatHax
+newTag.BackgroundColor3 = Color3.fromRGB(4, 179, 7)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "GUI"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 25
+newTag.BorderSizePixel = 0
 
 InsanityPowers.Name = "InsanityPowers"
 InsanityPowers.Parent = ScrollingFrame
@@ -2136,19 +1834,183 @@ InsanityPowers.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_46.Parent = InsanityPowers
 
-Floss.Name = "Floss"
-Floss.Parent = ScrollingFrame
-Floss.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
-Floss.Position = UDim2.new(0.00934579782, 0, 0.672106802, 0)
-Floss.Size = UDim2.new(0, 419, 0, 36)
-Floss.Font = Enum.Font.SourceSansBold
-Floss.Text = "    Floss"
-Floss.TextColor3 = Color3.fromRGB(255, 255, 255)
-Floss.TextSize = 20.000
-Floss.TextWrapped = true
-Floss.TextXAlignment = Enum.TextXAlignment.Left
+ModelInserter.Name = "ModelInserter"
+ModelInserter.Parent = ScrollingFrame
+ModelInserter.BackgroundColor3 = Color3.fromRGB(119, 221, 119)
+ModelInserter.Position = UDim2.new(0.00934579782, 0, 0.672106802, 0)
+ModelInserter.Size = UDim2.new(0, 419, 0, 36)
+ModelInserter.Font = Enum.Font.SourceSansBold
+ModelInserter.Text = "    Model Inserter"
+ModelInserter.TextColor3 = Color3.fromRGB(255, 255, 255)
+ModelInserter.TextSize = 20.000
+ModelInserter.TextWrapped = true
+ModelInserter.TextXAlignment = Enum.TextXAlignment.Left
+ModelInserter.MouseButton1Down:Connect(function()
+local UTGDisasters = Instance.new("ScreenGui")
+UTGDisasters.Name = "UTGDisasters"
+UTGDisasters.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UTGDisasters.ResetOnSpawn = true
 
-UICorner_47.Parent = Floss
+local Frame = Instance.new("Frame")
+Frame.Name = "MainFrame"
+Frame.Parent = UTGDisasters
+Frame.Size = UDim2.new(0, 410, 0, 280)
+Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.BorderSizePixel = 0
+
+local UICorner = Instance.new("UICorner", Frame)
+UICorner.CornerRadius = UDim.new(0, 18)
+
+local UIGradient = Instance.new("UIGradient", Frame)
+UIGradient.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(137, 0, 254)),
+    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(223, 0, 255))
+}
+
+local TitleShadow = Instance.new("TextLabel", Frame)
+TitleShadow.Name = "TitleShadow"
+TitleShadow.Position = UDim2.new(0, 1, 0, 10)
+TitleShadow.Size = UDim2.new(1, 0, 0, 50)
+TitleShadow.BackgroundTransparency = 1
+TitleShadow.Text = "UTG MODEL INSERTER"
+TitleShadow.TextSize = 42
+TitleShadow.Font = Enum.Font.SourceSansBold
+TitleShadow.TextColor3 = Color3.fromRGB(0, 0, 0)
+TitleShadow.TextTransparency = 0.4
+TitleShadow.ZIndex = 1
+
+local Title = Instance.new("TextLabel", Frame)
+Title.Name = "Title"
+Title.Position = UDim2.new(0, 0, 0, 9)
+Title.Size = UDim2.new(1, 0, 0, 50)
+Title.BackgroundTransparency = 1
+Title.Text = "UTG MODEL INSERTER"
+Title.TextSize = 40
+Title.Font = Enum.Font.SourceSansBold
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextWrapped = true
+Title.ZIndex = 2
+
+local TextBox = Instance.new("TextBox", Frame)
+TextBox.Name = "DisasterList"
+TextBox.Size = UDim2.new(0, 270, 0, 70)
+TextBox.AnchorPoint = Vector2.new(0.5, 0)
+TextBox.Position = UDim2.new(0.5, 0, 0, 80)
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextColor3 = Color3.new(0, 0, 0)
+TextBox.TextSize = 18
+TextBox.ClearTextOnFocus = true
+TextBox.Text = "Enter model asset ID..."
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.BorderSizePixel = 0
+
+Instance.new("UICorner", TextBox).CornerRadius = UDim.new(0, 15)
+
+local InsertButton = Instance.new("TextButton", Frame)
+InsertButton.Name = "InsertButton"
+InsertButton.Size = UDim2.new(0, 120, 0, 50)
+InsertButton.AnchorPoint = Vector2.new(0.5, 0)
+InsertButton.Position = UDim2.new(0.5, 0, 0, 165)
+InsertButton.BackgroundColor3 = Color3.fromRGB(137, 0, 254)
+InsertButton.Text = "Insert"
+InsertButton.TextColor3 = Color3.new(1, 1, 1)
+InsertButton.TextSize = 18
+InsertButton.Font = Enum.Font.SourceSansBold
+InsertButton.BorderSizePixel = 0
+InsertButton.AutoButtonColor = false
+
+Instance.new("UICorner", InsertButton).CornerRadius = UDim.new(0, 15)
+
+InsertButton.MouseEnter:Connect(function()
+    InsertButton.BackgroundColor3 = Color3.fromRGB(70, 70, 220)
+end)
+InsertButton.MouseLeave:Connect(function()
+    InsertButton.BackgroundColor3 = Color3.fromRGB(50, 50, 180)
+end)
+
+InsertButton.MouseButton1Down:Connect(function()
+	wait(0.3)
+	local InsertService = game:GetService("InsertService")
+	local assetId = TextBox.Text
+	local model = InsertService:LoadAsset(assetId)
+
+	if model then
+		model.Parent = game.Workspace
+	else
+		warn("Failed to load model with asset ID: " .. assetId)
+	end
+end)
+
+local X = Instance.new("TextButton", Frame)
+X.Name = "X"
+X.BackgroundColor3 = Color3.fromRGB(247, 114, 99)
+X.Position = UDim2.new(0.93569845, 0, -0.0337078646, 0)
+X.Size = UDim2.new(0, 50, 0, 50)
+X.Font = Enum.Font.SourceSansBold
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 255, 255)
+X.TextScaled = true
+X.TextWrapped = true
+
+Instance.new("UICorner", X).CornerRadius = UDim.new(1, 0)
+
+X.MouseButton1Down:Connect(function()
+	UTGDisasters:Destroy()
+end)
+
+local UIS = game:GetService("UserInputService")
+local dragging, dragInput, dragStart, startPos
+
+local function update(input)
+	local delta = input.Position - dragStart
+	Frame.Position = UDim2.new(
+		startPos.X.Scale, startPos.X.Offset + delta.X,
+		startPos.Y.Scale, startPos.Y.Offset + delta.Y
+	)
+end
+
+Title.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = Frame.Position
+
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+Title.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+
+UIS.InputChanged:Connect(function(input)
+	if input == dragInput and dragging then
+		update(input)
+	end
+end)
+end)
+
+UICorner_47.Parent = ModelInserter
+
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = ModelInserter
+newTag.BackgroundColor3 = Color3.fromRGB(4, 179, 7)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "GUI"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 25
+newTag.BorderSizePixel = 0
 
 Rokudayne.Name = "Rokudayne"
 Rokudayne.Parent = ScrollingFrame
@@ -2164,19 +2026,31 @@ Rokudayne.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_48.Parent = Rokudayne
 
-RussainKick.Name = "RussainKick"
-RussainKick.Parent = ScrollingFrame
-RussainKick.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
-RussainKick.Position = UDim2.new(0.00934579782, 0, 0.702799141, 0)
-RussainKick.Size = UDim2.new(0, 419, 0, 36)
-RussainKick.Font = Enum.Font.SourceSansBold
-RussainKick.Text = "    Russain Kick"
-RussainKick.TextColor3 = Color3.fromRGB(255, 255, 255)
-RussainKick.TextSize = 20.000
-RussainKick.TextWrapped = true
-RussainKick.TextXAlignment = Enum.TextXAlignment.Left
+AnimationGUI.Name = "AnimationGUI"
+AnimationGUI.Parent = ScrollingFrame
+AnimationGUI.BackgroundColor3 = Color3.fromRGB(119, 221, 119)
+AnimationGUI.Position = UDim2.new(0.00934579782, 0, 0.702799141, 0)
+AnimationGUI.Size = UDim2.new(0, 419, 0, 36)
+AnimationGUI.Font = Enum.Font.SourceSansBold
+AnimationGUI.Text = "    Animation gui"
+AnimationGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+AnimationGUI.TextSize = 20.000
+AnimationGUI.TextWrapped = true
+AnimationGUI.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_49.Parent = RussainKick
+UICorner_49.Parent = AnimationGUI
+
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = AnimationGUI
+newTag.BackgroundColor3 = Color3.fromRGB(4, 179, 7)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "GUI"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 25
+newTag.BorderSizePixel = 0
 
 Pillow.Name = "Pillow"
 Pillow.Parent = ScrollingFrame
@@ -2521,20 +2395,121 @@ BaseballBat.TextColor3 = Color3.fromRGB(255, 255, 255)
 BaseballBat.TextSize = 20.000
 BaseballBat.TextWrapped = true
 BaseballBat.TextXAlignment = Enum.TextXAlignment.Left
+BaseballBat.MouseButton1Down:Connect(function()
+--Paid Script By LilTywan--
+mouse = game.Players.LocalPlayer:GetMouse()
+using = false
+attack = false
+bat = Instance.new("Part", game.Players.LocalPlayer.Character)
+bat.Size = Vector3.new(1, 1, 5)
+bat.CanCollide = false
+bat:BreakJoints()
+baseballhit = Instance.new("Sound", bat)
+baseballhit.Volume = 10
+baseballhit.SoundId = "rbxassetid://175024455"
+swinging = Instance.new("Sound", bat)
+swinging.Volume = 10
+swinging.PlaybackSpeed = 1.2
+swinging.SoundId = "rbxassetid://147722227"
+weld = Instance.new("Weld", bat)
+weld.Part0 = game.Players.LocalPlayer.Character["Right Arm"]
+weld.Part1 = bat
+weld.C0 = weld.C0 * CFrame.Angles(0,3.15,0) * CFrame.new(0,-0.95,1.9)
+mesh = Instance.new("SpecialMesh", bat)
+mesh.MeshId = "http://www.roblox.com/asset/?id=54983181"
+mesh.TextureId = "http://www.roblox.com/asset/?id=54983107"
+mesh.Scale = Vector3.new(2,2,2)
+local rhandweld = Instance.new("Weld", game.Players.LocalPlayer.Character.Torso)
+rhandweld.Part0 = game.Players.LocalPlayer.Character.Torso
+rhandweld.Part1 = game.Players.LocalPlayer.Character["Right Arm"]
+rhandweld.C0 = CFrame.new(1.5, 0.5, 0, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+rhandweld.C1 = CFrame.new(0, 0.5, 0, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+local lhandweld = Instance.new("Weld", game.Players.LocalPlayer.Character.Torso)
+lhandweld.Part0 = game.Players.LocalPlayer.Character.Torso
+lhandweld.Part1 = game.Players.LocalPlayer.Character["Left Arm"]
+lhandweld.C0 = CFrame.new(-1.5, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+lhandweld.C1 = CFrame.new(0, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+for i = 1,20 do
+	wait()
+	game.Players.LocalPlayer.Character.Torso.Neck.C0 = game.Players.LocalPlayer.Character.Torso.Neck.C0 * CFrame.Angles(0,0,0.09)
+	lhandweld.C0 = lhandweld.C0 * CFrame.Angles(0,0,-0.12)
+	rhandweld.C0 = rhandweld.C0 * CFrame.Angles(0,0,0.13)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.RootJoint.C0 = game.Players.LocalPlayer.Character.HumanoidRootPart.RootJoint.C0 * CFrame.Angles(0,0,-0.1)
+end
+for i = 1,20 do
+	wait()
+	lhandweld.C0 = lhandweld.C0 * CFrame.Angles(0.08,0,0) * CFrame.new(0,-0.1,0)
+end
+function swing(key)
+	key = key:lower()
+	if key == "e" then
+		if not using then
+			using = true
+			local detect = Instance.new("Part", bat)
+			detect.Size = Vector3.new(1,1,4.5)
+			detect:BreakJoints()
+			detect.CanCollide = false
+			detect.Transparency = 1
+		    local welding = Instance.new("Weld", detect)
+		    welding.Part0 = bat
+		    welding.Part1 = detect
+		    local function rip(part)
+			if not attack then
+			attack = true
+			local humanoid = part.Parent:findFirstChild("Humanoid")
+			root = part.Parent:findFirstChild("HumanoidRootPart")
+			local joint = root:findFirstChild("RootJoint")
+			local torso = part.Parent:findFirstChild("Torso")
+			local head = part.Parent:findFirstChild("Head")
+			if head ~= nil then
+			if torso ~= nil then
+			if humanoid ~= nil then
+				if root ~= nil then
+					if joint ~= nil then
+						baseballhit:Play()
+						head.Died.Volume = 20
+						head.Died:Play()
+						humanoid.WalkSpeed = 0
+						humanoid.JumpPower = 0
+						for i = 1,15 do
+			            wait(0.02)
+			            torso["Right Shoulder"].C1 = torso["Right Shoulder"].C1 * CFrame.Angles(0.06,0,0)
+						torso["Left Shoulder"].C1 = torso["Left Shoulder"].C1 * CFrame.Angles(0.03,0,0)
+		            	joint.C1 = joint.C1 * CFrame.Angles(-0.11,0,0)
+		            	joint.C1 = joint.C1 * CFrame.new(0,0.4,0)
+		            	torso["Left Hip"].C1 = torso["Left Hip"].C1 * CFrame.Angles(0.01,0,0)
+		            	torso["Right Hip"].C1 = torso["Right Hip"].C1 * CFrame.Angles(0.005,0,0)
+		                end --end of anim
+                        wait(1.2)
+                        attack = false
+                        torso.Anchored = true
+                   end --end of joint nil
+				end -- end of root nil
+			end -- end of humanoid nil
+			end -- end of torso nil
+			end -- end if head nil
+			end -- end of not attacked
+		    end -- end of function (rip)
+		    detect.Touched:connect(rip)
+            for i = 1,7 do
+	        wait()
+	        rhandweld.C0 = rhandweld.C0 * CFrame.Angles(0,0,-0.3)
+	        game.Players.LocalPlayer.Character.HumanoidRootPart.RootJoint.C0 = game.Players.LocalPlayer.Character.HumanoidRootPart.RootJoint.C0 * CFrame.Angles(0,0,0.5)
+            end
+            detect:destroy()
+            for i = 1,7 do
+	        wait()
+	        rhandweld.C0 = rhandweld.C0 * CFrame.Angles(0,0,0.3)
+	        game.Players.LocalPlayer.Character.HumanoidRootPart.RootJoint.C0 = game.Players.LocalPlayer.Character.HumanoidRootPart.RootJoint.C0 * CFrame.Angles(0,0,-0.5)
+            end
+			using = false
+		end --end of is not using then
+	end --end of if key
+end --end of swing function
+mouse.KeyDown:connect(swing)
+end)
 
 UICorner_66.Parent = BaseballBat
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = BaseballBat
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 Eggdog.Name = "Eggdog"
 Eggdog.Parent = ScrollingFrame
@@ -2557,7 +2532,7 @@ Credits.BorderSizePixel = 0
 Credits.Position = UDim2.new(0.0223718882, 0, 0.834973812, 0)
 Credits.Size = UDim2.new(0, 428, 0, 36)
 Credits.Font = Enum.Font.SourceSans
-Credits.Text = "Created by YepImSirPwnsAlot and Fartman42121cool"
+Credits.Text = "Created by YepImSirPwnsAlot"
 Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credits.TextSize = 23
 Credits.TextWrapped = true
@@ -2592,22 +2567,6 @@ end
 
 UICorner_69.CornerRadius = UDim.new(0, 15)
 UICorner_69.Parent = Respawn
-
-Netless.Name = "Netless"
-Netless.Parent = Main
-Netless.BackgroundColor3 = Color3.fromRGB(119, 221, 119)
-Netless.Position = UDim2.new(0.63, 0, 0.915730357, 0)
-Netless.Size = UDim2.new(0, 50, 0, 36)
-Netless.Font = Enum.Font.SourceSansBold
-Netless.Text = ""
-Netless.TextColor3 = Color3.fromRGB(0,128,0)
-Netless.TextScaled = true
-Netless.TextSize = 14.000
-Netless.TextWrapped = true
-Netless.Visible = false
-
-UICorner_70.CornerRadius = UDim.new(1, 0)
-UICorner_70.Parent = Netless
 
 AntiFling.Name = "AntiFling"
 AntiFling.Parent = Main
