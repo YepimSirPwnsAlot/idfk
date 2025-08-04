@@ -6,7 +6,7 @@ local Welcome2 = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
 local ScrollSizer = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local Updated = Instance.new("TextButton")
+local Banzai = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local Cleetus = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
@@ -14,7 +14,7 @@ local JohnDoe = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local TheDankEngine = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local Banisher = Instance.new("TextButton")
+local Splatterhouse = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local Illuminati = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
@@ -24,25 +24,25 @@ local ChopChop = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local HolyWrench = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
-local Baseplate = Instance.new("TextButton")
+local Solario = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
-local FlingGUI = Instance.new("TextButton")
+local FlamingCube = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
 local Techno = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
 local M60 = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local Characters = Instance.new("TextButton")
+local Neptunion = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
 local ChainSaw = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
-local FixedStuff = Instance.new("TextButton")
+local Spider = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
 local InfGaunt = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
 local DemonClaws = Instance.new("TextButton")
 local UICorner_20 = Instance.new("UICorner")
-local chopchop = Instance.new("TextButton")
+local Fraud = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
 local Nuke = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
@@ -86,11 +86,11 @@ local Chrono = Instance.new("TextButton")
 local UICorner_41 = Instance.new("UICorner")
 local Disasters = Instance.new("TextButton")
 local UICorner_42 = Instance.new("UICorner")
-local Misc = Instance.new("TextButton")
+local GUI = Instance.new("TextButton")
 local UICorner_43 = Instance.new("UICorner")
 local Zeroith = Instance.new("TextButton")
 local UICorner_44 = Instance.new("UICorner")
-local FencingRestore = Instance.new("TextButton")
+local ChatHax = Instance.new("TextButton")
 local UICorner_45 = Instance.new("UICorner")
 local InsanityPowers = Instance.new("TextButton")
 local UICorner_46 = Instance.new("UICorner")
@@ -98,7 +98,7 @@ local ModelInserter = Instance.new("TextButton")
 local UICorner_47 = Instance.new("UICorner")
 local Rokudayne = Instance.new("TextButton")
 local UICorner_48 = Instance.new("UICorner")
-local RussainKick = Instance.new("TextButton")
+local AnimationGUI = Instance.new("TextButton")
 local UICorner_49 = Instance.new("UICorner")
 local Pillow = Instance.new("TextButton")
 local UICorner_50 = Instance.new("UICorner")
@@ -140,8 +140,6 @@ local Credits = Instance.new("TextLabel")
 local UICorner_68 = Instance.new("UICorner")
 local Respawn = Instance.new("TextButton")
 local UICorner_69 = Instance.new("UICorner")
-local Netless = Instance.new("TextButton")
-local UICorner_70 = Instance.new("UICorner")
 local AntiFling = Instance.new("TextBox")
 local UICorner_71 = Instance.new("UICorner")
 local X = Instance.new("TextButton")
@@ -153,7 +151,7 @@ local OpenUtg = Instance.new("TextButton")
 UltimateTrollingGuiV6.Name = "UltimateTrollingGuiV6"
 UltimateTrollingGuiV6.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 UltimateTrollingGuiV6.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-UltimateTrollingGuiV6.ResetOnSpawn = true
+UltimateTrollingGuiV6.ResetOnSpawn = false
 
 Main.Name = "Main"
 Main.Parent = UltimateTrollingGuiV6
@@ -161,7 +159,7 @@ Main.Active = true
 Main.Draggable = true
 Main.BackgroundColor3 = Color3.fromRGB(137, 0, 254)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.382268965, 0, 1.18099999, 0)
+Main.Position = UDim2.new(0, 700, 0, 49)
 Main.Size = UDim2.new(0, 451, 0, 525)
 Main.Visible = true
 
@@ -178,7 +176,7 @@ Title.Font = Enum.Font.SourceSans
 Title.Text = "ULTIMATE TROLLING GUI"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextScaled = true
-Title.TextSize = 20
+Title.TextSize = 12
 Title.TextWrapped = true
 
 Welcome2.Name = "Welcome2"
@@ -188,9 +186,9 @@ Welcome2.BorderSizePixel = 0
 Welcome2.Position = UDim2.new(0.0245891828, 0, 0.114000015, 0)
 Welcome2.Size = UDim2.new(0, 428, 0, 36)
 Welcome2.Font = Enum.Font.SourceSans
-Welcome2.Text = "Added Model Inserter, Disasters and Chat Hax"
+Welcome2.Text = "Thank you for using the early version MasterMZ :D"
 Welcome2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Welcome2.TextSize = 14
+Welcome2.TextSize = 10
 Welcome2.TextWrapped = true
 Welcome2.TextScaled = true
 
@@ -207,7 +205,7 @@ ScrollSizer.Size = UDim2.new(0, 428, 2, 333)
 
 local UICorner = Instance.new("UICorner")
 UICorner.Parent = ScrollSizer
-UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.CornerRadius = UDim.new(0, 13)
 
 ScrollingFrame.Name = "E"
 ScrollingFrame.Parent = ScrollSizer
@@ -219,26 +217,29 @@ ScrollingFrame.ScrollBarThickness = 0
 
 local UICorner = Instance.new("UICorner")
 UICorner.Parent = ScrollingFrame
-UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.CornerRadius = UDim.new(0, 13)
 
-Updated.Name = "Updated"
-Updated.Parent = ScrollingFrame
-Updated.BackgroundColor3 = Color3.fromRGB(235, 190, 77)
-Updated.Position = UDim2.new(0.0093457941, 0, 0.0022281385, 0)
-Updated.Size = UDim2.new(0, 419, 0, 36)
-Updated.Font = Enum.Font.SourceSansBold
-Updated.Text = "    Updated Stuff"
-Updated.TextColor3 = Color3.fromRGB(255, 255, 255)
-Updated.TextSize = 20.000
-Updated.TextWrapped = true
-Updated.TextXAlignment = Enum.TextXAlignment.Left
+Banzai.Name = "Banzai"
+Banzai.Parent = ScrollingFrame
+Banzai.BackgroundColor3 = Color3.fromRGB(87, 185, 255)
+Banzai.Position = UDim2.new(0.0093457941, 0, 0.0022281385, 0)
+Banzai.Size = UDim2.new(0, 419, 0, 36)
+Banzai.Font = Enum.Font.SourceSansBold
+Banzai.Text = "    Banzai Bazooka"
+Banzai.TextColor3 = Color3.fromRGB(255, 255, 255)
+Banzai.TextSize = 20.000
+Banzai.TextWrapped = true
+Banzai.TextXAlignment = Enum.TextXAlignment.Left
+Banzai.MouseButton1Down:Connect(function()
+	loadstring(Game:GetObjects("rbxassetid://4941303393")[1].Source)()
+end)
 
-UICorner_3.Parent = Updated
+UICorner_3.Parent = Banzai
 
 local newTag = Instance.new("TextLabel")
 newTag.Name = "NewTag"
-newTag.Parent = Updated
-newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
+newTag.Parent = Banzai
+newTag.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
 newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
 newTag.Size = UDim2.new(0, 60, 0, 30)
 newTag.Text = "UPDATED"
@@ -249,7 +250,7 @@ newTag.BorderSizePixel = 0
 
 Cleetus.Name = "Cleetus"
 Cleetus.Parent = ScrollingFrame
-Cleetus.BackgroundColor3 = Color3.fromRGB(235, 190, 77)
+Cleetus.BackgroundColor3 = Color3.fromRGB(87, 185, 255)
 Cleetus.Position = UDim2.new(0.0093457941, 0, 0.0175743196, 0)
 Cleetus.Size = UDim2.new(0, 419, 0, 36)
 Cleetus.Font = Enum.Font.SourceSansBold
@@ -264,7 +265,7 @@ UICorner_4.Parent = Cleetus
 local newTag = Instance.new("TextLabel")
 newTag.Name = "NewTag"
 newTag.Parent = Cleetus
-newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
+newTag.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
 newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
 newTag.Size = UDim2.new(0, 60, 0, 30)
 newTag.Text = "UPDATED"
@@ -284,6 +285,564 @@ JohnDoe.TextColor3 = Color3.fromRGB(255, 255, 255)
 JohnDoe.TextSize = 20.000
 JohnDoe.TextWrapped = true
 JohnDoe.TextXAlignment = Enum.TextXAlignment.Left
+JohnDoe.MouseButton1Down:Connect(function()
+------------
+--John Doe--
+------------
+-----by-----
+--CKbackup--
+------------
+
+--Player Stuff--
+player = game:GetService("Players").LocalPlayer
+chara = player.Character
+
+ch = chara:GetChildren()
+for i = 1, #ch do
+if ch[i].Name == "Torso" then
+ch[i].roblox.Transparency = 1
+elseif ch[i].Name == "Head" then
+ch[i].face.Transparency = 1
+ch[i].Transparency = 1
+elseif ch[i].ClassName == "Accessory" or ch[i].ClassName == "Shirt" or ch[i].ClassName == "Pants" or ch[i].ClassName == "ShirtGraphic" then
+ch[i]:Destroy()
+end
+end
+
+chara["Left Arm"].BrickColor = BrickColor.new("Cool yellow")
+chara["Right Arm"].BrickColor = BrickColor.new("Cool yellow")
+chara["Left Leg"].BrickColor = BrickColor.new("Medium blue")
+chara["Right Leg"].BrickColor = BrickColor.new("Medium blue")
+chara.Torso.BrickColor = BrickColor.new("Bright yellow")
+
+--Outfit--
+New = function(Object, Parent, Name, Data)
+	local Object = Instance.new(Object)
+	for Index, Value in pairs(Data or {}) do
+		Object[Index] = Value
+	end
+	Object.Parent = Parent
+	Object.Name = Name
+	return Object
+end
+
+function ScatterEff(part)
+local eff1 = Instance.new("ParticleEmitter",part)
+eff1.Size = NumberSequence.new(.1)
+eff1.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(.9,0),NumberSequenceKeypoint.new(1,1)})
+eff1.LightEmission = 1
+eff1.Lifetime = NumberRange.new(1)
+eff1.Speed = NumberRange.new(1)
+eff1.Rate = 100
+eff1.VelocitySpread = 10000
+eff1.Texture = "rbxassetid://347504241"
+eff1.Color = ColorSequence.new(Color3.new(1,0,0))
+local eff2 = Instance.new("ParticleEmitter",part)
+eff2.Size = NumberSequence.new(.1)
+eff2.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(.9,0),NumberSequenceKeypoint.new(1,1)})
+eff2.LightEmission = 1
+eff2.Lifetime = NumberRange.new(1)
+eff2.Speed = NumberRange.new(1)
+eff2.Rate = 100
+eff2.VelocitySpread = 10000
+eff2.Texture = "rbxassetid://347504259"
+eff2.Color = ColorSequence.new(Color3.new(1,0,0))
+end
+
+function BurningEff(part)
+local eff1 = Instance.new("ParticleEmitter",part)
+eff1.Size = NumberSequence.new(.1)
+eff1.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(.2,0),NumberSequenceKeypoint.new(1,1)})
+eff1.LightEmission = 1
+eff1.Lifetime = NumberRange.new(1)
+eff1.Speed = NumberRange.new(0)
+eff1.Rate = 100
+eff1.Texture = "rbxassetid://347504241"
+eff1.Acceleration = Vector3.new(0,10,0)
+eff1.Color = ColorSequence.new(Color3.new(1,0,0))
+local eff2 = Instance.new("ParticleEmitter",part)
+eff2.Size = NumberSequence.new(.1)
+eff2.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(.2,0),NumberSequenceKeypoint.new(1,1)})
+eff2.LightEmission = 1
+eff2.Lifetime = NumberRange.new(1)
+eff2.Speed = NumberRange.new(0)
+eff2.Rate = 100
+eff2.Texture = "rbxassetid://347504259"
+eff2.Acceleration = Vector3.new(0,10,0)
+eff2.Color = ColorSequence.new(Color3.new(1,0,0))
+local eff3 = Instance.new("ParticleEmitter",part)
+eff3.Size = NumberSequence.new(1)
+eff3.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(1,1)})
+eff3.LightEmission = 1
+eff3.Lifetime = NumberRange.new(1)
+eff3.Speed = NumberRange.new(0)
+eff3.Rate = 100
+eff3.Texture = "rbxasset://textures/particles/fire_main.dds"
+eff3.Acceleration = Vector3.new(0,10,0)
+eff3.Color = ColorSequence.new(Color3.new(1,0,0))
+end
+
+FakeHead = New("Model",chara,"FakeHead",{})
+MainPart = New("Part",FakeHead,"MainPart",{FormFactor = Enum.FormFactor.Symmetric,Size = Vector3.new(2, 1, 1),CFrame = CFrame.new(2.29537678, 7.81603718, 0.746068954, 0.00980896503, 0.00110200304, 0.999957919, -0.000536994543, 1.00000548, -0.00109680078, -0.99994874, -0.0005262224, 0.00980964955),CanCollide = false,TopSurface = Enum.SurfaceType.Smooth,})
+Mesh = New("SpecialMesh",MainPart,"Mesh",{Scale = Vector3.new(1.25, 1.25, 1.25),})
+face = New("Decal",MainPart,"face",{Texture = "rbxasset://textures/face.png",})
+Weld = New("ManualWeld",MainPart,"Weld",{Part0 = MainPart,Part1 = chara.Head,C0 = CFrame.new(0, 0, 0, 0.00980896503, -0.000536994543, -0.99994874, 0.00110200304, 1.00000548, -0.0005262224, 0.999957919, -0.00109680078, 0.00980964955),C1 = CFrame.new(5.96046448e-008, -8.58306885e-006, 0, 0.00980896503, -0.000536994543, -0.99994874, 0.00110200304, 1.00000548, -0.0005262224, 0.999957919, -0.00109680078, 0.00980964955),})
+FakeHead.MainPart.BrickColor = BrickColor.new("Cool yellow")
+EyeFire = New("Part",FakeHead,"EyeFire",{BrickColor = BrickColor.new("Really red"),Material = Enum.Material.Neon,Size = Vector3.new(0.400000006, 0.200000003, 0.200000003),CFrame = CFrame.new(1.69668579, 8.11665249, 0.640022159, -0.00107900088, 0.999958038, -0.00980941113, -1.0000056, -0.00107390946, 0.000525554642, 0.000515007298, 0.00981007144, 0.999948859),CanCollide = false,Color = Color3.new(1, 0, 0),})
+Mesh = New("CylinderMesh",EyeFire,"Mesh",{Offset = Vector3.new(0.0500000007, 0, -0.0399999991),Scale = Vector3.new(1, 0.150000006, 1),})
+Weld = New("ManualWeld",EyeFire,"Weld",{Part0 = EyeFire,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.0010790003, -0.999999344, 0.000515000196, 0.999951363, -0.0010738963, 0.00981000345, -0.00980944186, 0.000525560055, 0.99995178),C1 = CFrame.new(0.100008011, 0.300009251, -0.600027919, 0.00980899762, -0.000536999898, -0.99995178, 0.00110200245, 0.999999344, -0.000526215415, 0.999951363, -0.00109678751, 0.00980958249),})
+Chest = New("Model",chara,"Chest",{})
+MainPart = New("Part",Chest,"MainPart",{Transparency = 1,Transparency = 1,FormFactor = Enum.FormFactor.Symmetric,Size = Vector3.new(2, 2, 1),CFrame = CFrame.new(2.2937007, 6.31611967, 0.746871948, 0.00980956201, 0.00110224239, 0.999954581, -0.000537135813, 1.00000238, -0.00109703222, -0.99995023, -0.000526354474, 0.00981019717),CanCollide = false,LeftSurface = Enum.SurfaceType.Weld,RightSurface = Enum.SurfaceType.Weld,})
+Weld = New("ManualWeld",MainPart,"Weld",{Part0 = MainPart,Part1 = chara.Torso,C0 = CFrame.new(0, 0, 0, 0.009809535, -0.000537137908, -0.99994725, 0.00110225554, 1.00000858, -0.000526368851, 0.999961257, -0.00109705783, 0.00981026888),C1 = CFrame.new(5.96046448e-008, -9.05990601e-006, -2.38418579e-007, 0.00980956666, -0.000537143264, -0.99995023, 0.00110225484, 1.00000238, -0.000526361808, 0.999954581, -0.00109704456, 0.00981020182),})
+CorruptedPart = New("Part",Chest,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.400000006, 0.800000072, 1),CFrame = CFrame.new(2.28977966, 7.11656427, 1.34486222, -0.00110228383, -0.00980954897, -0.9999578, -1.00000536, 0.000536905834, 0.00109708123, 0.000526248943, 0.99994868, -0.00981033035),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.0011022957, -0.999999225, 0.000526249292, -0.00980958622, 0.000536918582, 0.99995172, -0.999951243, 0.0010970803, -0.00981026702),C1 = CFrame.new(-0.598430753, 0.800122261, 0.00106739998, 0.00980956666, -0.000537143264, -0.99995023, 0.00110225484, 1.00000238, -0.000526361808, 0.999954581, -0.00109704456, 0.00981020182),})
+CorruptedPart = New("Part",Chest,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.400000006, 0.400000066, 1),CFrame = CFrame.new(2.29174757, 6.71645212, 1.54485857, -0.00110228383, -0.00980954897, -0.9999578, -1.00000536, 0.000536905834, 0.00109708123, 0.000526248943, 0.99994868, -0.00981033035),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.0011022957, -0.999999225, 0.000526249292, -0.00980958622, 0.000536918582, 0.99995172, -0.999951243, 0.0010970803, -0.00981026702),C1 = CFrame.new(-0.798183441, 0.399908543, 0.00543618202, 0.00980956666, -0.000537143264, -0.99995023, 0.00110225484, 1.00000238, -0.000526361808, 0.999954581, -0.00109704456, 0.00981020182),})
+LeftArm = New("Model",chara,"LeftArm",{})
+MainPart = New("Part",LeftArm,"MainPart",{Transparency = 1,Transparency = 1,FormFactor = Enum.FormFactor.Symmetric,Size = Vector3.new(1, 2, 1),CFrame = CFrame.new(1.90889204, 6.31596565, 3.24640989, -0.0484240092, -0.0324009918, 0.998301268, -0.00117100019, 0.999474883, 0.0323822871, -0.998826265, 0.000399069104, -0.0484365262),CanCollide = false,})
+Weld = New("ManualWeld",MainPart,"Weld",{Part0 = MainPart,Part1 = chara["Left Arm"],C0 = CFrame.new(0, 0, 0, -0.0484240092, -0.00117100019, -0.998826265, -0.0324009918, 0.999474883, 0.000399069104, 0.998301268, 0.0323822871, -0.0484365262),C1 = CFrame.new(0, -8.10623169e-006, -2.38418579e-007, -0.0484240092, -0.00117100019, -0.998826265, -0.0324009918, 0.999474883, 0.000399069104, 0.998301268, 0.0323822871, -0.0484365262),})
+CorruptedPart = New("Part",LeftArm,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.400000006, 0.200000003),CFrame = CFrame.new(1.48370504, 6.50245714, 2.8663168, -0.048417028, -0.0324150361, 0.998301387, -0.00116700074, 0.999474525, 0.03239654, -0.998826742, 0.000403525919, -0.0484294258),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.048417028, -0.00116700074, -0.998826623, -0.0324150361, 0.999474466, 0.000403525832, 0.998301208, 0.0323965363, -0.0484294109),C1 = CFrame.new(0.400017738, 0.200018406, -0.400015235, -0.0484240092, -0.00117100019, -0.998826265, -0.0324009918, 0.999474883, 0.000399069104, 0.998301268, 0.0323822871, -0.0484365262),})
+CorruptedPart = New("Part",LeftArm,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.600000024, 0.200000003),CFrame = CFrame.new(1.51924801, 6.60332775, 3.66543078, -0.048417028, -0.0324150361, 0.998301387, -0.00116700074, 0.999474525, 0.03239654, -0.998826742, 0.000403525919, -0.0484294258),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.048417028, -0.00116700074, -0.998826623, -0.0324150361, 0.999474466, 0.000403525832, 0.998301208, 0.0323965363, -0.0484294109),C1 = CFrame.new(-0.399997473, 0.300003052, -0.399972558, -0.0484240092, -0.00117100019, -0.998826265, -0.0324009918, 0.999474883, 0.000399069104, 0.998301268, 0.0323822871, -0.0484365262),})
+EffCorruptedPart = New("Part",LeftArm,"EffCorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(1, 1, 1),CFrame = CFrame.new(1.92512023, 5.81624889, 3.24619365, -0.048417028, -0.0324150361, 0.998301387, -0.00116700074, 0.999474525, 0.03239654, -0.998826742, 0.000403525919, -0.0484294258),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",EffCorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",EffCorruptedPart,"Weld",{Part0 = EffCorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.048417028, -0.00116700074, -0.998826623, -0.0324150361, 0.999474466, 0.000403525832, 0.998301208, 0.0323965363, -0.0484294109),C1 = CFrame.new(1.52587891e-005, -0.49998045, 2.90870667e-005, -0.0484240092, -0.00117100019, -0.998826265, -0.0324009918, 0.999474883, 0.000399069104, 0.998301268, 0.0323822871, -0.0484365262),})
+CorruptedPart = New("Part",LeftArm,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.800000072, 0.200000003),CFrame = CFrame.new(2.31463432, 6.72918367, 3.62673688, -0.048417028, -0.0324150361, 0.998301387, -0.00116700074, 0.999474525, 0.03239654, -0.998826742, 0.000403525919, -0.0484294258),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.048417028, -0.00116700074, -0.998826623, -0.0324150361, 0.999474466, 0.000403525832, 0.998301208, 0.0323965363, -0.0484294109),C1 = CFrame.new(-0.400012016, 0.400006294, 0.400012136, -0.0484240092, -0.00117100019, -0.998826265, -0.0324009918, 0.999474883, 0.000399069104, 0.998301268, 0.0323822871, -0.0484365262),})
+CorruptedPart = New("Part",LeftArm,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.200000003, 0.200000003),CFrame = CFrame.new(1.50631011, 6.40297413, 3.26581192, -0.048417028, -0.0324150361, 0.998301387, -0.00116700074, 0.999474525, 0.03239654, -0.998826742, 0.000403525919, -0.0484294258),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.048417028, -0.00116700074, -0.998826623, -0.0324150361, 0.999474466, 0.000403525832, 0.998301208, 0.0323965363, -0.0484294109),C1 = CFrame.new(1.3589859e-005, 0.100014687, -0.400020242, -0.0484240092, -0.00117100019, -0.998826265, -0.0324009918, 0.999474883, 0.000399069104, 0.998301268, 0.0323822871, -0.0484365262),})
+CorruptedPart = New("Part",LeftArm,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.400000036, 0.200000003),CFrame = CFrame.new(1.92179501, 6.51633835, 3.64602208, -0.048417028, -0.0324150361, 0.998301387, -0.00116700074, 0.999474525, 0.03239654, -0.998826742, 0.000403525919, -0.0484294258),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.048417028, -0.00116700074, -0.998826623, -0.0324150361, 0.999474466, 0.000403525832, 0.998301208, 0.0323965363, -0.0484294109),C1 = CFrame.new(-0.40000248, 0.200008869, 1.37090683e-005, -0.0484240092, -0.00117100019, -0.998826265, -0.0324009918, 0.999474883, 0.000399069104, 0.998301268, 0.0323822871, -0.0484365262),})
+BurningEff(EffCorruptedPart)
+LeftLeg = New("Model",chara,"LeftLeg",{})
+MainPart = New("Part",LeftLeg,"MainPart",{Transparency = 1,Transparency = 1,FormFactor = Enum.FormFactor.Symmetric,Size = Vector3.new(1, 2, 1),CFrame = CFrame.new(2.2865479, 1.31659603, 1.24781799, 0.00980953407, 0.00110225566, 0.999961138, -0.000537137908, 1.00000858, -0.00109705783, -0.99994719, -0.000526368851, 0.00981026888),CanCollide = false,BottomSurface = Enum.SurfaceType.Smooth,})
+Weld = New("ManualWeld",MainPart,"Weld",{Part0 = MainPart,Part1 = chara["Left Leg"],C0 = CFrame.new(0, 0, 0, 0.00980953407, -0.000537137908, -0.99994719, 0.00110225566, 1.00000858, -0.000526368851, 0.999961138, -0.00109705783, 0.00981026888),C1 = CFrame.new(0, -8.58306885e-006, -2.38418579e-007, 0.00980953407, -0.000537137908, -0.99994719, 0.00110225566, 1.00000858, -0.000526368851, 0.999961138, -0.00109705783, 0.00981026888),})
+EffCorruptedPart = New("Part",LeftLeg,"EffCorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(1, 0.200000048, 1),CFrame = CFrame.new(2.28007793, 0.400032878, 1.25993299, 1.00001979, -3.03611159e-007, -5.47617674e-007, 5.67175448e-007, 1.00001717, -5.60779881e-007, -1.86450779e-006, 9.50574758e-007, 0.99998951),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",EffCorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",EffCorruptedPart,"Weld",{Part0 = EffCorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 1, 5.86369708e-007, -2.15602267e-006, -2.8440752e-007, 0.999998569, 9.76819592e-007, -8.39119252e-007, -5.34477465e-007, 0.999998569),C1 = CFrame.new(-0.0116856098, -0.916567385, -0.00534534454, 0.00980953407, -0.000537137908, -0.99994719, 0.00110225566, 1.00000858, -0.000526368851, 0.999961138, -0.00109705783, 0.00981026888),})
+CorruptedPart = New("Part",LeftLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.600000024, 0.200000003),CFrame = CFrame.new(1.88013697, 0.800038397, 0.859943509, 1.00001979, -3.03611159e-007, -5.47617674e-007, 5.67175448e-007, 1.00001717, -5.60779881e-007, -1.86450779e-006, 9.50574758e-007, 0.99998951),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 1, 5.86369708e-007, -2.15602267e-006, -2.8440752e-007, 0.999998569, 9.76819592e-007, -8.39119252e-007, -5.34477465e-007, 0.999998569),C1 = CFrame.new(0.3841483, -0.516796231, -0.40962553, 0.00980953407, -0.000537137908, -0.99994719, 0.00110225566, 1.00000858, -0.000526368851, 0.999961138, -0.00109705783, 0.00981026888),})
+CorruptedPart = New("Part",LeftLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.800000012, 0.200000003),CFrame = CFrame.new(2.69002914, 0.915953577, 0.851962805, 0.999971032, 0.0011022269, -0.00980960391, -0.00109704852, 1.00001776, 0.000537177373, 0.00981036108, -0.000526409131, 0.999942601),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 0.999951303, -0.0010970087, 0.00981015898, 0.00110222446, 0.999999166, -0.000526388001, -0.00980970077, 0.00053719338, 0.99995172),C1 = CFrame.new(0.400011122, -0.399985313, 0.400013685, 0.00980953407, -0.000537137908, -0.99994719, 0.00110225566, 1.00000858, -0.000526368851, 0.999961138, -0.00109705783, 0.00981026888),})
+CorruptedPart = New("Part",LeftLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.800000012, 0.200000003),CFrame = CFrame.new(1.88013721, 0.900040269, 1.65993917, 1.00001979, -3.03611159e-007, -5.47617674e-007, 5.67175448e-007, 1.00001717, -5.60779881e-007, -1.86450779e-006, 9.50574758e-007, 0.99998951),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 1, 5.86369708e-007, -2.15602267e-006, -2.8440752e-007, 0.999998569, 9.76819592e-007, -8.39119252e-007, -5.34477465e-007, 0.999998569),C1 = CFrame.new(-0.415866137, -0.41721642, -0.40188694, 0.00980953407, -0.000537137908, -0.99994719, 0.00110225566, 1.00000858, -0.000526368851, 0.999961138, -0.00109705783, 0.00981026888),})
+CorruptedPart = New("Part",LeftLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.200000003, 0.200000003),CFrame = CFrame.new(1.88013721, 0.600035727, 1.25993288, 1.00001979, -3.03611159e-007, -5.47617674e-007, 5.67175448e-007, 1.00001717, -5.60779881e-007, -1.86450779e-006, 9.50574758e-007, 0.99998951),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 1, 5.86369708e-007, -2.15602267e-006, -2.8440752e-007, 0.999998569, 9.76819592e-007, -8.39119252e-007, -5.34477465e-007, 0.999998569),C1 = CFrame.new(-0.0157161951, -0.717007458, -0.405481935, 0.00980953407, -0.000537137908, -0.99994719, 0.00110225566, 1.00000858, -0.000526368851, 0.999961138, -0.00109705783, 0.00981026888),})
+CorruptedPart = New("Part",LeftLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.400000006, 0.200000003),CFrame = CFrame.new(2.28007793, 0.700037479, 1.65993929, 1.00001967, -3.84054147e-007, 3.90969217e-006, 6.35045581e-007, 1.00001717, -5.60838998e-007, -6.19795173e-006, 9.32147486e-007, 0.99998951),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 1, 6.5424797e-007, -6.48946025e-006, -3.64865258e-007, 0.999998629, 9.58411874e-007, 3.61912225e-006, -5.34497644e-007, 0.999998629),C1 = CFrame.new(-0.411835551, -0.616776347, -0.00175023079, 0.00980953407, -0.000537137908, -0.99994719, 0.00110225566, 1.00000858, -0.000526368851, 0.999961138, -0.00109705783, 0.00981026888),})
+CorruptedPart = New("Part",LeftLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 1.20000005, 0.200000003),CFrame = CFrame.new(2.68018699, 1.10004401, 1.65993941, 1.00001967, -3.84054147e-007, 3.90969217e-006, 6.35045581e-007, 1.00001717, -5.60838998e-007, -6.19795173e-006, 9.32147486e-007, 0.99998951),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 1, 6.5424797e-007, -6.48946025e-006, -3.64865258e-007, 0.999998629, 9.58411874e-007, 3.61912225e-006, -5.34497644e-007, 0.999998629),C1 = CFrame.new(-0.408125639, -0.216332912, 0.397896528, 0.00980953407, -0.000537137908, -0.99994719, 0.00110225566, 1.00000858, -0.000526368851, 0.999961138, -0.00109705783, 0.00981026888),})
+CorruptedPart = New("Part",LeftLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.600000024, 0.200000003),CFrame = CFrame.new(2.68596959, 0.816166699, 1.25195313, 0.999971032, 0.0011022269, -0.00980960391, -0.00109704852, 1.00001776, 0.000537177373, 0.00981036108, -0.000526409131, 0.999942601),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 0.999951303, -0.0010970087, 0.00981015898, 0.00110222446, 0.999999166, -0.000526388001, -0.00980970077, 0.00053719338, 0.99995172),C1 = CFrame.new(5.20944595e-005, -0.499986172, 0.399987936, 0.00980953407, -0.000537137908, -0.99994719, 0.00110225566, 1.00000858, -0.000526368851, 0.999961138, -0.00109705783, 0.00981026888),})
+ScatterEff(EffCorruptedPart)
+RightArm = New("Model",chara,"RightArm",{})
+MainPart = New("Part",RightArm,"MainPart",{Transparency = 1,Transparency = 1,FormFactor = Enum.FormFactor.Symmetric,Size = Vector3.new(1, 2, 1),CFrame = CFrame.new(2.011096, 6.31690788, -3.92582893, 0.00918400101, -0.262283146, 0.964947343, 0.259330034, 0.932596445, 0.251021653, -0.965745091, 0.247934431, 0.0765828639),CanCollide = false,})
+Weld = New("ManualWeld",MainPart,"Weld",{Part0 = MainPart,Part1 = chara["Right Arm"],C0 = CFrame.new(0, 0, 0, 0.00918400101, 0.259330034, -0.965745091, -0.262283146, 0.932596445, 0.247934431, 0.964947343, 0.251021653, 0.0765828639),C1 = CFrame.new(-2.86102295e-006, -9.05990601e-006, -2.38418579e-006, 0.00918400101, 0.259330034, -0.965745091, -0.262283146, 0.932596445, 0.247934431, 0.964947343, 0.251021653, 0.0765828639),})
+Hitbox = New("Part",RightArm,"Hitbox",{BrickColor = BrickColor.new("Really black"),Transparency = 1,Transparency = 1,Size = Vector3.new(1, 4, 1),CFrame = CFrame.new(22.2733669, 5.0842762, -22.1737366, -0.964945257, -0.262290984, 0.00919180829, -0.251027077, 0.93259424, 0.259333313, -0.0765930116, 0.247935042, -0.965744138),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Weld = New("ManualWeld",Hitbox,"Weld",{Part0 = Hitbox,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.964945257, -0.251027077, -0.0765930116, -0.262290984, 0.93259424, 0.247935042, 0.00919180829, 0.259333313, -0.965744138),C1 = CFrame.new(-1.52587891e-005, -1.00003147, -1.71661377e-005, 0.0091838371, 0.259330064, -0.965745151, -0.262283117, 0.932596445, 0.247934505, 0.964947283, 0.251021653, 0.0765827149),})
+CorruptedPart = New("Part",RightArm,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(1, 2, 1),CFrame = CFrame.new(2.011096, 6.3169179, -3.92581391, -0.964945257, -0.262290984, 0.00919180829, -0.251027077, 0.93259424, 0.259333313, -0.0765930116, 0.247935042, -0.965744138),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.964945138, -0.251027018, -0.0765930042, -0.262290984, 0.932594121, 0.247935027, 0.00919180084, 0.259333313, -0.965744197),C1 = CFrame.new(-1.1920929e-005, 1.28746033e-005, 3.57627869e-006, 0.00918400101, 0.259330034, -0.965745091, -0.262283146, 0.932596445, 0.247934431, 0.964947343, 0.251021653, 0.0765828639),})
+CorruptedPart = New("Part",RightArm,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(1, 0.600000024, 0.400000036),CFrame = CFrame.new(2.14866924, 6.03215551, -4.72580194, -0.964945078, 0.262291819, -0.00918725226, -0.251029015, -0.932593465, -0.259333432, -0.0765890032, -0.247936144, 0.965744317),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("SpecialMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),MeshType = Enum.MeshType.Wedge,})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.964944899, -0.251028955, -0.0765889958, 0.262291819, -0.932593465, -0.247936144, -0.00918724574, -0.259333432, 0.965744257),C1 = CFrame.new(0.699988842, -0.499982834, 7.62939453e-006, 0.00918400101, 0.259330034, -0.965745091, -0.262283146, 0.932596445, 0.247934431, 0.964947343, 0.251021653, 0.0765828639),})
+CorruptedPart = New("Part",RightArm,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(1, 1.20000005, 0.600000024),CFrame = CFrame.new(2.63876629, 4.02682734, -4.32773018, -0.964945078, 0.262291819, -0.00918725226, -0.251029015, -0.932593465, -0.259333432, -0.0765890032, -0.247936144, 0.965744317),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("SpecialMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),MeshType = Enum.MeshType.Wedge,})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.964944899, -0.251028955, -0.0765889958, 0.262291819, -0.932593465, -0.247936144, -0.00918724574, -0.259333432, 0.965744257),C1 = CFrame.new(-0.199987888, -2.39999342, 3.02791595e-005, 0.00918400101, 0.259330034, -0.965745091, -0.262283146, 0.932596445, 0.247934431, 0.964947343, 0.251021653, 0.0765828639),})
+CorruptedPart = New("Part",RightArm,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(1, 1, 0.600000024),CFrame = CFrame.new(1.62134135, 7.81954479, -3.94021821, 0.964945078, -0.262291819, -0.00918725226, 0.251029015, 0.932593465, -0.259333432, 0.0765890032, 0.247936144, 0.965744317),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("SpecialMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),MeshType = Enum.MeshType.Wedge,})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 0.964944899, 0.251028955, 0.0765889958, -0.262291819, 0.932593465, 0.247936144, -0.00918724574, -0.259333432, 0.965744257),C1 = CFrame.new(0.399995804, 1.5000124, -2.38418579e-007, 0.00918400101, 0.259330034, -0.965745091, -0.262283146, 0.932596445, 0.247934431, 0.964947343, 0.251021653, 0.0765828639),})
+CorruptedPart = New("Part",RightArm,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(1, 0.600000024, 0.400000036),CFrame = CFrame.new(2.35483098, 5.18234444, -4.53787422, -0.964945078, 0.262291819, -0.00918725226, -0.251029015, -0.932593465, -0.259333432, -0.0765890032, -0.247936144, 0.965744317),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("SpecialMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),MeshType = Enum.MeshType.Wedge,})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.964944899, -0.251028955, -0.0765889958, 0.262291819, -0.932593465, -0.247936144, -0.00918724574, -0.259333432, 0.965744257),C1 = CFrame.new(0.300010204, -1.29999256, 1.40666962e-005, 0.00918400101, 0.259330034, -0.965745091, -0.262283146, 0.932596445, 0.247934431, 0.964947343, 0.251021653, 0.0765828639),})
+CorruptedPart = New("Part",RightArm,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(1, 1, 0.600000024),CFrame = CFrame.new(1.88730097, 6.99068737, -4.57445002, -0.964945078, 0.262291819, -0.00918725226, -0.251029015, -0.932593465, -0.259333432, -0.0765890032, -0.247936144, 0.965744317),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("SpecialMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),MeshType = Enum.MeshType.Wedge,})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.964944899, -0.251028955, -0.0765889958, 0.262291819, -0.932593465, -0.247936144, -0.00918724574, -0.259333432, 0.965744257),C1 = CFrame.new(0.799996853, 0.50001812, 4.29153442e-006, 0.00918400101, 0.259330034, -0.965745091, -0.262283146, 0.932596445, 0.247934431, 0.964947343, 0.251021653, 0.0765828639),})
+CorruptedPart = New("Part",RightArm,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(1, 0.800000072, 0.600000024),CFrame = CFrame.new(2.37646794, 4.9594202, -4.07979012, -0.964945316, -0.262290984, 0.00918756705, -0.251028091, 0.932593942, 0.259333163, -0.0765890256, 0.247935995, -0.965744197),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, -0.964945138, -0.251028031, -0.0765890107, -0.262290955, 0.932593882, 0.247935966, 0.0091875596, 0.259333193, -0.965744257),C1 = CFrame.new(-0.199994564, -1.39999104, 1.52587891e-005, 0.00918400101, 0.259330034, -0.965745091, -0.262283146, 0.932596445, 0.247934431, 0.964947343, 0.251021653, 0.0765828639),})
+RightLeg = New("Model",chara,"RightLeg",{})
+MainPart = New("Part",RightLeg,"MainPart",{Transparency = 1,Transparency = 1,FormFactor = Enum.FormFactor.Symmetric,Size = Vector3.new(1, 2, 1),CFrame = CFrame.new(2.29641008, 1.31540966, 0.248092994, 0.00933599845, 0.00110999751, 0.999955773, -0.0030579993, 0.999994755, -0.00108149007, -0.99995178, -0.0030477671, 0.00933934376),CanCollide = false,BottomSurface = Enum.SurfaceType.Smooth,})
+Weld = New("ManualWeld",MainPart,"Weld",{Part0 = MainPart,Part1 = chara["Right Leg"],C0 = CFrame.new(0, 0, 0, 0.00933599845, -0.0030579993, -0.99995178, 0.00110999751, 0.999994755, -0.0030477671, 0.999955773, -0.00108149007, 0.00933934376),C1 = CFrame.new(2.98023224e-008, -8.58306885e-006, 2.38418579e-007, 0.00933599845, -0.0030579993, -0.99995178, 0.00110999751, 0.999994755, -0.0030477671, 0.999955773, -0.00108149007, 0.00933934376),})
+CorruptedPart = New("Part",RightLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.200000003, 0.200000003),CFrame = CFrame.new(2.70045996, 1.61376095, -0.149078026, 0.999955833, 0.00111049914, -0.0093326522, -0.00108199986, 0.999994755, 0.00305823679, 0.00933599938, -0.00304800388, 0.999951839),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 0.999955893, -0.00108199986, 0.00933599938, 0.00111049926, 0.999994755, -0.00304800388, -0.0093326522, 0.00305823679, 0.99995178),C1 = CFrame.new(0.400011688, 0.300008655, 0.400000095, 0.00933599845, -0.0030579993, -0.99995178, 0.00110999751, 0.999994755, -0.0030477671, 0.999955773, -0.00108149007, 0.00933934376),})
+CorruptedPart = New("Part",RightLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.600000024, 0.200000003),CFrame = CFrame.new(1.90071809, 1.81462395, -0.157150015, 0.999955714, 0.00111050205, -0.0093366541, -0.00108199974, 0.999994755, 0.00305724167, 0.00933999754, -0.00304700364, 0.999951899),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 0.999955773, -0.00108199974, 0.00933999848, 0.00111050217, 0.999994755, -0.00304700388, -0.00933665317, 0.00305724121, 0.99995178),C1 = CFrame.new(0.400002658, 0.50000751, -0.399999142, 0.00933599845, -0.0030579993, -0.99995178, 0.00110999751, 0.999994755, -0.0030477671, 0.999955773, -0.00108149007, 0.00933934376),})
+CorruptedPart = New("Part",RightLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.400000036, 0.200000003),CFrame = CFrame.new(1.896873, 1.71584904, 0.243133992, 0.999955714, 0.00111050205, -0.0093366541, -0.00108199974, 0.999994755, 0.00305724167, 0.00933999754, -0.00304700364, 0.999951899),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 0.999955773, -0.00108199974, 0.00933999848, 0.00111050217, 0.999994755, -0.00304700388, -0.00933665317, 0.00305724121, 0.99995178),C1 = CFrame.new(4.14252281e-006, 0.400008917, -0.399998784, 0.00933599845, -0.0030579993, -0.99995178, 0.00110999751, 0.999994755, -0.0030477671, 0.999955773, -0.00108149007, 0.00933934376),})
+CorruptedPart = New("Part",RightLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.800000072, 0.200000003),CFrame = CFrame.new(1.89314091, 1.71706903, 0.643112063, 0.999955714, 0.00111050205, -0.0093366541, -0.00108199974, 0.999994755, 0.00305724167, 0.00933999754, -0.00304700364, 0.999951899),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 0.999955773, -0.00108199974, 0.00933999848, 0.00111050217, 0.999994755, -0.00304700388, -0.00933665317, 0.00305724121, 0.99995178),C1 = CFrame.new(-0.399993181, 0.400005698, -0.399996519, 0.00933599845, -0.0030579993, -0.99995178, 0.00110999751, 0.999994755, -0.0030477671, 0.999955773, -0.00108149007, 0.00933934376),})
+EffCorruptedPart = New("Part",RightLeg,"EffCorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(1, 1.20000005, 1),CFrame = CFrame.new(2.29597116, 0.915416002, 0.249298006, 0.999955714, 0.00111051137, -0.00933665317, -0.00108199974, 0.999994755, 0.00305824191, 0.00933999754, -0.00304800365, 0.999951899),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",EffCorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",EffCorruptedPart,"Weld",{Part0 = EffCorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 0.999955773, -0.00108199974, 0.00933999848, 0.00111051148, 0.999994755, -0.00304800388, -0.00933665223, 0.00305824145, 0.99995178),C1 = CFrame.new(1.41263008e-005, -0.399995744, 5.00679016e-006, 0.00933599845, -0.0030579993, -0.99995178, 0.00110999751, 0.999994755, -0.0030477671, 0.999955773, -0.00108149007, 0.00933934376),})
+CorruptedPart = New("Part",RightLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.400000006, 0.200000003),CFrame = CFrame.new(2.300596, 1.71419013, -0.153122023, 0.999955714, 0.00111051137, -0.00933665317, -0.00108199974, 0.999994755, 0.00305824191, 0.00933999754, -0.00304800365, 0.999951899),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 0.999955773, -0.00108199974, 0.00933999848, 0.00111051148, 0.999994755, -0.00304800388, -0.00933665223, 0.00305824145, 0.99995178),C1 = CFrame.new(0.400015235, 0.400005817, 7.39097595e-006, 0.00933599845, -0.0030579993, -0.99995178, 0.00110999751, 0.999994755, -0.0030477671, 0.999955773, -0.00108149007, 0.00933934376),})
+CorruptedPart = New("Part",RightLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.600000024, 0.200000003),CFrame = CFrame.new(2.69322205, 1.81620288, 0.650299072, 0.999955714, 0.00111051137, -0.00933665317, -0.00108199974, 0.999994755, 0.00305824191, 0.00933999754, -0.00304800365, 0.999951899),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 0.999955773, -0.00108199974, 0.00933999848, 0.00111051148, 0.999994755, -0.00304800388, -0.00933665223, 0.00305824145, 0.99995178),C1 = CFrame.new(-0.400013447, 0.500005245, 0.400009155, 0.00933599845, -0.0030579993, -0.99995178, 0.00110999751, 0.999994755, -0.0030477671, 0.999955773, -0.00108149007, 0.00933934376),})
+CorruptedPart = New("Part",RightLeg,"CorruptedPart",{BrickColor = BrickColor.new("Really black"),Material = Enum.Material.Granite,Size = Vector3.new(0.200000003, 0.400000006, 0.200000003),CFrame = CFrame.new(2.69684124, 1.71498096, 0.250625998, 0.999955714, 0.00111051137, -0.00933665317, -0.00108199974, 0.999994755, 0.00305824191, 0.00933999754, -0.00304800365, 0.999951899),CanCollide = false,BackSurface = Enum.SurfaceType.SmoothNoOutlines,BottomSurface = Enum.SurfaceType.SmoothNoOutlines,FrontSurface = Enum.SurfaceType.SmoothNoOutlines,LeftSurface = Enum.SurfaceType.SmoothNoOutlines,RightSurface = Enum.SurfaceType.SmoothNoOutlines,TopSurface = Enum.SurfaceType.SmoothNoOutlines,Color = Color3.new(0.0666667, 0.0666667, 0.0666667),})
+Mesh = New("BlockMesh",CorruptedPart,"Mesh",{Scale = Vector3.new(1.10000002, 1.10000002, 1.10000002),})
+Weld = New("ManualWeld",CorruptedPart,"Weld",{Part0 = CorruptedPart,Part1 = MainPart,C0 = CFrame.new(0, 0, 0, 0.999955773, -0.00108199974, 0.00933999848, 0.00111051148, 0.999994755, -0.00304800388, -0.00933665223, 0.00305824145, 0.99995178),C1 = CFrame.new(-1.63316727e-005, 0.400005937, 0.400005102, 0.00933599845, -0.0030579993, -0.99995178, 0.00110999751, 0.999994755, -0.0030477671, 0.999955773, -0.00108149007, 0.00933934376),})
+ScatterEff(EffCorruptedPart)
+
+sa = RightArm:GetChildren()
+for i = 1, #sa do
+ScatterEff(sa[i])
+end
+
+local eff1 = Instance.new("ParticleEmitter",EyeFire)
+eff1.Size = NumberSequence.new(.1)
+eff1.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(.2,0),NumberSequenceKeypoint.new(1,1)})
+eff1.LightEmission = 1
+eff1.Lifetime = NumberRange.new(.5)
+eff1.Speed = NumberRange.new(1)
+eff1.EmissionDirection = "Front"
+eff1.Rate = 100
+eff1.Texture = "rbxassetid://347504241"
+eff1.Acceleration = Vector3.new(0,10,0)
+eff1.Color = ColorSequence.new(Color3.new(1,0,0))
+local eff2 = Instance.new("ParticleEmitter",EyeFire)
+eff2.Size = NumberSequence.new(.1)
+eff2.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(.2,0),NumberSequenceKeypoint.new(1,1)})
+eff2.LightEmission = 1
+eff2.Lifetime = NumberRange.new(.5)
+eff2.Speed = NumberRange.new(1)
+eff2.EmissionDirection = "Front"
+eff2.Rate = 100
+eff2.Texture = "rbxassetid://347504259"
+eff2.Acceleration = Vector3.new(0,10,0)
+eff2.Color = ColorSequence.new(Color3.new(1,0,0))
+local eff3 = Instance.new("ParticleEmitter",EyeFire)
+eff3.Size = NumberSequence.new(.1)
+eff3.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,0),NumberSequenceKeypoint.new(1,1)})
+eff3.LightEmission = 1
+eff3.Lifetime = NumberRange.new(.5)
+eff3.Speed = NumberRange.new(1)
+eff3.EmissionDirection = "Front"
+eff3.Rate = 100
+eff3.Texture = "rbxasset://textures/particles/fire_main.dds"
+eff3.Acceleration = Vector3.new(0,10,0)
+eff3.Color = ColorSequence.new(Color3.new(1,0,0))
+
+--Sounds--
+slashsnd = New("Sound",chara.Torso,"Slash",{SoundId = "rbxassetid://28144425",PlaybackSpeed = .7,Volume = 5})
+hitsnd = New("Sound",chara.Torso,"Hit",{SoundId = "rbxassetid://429400881",PlaybackSpeed = .7,Volume = 5})
+telesnd = New("Sound",chara.Torso,"Tele",{SoundId = "rbxassetid://2767090",PlaybackSpeed = .7,Volume = 5})
+burnsnd = New("Sound",chara.Torso,"Burn",{SoundId = "rbxassetid://32791565",PlaybackSpeed = .7,Volume = 5})
+music1 = New("Sound",chara.Torso,"Music1",{SoundId = "rbxassetid://151038517",PlaybackSpeed = .5,Volume = 10,Looped = true})
+music2 = New("Sound",chara.Torso,"Music2",{SoundId = "rbxassetid://11984351",PlaybackSpeed = .2,Volume = 5,Looped = true})
+deathmus = New("Sound",chara.Torso,"DeathMus",{SoundId = "rbxassetid://19094700",PlaybackSpeed = .5,Volume = 5,Looped = true})
+deathex = New("Sound",chara.Torso,"DeathEx",{SoundId = "rbxassetid://11984351",PlaybackSpeed = 1,Volume = 5})
+music1:Play()
+music2:Play()
+
+--Animations--
+swinganim = chara.Humanoid:LoadAnimation(New("Animation",chara,"Swing",{AnimationId = "rbxassetid://186934658"}))
+
+--Name Tag--
+local naeeym = Instance.new("BillboardGui",chara)
+naeeym.Size = UDim2.new(0,100,0,40)
+naeeym.StudsOffset = Vector3.new(0,2,0)
+naeeym.Adornee = chara.Head
+local tecks = Instance.new("TextLabel",naeeym)
+tecks.BackgroundTransparency = 1
+tecks.BorderSizePixel = 0
+tecks.Text = "John Doe"
+tecks.Font = "Fantasy"
+tecks.FontSize = "Size24"
+tecks.TextStrokeTransparency = 0
+tecks.TextStrokeColor3 = Color3.new(0,0,0)
+tecks.TextColor3 = Color3.new(0,0,0)
+tecks.Size = UDim2.new(1,0,0.5,0)
+
+--Skybox--
+skybox = Instance.new("Part",chara)
+skybox.Size = Vector3.new(0,0,0)
+skybox.Anchored = true
+skybox.CanCollide = true
+skyboxmesh = Instance.new("SpecialMesh",skybox)
+skyboxmesh.MeshId = "http://www.roblox.com/asset/?id=1527559"
+skyboxmesh.TextureId = "http://www.roblox.com/asset/?id=1529455"
+skyboxmesh.VertexColor = Vector3.new(1,0,0)
+skyboxmesh.Scale = Vector3.new(-3000,-1000,-3000)
+
+--Soul Steal--
+function SoulSteal(pos)
+local soulst = coroutine.wrap(function()
+local soul = Instance.new("Part",chara)
+soul.Size = Vector3.new(0,0,0)
+soul.CanCollide = false
+soul.Anchored = false
+soul.Position = pos
+soul.CFrame = CFrame.new(pos.X,pos.Y,pos.Z)
+soul.Transparency = 1
+local ptc = Instance.new("ParticleEmitter",soul)
+ptc.Texture = "http://www.roblox.com/asset/?id=413366101"
+ptc.Size = NumberSequence.new(.5)
+ptc.LockedToPart = true
+ptc.Speed = NumberRange.new(0)
+ptc.Lifetime = NumberRange.new(9999)
+local bodpos = Instance.new("BodyPosition",soul)
+bodpos.Position = pos
+wait(2)
+soul.Touched:connect(function(hit)
+if hit.Parent == chara then
+soul:Destroy()
+end
+end)
+while soul do
+wait(.1)
+bodpos.Position = chara.Torso.Position
+end
+end)
+soulst()
+end
+
+--Death of a Mortal--
+function KillMortal(hitdude)
+local torsy = nil
+if hitdude:FindFirstChild("Torso")~=nil then
+torsy = hitdude.Torso	
+elseif hitdude:FindFirstChild("UpperTorso")~=nil then
+torsy = hitdude.UpperTorso
+end
+local val = Instance.new("ObjectValue",hitdude)
+val.Name = "HasBeenHit"
+hitdude:BreakJoints()
+hitdude.Humanoid:Destroy()
+SoulSteal(torsy.Position)
+local chi = hitdude:GetChildren()
+for i = 1, #chi do
+if chi[i].ClassName == "Part" or chi[i].ClassName == "MeshPart" then
+local bodpos = Instance.new("BodyPosition",chi[i])
+bodpos.Position = chi[i].Position + Vector3.new(math.random(-5,5),math.random(-5,5),math.random(-5,5))
+ScatterEff(chi[i])
+chi[i].BrickColor = BrickColor.new("Really black")
+end
+end
+for i = 1, 4 do
+for i = 1, #chi do
+if chi[i].ClassName == "Part" or chi[i].ClassName == "MeshPart" then
+chi[i].Transparency = chi[i].Transparency + .25
+wait(.01)
+end
+end
+end
+for i = 1, #chi do
+if chi[i].ClassName == "Part" or chi[i].ClassName == "MeshPart" then
+chi[i]:Destroy()
+end
+end
+end
+
+--Arm Touch--
+bladeactive = false
+Hitbox.Touched:connect(function(hit)
+if bladeactive == true then
+if hit.Parent:FindFirstChild("Humanoid")~= nil and hit.Parent:FindFirstChild("HasBeenHit")== nil and hit.Parent ~= chara then
+hitsnd:Play()
+KillMortal(hit.Parent)
+end
+end
+end)
+
+--Teleport--
+function Teleport(pos)
+telesnd:Play()
+local ch = chara:GetChildren()
+for i = 1, #ch do
+if ch[i].ClassName == "Part" and ch[i].Name ~= "HumanoidRootPart" then
+local trace = Instance.new("Part",game.Workspace)
+trace.Size = ch[i].Size
+trace.Material = "Neon"
+trace.BrickColor = BrickColor.new("Really black")
+trace.Transparency = .3
+trace.CanCollide = false
+trace.Anchored = true
+trace.CFrame = ch[i].CFrame
+if ch[i].Name == "Head" then
+mehs = Instance.new("CylinderMesh",trace)
+mehs.Scale = Vector3.new(1.25,1.25,1.25)
+end
+tracedisappear = coroutine.wrap(function()
+wait(1)
+for i = 1, 7 do
+wait(.1)
+trace.Transparency = trace.Transparency + .1
+end
+trace:Destroy()
+end)
+tracedisappear()
+end
+end
+chara.Torso.CFrame = CFrame.new(pos.X,pos.Y,pos.Z)
+end
+
+--Grab--
+function Grab(mouse)
+local hit = mouse.Target
+if hit ~= nil then
+if hit.Parent:FindFirstChild("Humanoid")~=nil then
+local torsy = nil
+if hit.Parent:FindFirstChild("Torso")~=nil then
+torsy = hit.Parent.Torso
+elseif hit.Parent:FindFirstChild("UpperTorso")~=nil then
+torsy = hit.Parent.UpperTorso
+end
+local bodpos = Instance.new("BodyPosition",torsy)
+bodpos.Position = torsy.Position
+wait(1)
+burnsnd:Play()
+hit.Parent.Humanoid.MaxHealth = 100
+bodpos.Position = bodpos.Position + Vector3.new(0,4,0)
+for i = 1, 10 do
+wait(.1)
+BurningEff(torsy)
+hit.Parent.Humanoid.Health = hit.Parent.Humanoid.Health - 10
+end
+KillMortal(hit.Parent)
+end
+else end
+end
+
+--Button1Down--
+dell = false
+function onButton1Down()
+if dell == false then
+dell = true
+swinganim:Play()
+bladeactive = true
+slashsnd:Play()
+wait(.7)
+bladeactive = false
+dell = false
+swinganim:Stop()
+end
+end
+
+--KeyDowns--
+function onKeyDown(key)
+if key == "z" then
+Teleport(Mouse.Hit.p + Vector3.new(0,2,0))
+elseif key == "x" then
+Grab(Mouse)
+end
+end
+
+--Mouse Functions--
+Mouse = player:GetMouse()
+if Mouse then
+Mouse.Button1Down:connect(onButton1Down)
+Mouse.KeyDown:connect(onKeyDown)
+end
+
+--Death--
+chara.Humanoid.Died:connect(function()
+local pat = Instance.new("Part",game.Workspace)
+pat.Transparency = 1
+pat.Anchored = true
+pat.CFrame = chara.Torso.CFrame
+naeeym.Parent = pat
+naeeym.Adornee = pat
+skybox.Parent = game.Workspace
+tecks.Text = "BAD CHOICE"
+tecks.FontSize = "Size48"
+tecks.TextColor3 = Color3.new(1,0,0)
+music1:Stop()
+music2:Stop()
+deathmus.Parent = game.Workspace
+deathex.Parent = game.Workspace
+deathmus:Play()
+deathex:Play()
+game.Lighting.OutdoorAmbient = Color3.new(0,0,0)
+game.Lighting.TimeOfDay = "00:00:00"
+game.Lighting.FogColor = Color3.new(0,0,0)
+game.Lighting.FogEnd = 1000
+local ex = Instance.new("Explosion",game.Workspace)
+ex.Position = chara.Torso.Position
+ex.Visible = false
+ex.BlastRadius = 999999999999999999999999
+ex.BlastPressure = 9999999999999999999999999
+end)
+
+--Loop Function--
+while true do
+wait(.01)
+chance = math.random(0,100)
+if chance < 10 then
+sel = math.random(1,3)
+if sel == 1 then
+tecks.Text = "NOHOPE"
+elseif sel == 2 then
+tecks.Text = "GIVEUP"
+elseif sel == 3 then
+tecks.Text = "BURNINHELL"
+end
+else tecks.Text = "John Doe"
+end
+if chara.Humanoid.Health > 0 then
+chara.Humanoid.MaxHealth = math.huge
+chara.Humanoid.Health = math.huge
+game.Lighting.OutdoorAmbient = Color3.new(1,0,0)
+game.Lighting.Ambient = Color3.new(1,0,0)
+chara["Left Arm"].BrickColor = BrickColor.new("Cool yellow")
+chara["Right Arm"].BrickColor = BrickColor.new("Cool yellow")
+chara["Left Leg"].BrickColor = BrickColor.new("Medium blue")
+chara["Right Leg"].BrickColor = BrickColor.new("Medium blue")
+chara.Torso.BrickColor = BrickColor.new("Bright yellow")
+chara["Left Arm"].Anchored = false
+chara["Right Arm"].Anchored = false
+chara["Left Leg"].Anchored = false
+chara["Right Leg"].Anchored = false
+chara.Torso.Anchored = false
+ch = chara:GetChildren()
+for i = 1, #ch do
+if ch[i].ClassName == "Accessory" or ch[i].ClassName == "Hat" then
+ch[i]:Destroy()
+end
+end
+tools = player.Backpack:GetChildren()
+for i = 1, #tools do
+if tools[i].ClassName == "HopperBin" then
+tools[i]:Destroy()
+end
+end
+skybox.CFrame = skybox.CFrame * CFrame.fromEulerAnglesXYZ(0,math.rad(1),0)
+tecks.Position = UDim2.new(0,math.random(-3,3),0,math.random(-3,3))
+local jtrace = Instance.new("Part",game.Workspace)
+jtrace.Name = "JDTrace"
+jtrace.Size = Vector3.new(10,0,10)
+jtrace.Position = chara.Torso.Position
+jtrace.CFrame = chara.Torso.CFrame - Vector3.new(0,3,0)
+jtrace.Anchored = true
+jtrace.CanCollide = false
+jtrace.BrickColor = BrickColor.new("Really black")
+jtrace.Material = "Granite"
+BurningEff(jtrace)
+game.Debris:AddItem(jtrace,1)
+end
+end
+end)
 
 UICorner_5.Parent = JohnDoe
 
@@ -292,11 +851,11 @@ newTag.Name = "NewTag"
 newTag.Parent = JohnDoe
 newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
 newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 60, 0, 30)
-newTag.Text = "UPDATED"
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "FIXED"
 newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
 newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 18
+newTag.TextSize = 20
 newTag.BorderSizePixel = 0
 
 TheDankEngine.Name = "TheDankEngine"
@@ -318,42 +877,278 @@ newTag.Name = "NewTag"
 newTag.Parent = TheDankEngine
 newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
 newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 60, 0, 30)
-newTag.Text = "UPDATED"
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "FIXED"
 newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
 newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 18
+newTag.TextSize = 20
 newTag.BorderSizePixel = 0
 
-Banisher.Name = "Banisher"
-Banisher.Parent = ScrollingFrame
-Banisher.BackgroundColor3 = Color3.fromRGB(235, 190, 77)
-Banisher.Position = UDim2.new(0.0093457941, 0, 0.077888377, 0)
-Banisher.Size = UDim2.new(0, 419, 0, 36)
-Banisher.Font = Enum.Font.SourceSansBold
-Banisher.Text = "    Banisher"
-Banisher.TextColor3 = Color3.fromRGB(255, 255, 255)
-Banisher.TextSize = 20.000
-Banisher.TextWrapped = true
-Banisher.TextXAlignment = Enum.TextXAlignment.Left
+Splatterhouse.Name = "Splatterhouse"
+Splatterhouse.Parent = ScrollingFrame
+Splatterhouse.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+Splatterhouse.Position = UDim2.new(0.0093457941, 0, 0.0625422001, 0)
+Splatterhouse.Size = UDim2.new(0, 419, 0, 36)
+Splatterhouse.Font = Enum.Font.SourceSansBold
+Splatterhouse.Text = "    Rick's Retribution"
+Splatterhouse.TextColor3 = Color3.fromRGB(255, 255, 255)
+Splatterhouse.TextSize = 20.000
+Splatterhouse.TextWrapped = true
+Splatterhouse.TextXAlignment = Enum.TextXAlignment.Left
+Splatterhouse.MouseButton1Down:Connect(function()
+--====================================================--
+--||              SPLATTERHOUSE CREDITS              ||--
+--====================================================--
 
-UICorner_7.Parent = Banisher
+-- Created By: YepImSirPwnsAlot
+-- Script Name: Rick's Retribution
+-- Inspired By: Sega Genesis: Splatterhouse 2
+
+--=={ Startup Script }==--
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
+
+local LAMO = Instance.new("ScreenGui")
+LAMO.Name = "LAMO_TypingEffect"
+LAMO.IgnoreGuiInset = true
+LAMO.DisplayOrder = 1000
+LAMO.ResetOnSpawn = false
+LAMO.Parent = PlayerGui
+
+local Frame = Instance.new("Frame")
+Frame.Name = "BlackoutFrame"
+Frame.Parent = LAMO
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0, 0)
+Frame.Size = UDim2.new(1, 0, 1, 0)
+
+local music = Instance.new("Sound")
+music.Name = "IntroMusic"
+music.SoundId = "rbxassetid://137820949448461"
+music.Volume = 2
+music.PlaybackSpeed = 1
+music.Looped = false
+music.Parent = workspace
+music:Play()
+
+local TextLabel = Instance.new("TextLabel")
+TextLabel.Parent = Frame
+TextLabel.Size = UDim2.new(0.6, 0, 0.5, 0)
+TextLabel.Position = UDim2.new(0.5, 0, 0.55, 0)
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundTransparency = 1
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Font = Enum.Font.Arcade
+TextLabel.TextSize = 20
+TextLabel.TextXAlignment = Enum.TextXAlignment.Center
+TextLabel.TextYAlignment = Enum.TextYAlignment.Center
+TextLabel.TextWrapped = true
+TextLabel.Text = ""
+
+local NumberImage = Instance.new("ImageLabel")
+NumberImage.Name = "NumberImage"
+NumberImage.Parent = Frame
+NumberImage.Size = UDim2.new(0, 250, 0, 210)
+NumberImage.Position = UDim2.new(0.5, 0, 0.35, 0)
+NumberImage.AnchorPoint = Vector2.new(0.5, 0.5)
+NumberImage.BackgroundTransparency = 1
+NumberImage.Image = "rbxassetid://134169990445330"
+NumberImage.ScaleType = Enum.ScaleType.Fit
+
+local message = [[
+You've always been a killer...In another life, in another game!
+You've always known it about that urge, you just tried to bury it.
+You've been wearing a mask your whole life...
+It's time to embrace it.
+this is who you really are.
+]]
+
+local delayBetweenChars = 0.06
+local running = true
+local swap = true
+
+task.spawn(function()
+	while running do
+		NumberImage.Image = swap and "rbxassetid://134169990445330" or "rbxassetid://95323780549355"
+		swap = not swap
+		wait(0.5)
+	end
+end)
+
+for i = 1, #message do
+	local currentText = string.sub(message, 1, i)
+	TextLabel.Text = currentText
+
+	if currentText:find("this is who you really are") then
+		TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+	else
+		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end
+
+	wait(delayBetweenChars)
+end
+
+running = false
+wait(1)
+NumberImage:Destroy()
+Frame:Destroy()
+
+--=={ Character Script }==--
+
+local p = game.Players.LocalPlayer
+local player = p
+local m = p:GetMouse()
+local ch = p.Character or p.CharacterAdded:Wait()
+local root = ch:WaitForChild("HumanoidRootPart")
+local hum = ch:WaitForChild("Humanoid")
+
+local userinput = game:GetService("UserInputService")
+local debris = game:GetService("Debris")
+
+local anim = "Idle"
+local attack = false
+local grabbed = false
+local canplay = false
+local canplaying = false
+local sine = 0
+local change = 1
+local speed = 15
+local jpower = 75
+
+Instance.new("ForceField", ch).Visible = false
+
+for i, v in pairs(ch:GetChildren()) do
+	if v:IsA("Accessory") or v:IsA("CharacterMesh") or v:IsA("BodyColors") or v:IsA("Shirt") or v:IsA("ShirtGraphic") or v:IsA("Pants") then
+		v:Destroy()
+	end
+end
+
+coroutine.wrap(function()
+	if ch.Head:FindFirstChild("face") then
+		ch.Head.face.Texture = "rbxassetid://121712604747616"
+	else
+		local newface = Instance.new("Decal", ch.Head)
+		newface.Face = Enum.NormalId.Front
+		newface.Texture = "rbxassetid://121712604747616"
+	end
+end)()
+
+local newcolor = Instance.new("BodyColors", ch)
+newcolor.HeadColor = BrickColor.new("Cork")
+newcolor.LeftArmColor = BrickColor.new("Cork")
+newcolor.RightArmColor = BrickColor.new("Cork")
+newcolor.LeftLegColor = BrickColor.new("Earth green")
+newcolor.RightLegColor = BrickColor.new("Earth green")
+newcolor.TorsoColor = BrickColor.new("Earth green")
+
+local pants = Instance.new("Pants", ch)
+pants.PantsTemplate = "rbxassetid://11894449582"
+
+local shirt = Instance.new("Shirt", ch)
+shirt.ShirtTemplate = "rbxassetid://6193052802"
+
+local music2 = Instance.new("Sound")
+music2.Parent = workspace
+music2.SoundId = "rbxassetid://123404399362375"
+music2.Volume = 5
+music2.PlaybackSpeed = 1
+music2.Looped = false
+music2:Play()
+
+--=={ GUI Work }==--
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "RicksRetributionGUI"
+screenGui.Parent = PlayerGui
+
+local frame = Instance.new("Frame")
+frame.Name = "RootFrame"
+frame.Parent = screenGui
+frame.BackgroundTransparency = 1
+frame.Size = UDim2.new(1, 0, 1, 0)
+
+local controlFrame = Instance.new("Frame")
+controlFrame.Name = "ControlFrame"
+controlFrame.Parent = frame
+controlFrame.Size = UDim2.new(0, 315, 0, 500)
+controlFrame.Position = UDim2.new(0, 700, 0, 49)
+controlFrame.BackgroundTransparency = 0.2
+controlFrame.BackgroundColor3 = Color3.fromRGB(6, 64, 43)
+controlFrame.BorderSizePixel = 0
+
+local function createLabel(parent, text, yOffset)
+	local label = Instance.new("TextLabel")
+	label.Name = "Label_" .. text:gsub(" ", "_")
+	label.Parent = parent
+	label.BackgroundTransparency = 1
+	label.Text = text
+	label.TextScaled = true
+	label.Font = Enum.Font.SourceSansBold
+	label.TextColor3 = Color3.new(1, 1, 1)
+	label.Size = UDim2.new(0.9, 0, 0, 40)
+	label.Position = UDim2.new(0.05, 0, 0, yOffset)
+	label.TextStrokeTransparency = 0
+	label.TextTransparency = 0
+	label.TextXAlignment = Enum.TextXAlignment.Center
+	return label
+end
+
+createLabel(controlFrame, "Rick's Retribution", 5)
+createLabel(controlFrame, "Created By: YepImSirPwnsAlot", 45)
+createLabel(controlFrame, "Click - Punch", 85)
+createLabel(controlFrame, "C - Crouch", 125)
+createLabel(controlFrame, "K - Kick", 165)
+createLabel(controlFrame, "J - Jump Kick", 205)
+createLabel(controlFrame, "U - Uppercut", 245)
+createLabel(controlFrame, "G - Grab and Throw", 285)
+createLabel(controlFrame, "R - Slide Kick", 325)
+createLabel(controlFrame, "F - Get Shotgun", 365)
+
+local OpenClose = Instance.new("TextButton")
+OpenClose.Name = "OpenClose"
+OpenClose.Parent = screenGui
+OpenClose.Size = UDim2.new(0, 104, 0, 50)
+OpenClose.Position = UDim2.new(0, 870, 0, 478)
+OpenClose.BackgroundTransparency = 0.2
+OpenClose.Text = "Close"
+OpenClose.TextSize = 20
+OpenClose.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenClose.BackgroundColor3 = Color3.fromRGB(6, 64, 43)
+OpenClose.Font = Enum.Font.SourceSansBold
+OpenClose.TextStrokeTransparency = 0
+OpenClose.BorderSizePixel = 0
+OpenClose.TextTransparency = 0
+OpenClose.MouseButton1Click:Connect(function()
+	if OpenClose.Text == "Close" then
+		frame.Visible = false
+		OpenClose.Text = "Open"
+	else
+		frame.Visible = true
+		OpenClose.Text = "Close"
+	end
+end)
+end)
+
+UICorner_7.Parent = Splatterhouse
 
 local newTag = Instance.new("TextLabel")
 newTag.Name = "NewTag"
-newTag.Parent = Banisher
-newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
+newTag.Parent = Splatterhouse
+newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 60, 0, 30)
-newTag.Text = "UPDATED"
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "NEW"
 newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
 newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 18
+newTag.TextSize = 20
 newTag.BorderSizePixel = 0
 
 Illuminati.Name = "Illuminati"
 Illuminati.Parent = ScrollingFrame
-Illuminati.BackgroundColor3 = Color3.fromRGB(235, 190, 77)
+Illuminati.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
 Illuminati.Position = UDim2.new(0.0093457941, 0, 0.0932345614, 0)
 Illuminati.Size = UDim2.new(0, 419, 0, 36)
 Illuminati.Font = Enum.Font.SourceSansBold
@@ -365,21 +1160,9 @@ Illuminati.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_8.Parent = Illuminati
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Illuminati
-newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 60, 0, 30)
-newTag.Text = "UPDATED"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 18
-newTag.BorderSizePixel = 0
-
 MineCraftSteve.Name = "MineCraftSteve"
 MineCraftSteve.Parent = ScrollingFrame
-MineCraftSteve.BackgroundColor3 = Color3.fromRGB(235, 190, 77)
+MineCraftSteve.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
 MineCraftSteve.Position = UDim2.new(0.0093457941, 0, 0.108580746, 0)
 MineCraftSteve.Size = UDim2.new(0, 419, 0, 36)
 MineCraftSteve.Font = Enum.Font.SourceSansBold
@@ -391,22 +1174,10 @@ MineCraftSteve.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_9.Parent = MineCraftSteve
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = MineCraftSteve
-newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 60, 0, 30)
-newTag.Text = "UPDATED"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 18
-newTag.BorderSizePixel = 0
-
 ChopChop.Name = "ChopChop"
 ChopChop.Parent = ScrollingFrame
-ChopChop.BackgroundColor3 = Color3.fromRGB(235, 190, 77)
-ChopChop.Position = UDim2.new(0.0093457941, 0, 0.0625422001, 0)
+ChopChop.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+ChopChop.Position = UDim2.new(0.0093457941, 0, 0.077888377, 0)
 ChopChop.Size = UDim2.new(0, 419, 0, 36)
 ChopChop.Font = Enum.Font.SourceSansBold
 ChopChop.Text = "    Chop Chop"
@@ -417,21 +1188,9 @@ ChopChop.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_10.Parent = ChopChop
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = ChopChop
-newTag.BackgroundColor3 = Color3.fromRGB(186, 142, 35)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 60, 0, 30)
-newTag.Text = "UPDATED"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 18
-newTag.BorderSizePixel = 0
-
 HolyWrench.Name = "HolyWrench"
 HolyWrench.Parent = ScrollingFrame
-HolyWrench.BackgroundColor3 = Color3.fromRGB(87, 185, 255)
+HolyWrench.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
 HolyWrench.Position = UDim2.new(0.0093457941, 0, 0.139630005, 0)
 HolyWrench.Size = UDim2.new(0, 419, 0, 36)
 HolyWrench.Font = Enum.Font.SourceSansBold
@@ -443,267 +1202,33 @@ HolyWrench.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_11.Parent = HolyWrench
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = HolyWrench
-newTag.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "FIXED"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+Solario.Name = "Solario"
+Solario.Parent = ScrollingFrame
+Solario.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+Solario.Position = UDim2.new(0.0093457941, 0, 0.154976189, 0)
+Solario.Size = UDim2.new(0, 419, 0, 36)
+Solario.Font = Enum.Font.SourceSansBold
+Solario.Text = "    Solaris"
+Solario.TextColor3 = Color3.fromRGB(255, 255, 255)
+Solario.TextSize = 20.000
+Solario.TextWrapped = true
+Solario.TextXAlignment = Enum.TextXAlignment.Left
 
-Baseplate.Name = "Baseplate"
-Baseplate.Parent = ScrollingFrame
-Baseplate.BackgroundColor3 = Color3.fromRGB(87, 185, 255)
-Baseplate.Position = UDim2.new(0.0093457941, 0, 0.154976189, 0)
-Baseplate.Size = UDim2.new(0, 419, 0, 36)
-Baseplate.Font = Enum.Font.SourceSansBold
-Baseplate.Text = "    Create Baseplate"
-Baseplate.TextColor3 = Color3.fromRGB(255, 255, 255)
-Baseplate.TextSize = 20.000
-Baseplate.TextWrapped = true
-Baseplate.TextXAlignment = Enum.TextXAlignment.Left
-Baseplate.MouseButton1Down:Connect(function()
-	local pt = Instance.new("Part")
-	pt.BrickColor = BrickColor.new("Silver")
-	pt.Anchored = true
-	pt.CanCollide = true
-	pt.BottomSurface = "Weld"
-	pt.Parent = workspace
-	pt.Name = (math.random(1,1000000))
-	pt.Size = Vector3.new(1000, 1, 1000)
-end)
+UICorner_12.Parent = Solario
 
-UICorner_12.Parent = Baseplate
+FlamingCube.Name = "FlamingCube"
+FlamingCube.Parent = ScrollingFrame
+FlamingCube.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+FlamingCube.Position = UDim2.new(0.0093457941, 0, 0.170322359, 0)
+FlamingCube.Size = UDim2.new(0, 419, 0, 36)
+FlamingCube.Font = Enum.Font.SourceSansBold
+FlamingCube.Text = "    Flaming Cube"
+FlamingCube.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlamingCube.TextSize = 20.000
+FlamingCube.TextWrapped = true
+FlamingCube.TextXAlignment = Enum.TextXAlignment.Left
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Baseplate
-newTag.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "FIXED"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
-FlingGUI.Name = "FlingGUI"
-FlingGUI.Parent = ScrollingFrame
-FlingGUI.BackgroundColor3 = Color3.fromRGB(87, 185, 255)
-FlingGUI.Position = UDim2.new(0.0093457941, 0, 0.170322359, 0)
-FlingGUI.Size = UDim2.new(0, 419, 0, 36)
-FlingGUI.Font = Enum.Font.SourceSansBold
-FlingGUI.Text = "    Yeet Gui"
-FlingGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
-FlingGUI.TextSize = 20.000
-FlingGUI.TextWrapped = true
-FlingGUI.TextXAlignment = Enum.TextXAlignment.Left
-FlingGUI.MouseButton1Down:Connect(function()
-local lplayer = game:GetService('Players').LocalPlayer
- 
-local yeeting = false
-function GetPlayer(String)
-local Found = {}
-local strl = String:lower()
-if strl == "all" then
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-table.insert(Found,v)
-end
-elseif strl == "others" then
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-if v.Name ~= lplayer.Name then
-table.insert(Found,v)
-end
-end
-elseif strl == "me" then
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-if v.Name == lplayer.Name then
-table.insert(Found,v)
-end
-end
-else
-for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-if v.Name:lower():sub(1, #String) == String:lower() then
-table.insert(Found,v)
-end
-end
-end
-return Found
-end
- 
-local yeetguiv4 = Instance.new("ScreenGui")
-local onetwoseventhree = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local player = Instance.new("TextBox")
-local yeet = Instance.new("TextButton")
-local ultrayeet = Instance.new("TextButton")
-local supernovayeet = Instance.new("TextButton")
-local stop = Instance.new("TextButton")
-local ImageLabel = Instance.new("ImageLabel")
-yeetguiv4.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-yeetguiv4.ResetOnSpawn = false
-onetwoseventhree.Name = "onetwoseventhree"
-onetwoseventhree.Parent = yeetguiv4
-onetwoseventhree.Active = true
-onetwoseventhree.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
-onetwoseventhree.BorderSizePixel = 0
-onetwoseventhree.Position = UDim2.new(0.112530395, 0, 0.565217376, 0)
-onetwoseventhree.Size = UDim2.new(0.239294425, 0, 0.260869563, 0)
-TextLabel.Parent = onetwoseventhree
-TextLabel.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(3.87869541e-08, 0, 0, 0)
-TextLabel.Size = UDim2.new(1.00000048, 0, 0.190522879, 0)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "fe yeet gui v4 | by scuba kermit"
-TextLabel.TextColor3 = Color3.new(1, 1, 1)
-TextLabel.TextSize = 18
-player.Name = "player"
-player.Parent = onetwoseventhree
-player.BackgroundColor3 = Color3.new(0.207843, 0.207843, 0.207843)
-player.BorderSizePixel = 0
-player.Position = UDim2.new(0.162684351, 0, 0.266666681, 0)
-player.Size = UDim2.new(0.674478829, 0, 0.194444448, 0)
-player.Font = Enum.Font.SourceSans
-player.PlaceholderText = "player name (can be shortened)"
-player.Text = ""
-player.TextColor3 = Color3.new(1, 1, 1)
-player.TextSize = 14
-yeet.Name = "yeet"
-yeet.Parent = onetwoseventhree
-yeet.BackgroundColor3 = Color3.new(0.207843, 0.207843, 0.207843)
-yeet.BorderSizePixel = 0
-yeet.Position = UDim2.new(0.0381292067, 0, 0.51111114, 0)
-yeet.Size = UDim2.new(0.453329861, 0, 0.177777782, 0)
-yeet.Font = Enum.Font.SourceSans
-yeet.Text = "Yeet Player"
-yeet.TextColor3 = Color3.new(1, 1, 1)
-yeet.TextSize = 18
-ultrayeet.Name = "ultrayeet"
-ultrayeet.Parent = onetwoseventhree
-ultrayeet.BackgroundColor3 = Color3.new(0.207843, 0.207843, 0.207843)
-ultrayeet.BorderSizePixel = 0
-ultrayeet.Position = UDim2.new(0.513472319, 0, 0.51111114, 0)
-ultrayeet.Size = UDim2.new(0.453329861, 0, 0.177777782, 0)
-ultrayeet.Font = Enum.Font.SourceSans
-ultrayeet.Text = "Ultra Yeet Player"
-ultrayeet.TextColor3 = Color3.new(1, 1, 1)
-ultrayeet.TextSize = 18
-supernovayeet.Name = "supernovayeet"
-supernovayeet.Parent = onetwoseventhree
-supernovayeet.BackgroundColor3 = Color3.new(0.207843, 0.207843, 0.207843)
-supernovayeet.BorderSizePixel = 0
-supernovayeet.Position = UDim2.new(0.0381291807, 0, 0.722222269, 0)
-supernovayeet.Size = UDim2.new(0.453329861, 0, 0.177777782, 0)
-supernovayeet.Font = Enum.Font.SourceSans
-supernovayeet.Text = "Supernova Yeet Player"
-supernovayeet.TextColor3 = Color3.new(1, 1, 1)
-supernovayeet.TextSize = 18
-stop.Name = "stop"
-stop.Parent = onetwoseventhree
-stop.BackgroundColor3 = Color3.new(0.207843, 0.207843, 0.207843)
-stop.BorderSizePixel = 0
-stop.Position = UDim2.new(0.513472319, 0, 0.722222269, 0)
-stop.Size = UDim2.new(0.453329861, 0, 0.177777782, 0)
-stop.Font = Enum.Font.SourceSans
-stop.Text = "Stop Yeeting"
-stop.TextColor3 = Color3.new(1, 1, 1)
-stop.TextSize = 18
-ImageLabel.Parent = onetwoseventhree
-ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
-ImageLabel.BackgroundTransparency = 1
-ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.0228774771, 0, 0, 0)
-ImageLabel.Size = UDim2.new(0.104219697, 0, 0.190522939, 0)
-ImageLabel.Image = "rbxassetid://2941043433"
-yeet.MouseButton1Click:Connect(function()
-    local target = unpack(GetPlayer(player.Text)).Character
- 
-    lplayer.Character.Humanoid.PlatformStand = true
-    yeeting = true
-    local coin = Instance.new('BodyThrust',lplayer.Character.HumanoidRootPart)
-    coin.Force = Vector3.new(2590,2590,2590)
-    coin.Name = "yeetforce"
-    repeat lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position game:GetService('RunService').Heartbeat:wait() until not target.Head or yeeting == false
-end)
-ultrayeet.MouseButton1Click:Connect(function()
-    local target = unpack(GetPlayer(player.Text)).Character
- 
-    lplayer.Character.Humanoid.PlatformStand = true
-    yeeting = true
-    local coin = Instance.new('BodyThrust',lplayer.Character.HumanoidRootPart)
-    coin.Force = Vector3.new(9999,9999,9999)
-    coin.Name = "yeetforce"
-    repeat lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position game:GetService('RunService').Heartbeat:wait() until not target.Head or yeeting == false
-end)
-supernovayeet.MouseButton1Click:Connect(function()
-    local target = unpack(GetPlayer(player.Text)).Character
- 
-    lplayer.Character.Humanoid.PlatformStand = true
-    yeeting = true
-    local coin = Instance.new('BodyThrust',lplayer.Character.HumanoidRootPart)
-    coin.Force = Vector3.new(18000,18000,18000)
-    coin.Name = "yeetforce"
-    repeat lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position game:GetService('RunService').Heartbeat:wait() until not target.Head or yeeting == false
-end)
- 
-local UIS = game:GetService("UserInputService")
-function dragify(Frame)
-    dragToggle = nil
-    dragSpeed = 1
-    dragInput = nil
-    dragStart = nil
-    dragPos = nil
-    function updateInput(input)
-        Delta = input.Position - dragStart
-        Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
-    end
-    Frame.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-        if UIS:GetFocusedTextBox() == nil then
-            dragToggle = true
-            dragStart = input.Position
-            startPos = Frame.Position
-            input.Changed:Connect(function()
-                if input.UserInputState == Enum.UserInputState.End then
-                    dragToggle = false
-                end
-            end)
-                end
-        end
-    end)
-    Frame.InputChanged:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-            dragInput = input
-        end
-    end)
-    game:GetService("UserInputService").InputChanged:Connect(function(input)
-        if input == dragInput and dragToggle then
-            updateInput(input)
-        end
-    end)
-end
-dragify(onetwoseventhree)
-end)
-	
-UICorner_13.Parent = FlingGUI
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = FlingGUI
-newTag.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "FIXED"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+UICorner_13.Parent = FlamingCube
 
 Techno.Name = "Techno"
 Techno.Parent = ScrollingFrame
@@ -719,18 +1244,6 @@ Techno.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_14.Parent = Techno
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Techno
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 M60.Name = "M60"
 M60.Parent = ScrollingFrame
 M60.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -745,43 +1258,19 @@ M60.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_15.Parent = M60
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = M60
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+Neptunion.Name = "Neptunion"
+Neptunion.Parent = ScrollingFrame
+Neptunion.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+Neptunion.Position = UDim2.new(0.0093457941, 0, 0.18459788, 0)
+Neptunion.Size = UDim2.new(0, 419, 0, 36)
+Neptunion.Font = Enum.Font.SourceSansBold
+Neptunion.Text = "    Neptunion V"
+Neptunion.TextColor3 = Color3.fromRGB(255, 255, 255)
+Neptunion.TextSize = 20.000
+Neptunion.TextWrapped = true
+Neptunion.TextXAlignment = Enum.TextXAlignment.Left
 
-Characters.Name = "Characters"
-Characters.Parent = ScrollingFrame
-Characters.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
-Characters.Position = UDim2.new(0.0093457941, 0, 0.18459788, 0)
-Characters.Size = UDim2.new(0, 419, 0, 36)
-Characters.Font = Enum.Font.SourceSansBold
-Characters.Text = "    New Characters"
-Characters.TextColor3 = Color3.fromRGB(255, 255, 255)
-Characters.TextSize = 20.000
-Characters.TextWrapped = true
-Characters.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_16.Parent = Characters
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Characters
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+UICorner_16.Parent = Neptunion
 
 ChainSaw.Name = "ChainSaw"
 ChainSaw.Parent = ScrollingFrame
@@ -1335,43 +1824,19 @@ end)
 
 UICorner_17.Parent = ChainSaw
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = ChainSaw
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+Spider.Name = "Spider"
+Spider.Parent = ScrollingFrame
+Spider.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+Spider.Position = UDim2.new(0.0093457941, 0, 0.124283813, 0)
+Spider.Size = UDim2.new(0, 419, 0, 36)
+Spider.Font = Enum.Font.SourceSansBold
+Spider.Text = "   Spiderbot"
+Spider.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spider.TextSize = 20.000
+Spider.TextWrapped = true
+Spider.TextXAlignment = Enum.TextXAlignment.Left
 
-FixedStuff.Name = "FixedStuff"
-FixedStuff.Parent = ScrollingFrame
-FixedStuff.BackgroundColor3 = Color3.fromRGB(87, 185, 255)
-FixedStuff.Position = UDim2.new(0.0093457941, 0, 0.124283813, 0)
-FixedStuff.Size = UDim2.new(0, 419, 0, 36)
-FixedStuff.Font = Enum.Font.SourceSansBold
-FixedStuff.Text = "   Fixed Stuff"
-FixedStuff.TextColor3 = Color3.fromRGB(255, 255, 255)
-FixedStuff.TextSize = 20.000
-FixedStuff.TextWrapped = true
-FixedStuff.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_18.Parent = FixedStuff
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = FixedStuff
-newTag.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+UICorner_18.Parent = Spider
 
 InfGaunt.Name = "Inf Gaunt"
 InfGaunt.Parent = ScrollingFrame
@@ -1390,18 +1855,6 @@ end)
 
 UICorner_19.Parent = InfGaunt
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = InfGaunt
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 DemonClaws.Name = "DemonClaws"
 DemonClaws.Parent = ScrollingFrame
 DemonClaws.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1416,43 +1869,22 @@ DemonClaws.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_20.Parent = DemonClaws
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = DemonClaws
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+Fraud.Name = "Fraud"
+Fraud.Parent = ScrollingFrame
+Fraud.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+Fraud.Position = UDim2.new(0.00934579596, 0, 0.292021126, 0)
+Fraud.Size = UDim2.new(0, 419, 0, 36)
+Fraud.Font = Enum.Font.SourceSansBold
+Fraud.Text = "	Fraud (Warning: You Have To Rejoin To Reset)"
+Fraud.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fraud.TextSize = 20.000
+Fraud.TextWrapped = true
+Fraud.TextXAlignment = Enum.TextXAlignment.Left
+Fraud.MouseButton1Down:Connect(function()
+	loadstring(Game:GetObjects("rbxassetid://6080098119")[1].Source)()
+end)
 
-chopchop.Name = "Chop Chop"
-chopchop.Parent = ScrollingFrame
-chopchop.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
-chopchop.Position = UDim2.new(0.00934579596, 0, 0.292021126, 0)
-chopchop.Size = UDim2.new(0, 419, 0, 36)
-chopchop.Font = Enum.Font.SourceSansBold
-chopchop.Text = "	Chop Chop"
-chopchop.TextColor3 = Color3.fromRGB(255, 255, 255)
-chopchop.TextSize = 20.000
-chopchop.TextWrapped = true
-chopchop.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_21.Parent = chopchop
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = chopchop
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+UICorner_21.Parent = Fraud
 
 Nuke.Name = "Nuke"
 Nuke.Parent = ScrollingFrame
@@ -1503,18 +1935,6 @@ end)
 
 UICorner_22.Parent = Nuke
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Nuke
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 Stand.Name = "Stand"
 Stand.Parent = ScrollingFrame
 Stand.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1529,25 +1949,13 @@ Stand.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_23.Parent = Stand
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Stand
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 KJ.Name = "KJ"
 KJ.Parent = ScrollingFrame
 KJ.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
 KJ.Position = UDim2.new(0.00934579596, 0, 0.306296647, 0)
 KJ.Size = UDim2.new(0, 419, 0, 36)
 KJ.Font = Enum.Font.SourceSansBold
-KJ.Text = "    KJ (Crappy)"
+KJ.Text = "    KJ (Warning: Very Shitty)"
 KJ.TextColor3 = Color3.fromRGB(255, 255, 255)
 KJ.TextSize = 20.000
 KJ.TextWrapped = true
@@ -1557,18 +1965,6 @@ KJ.MouseButton1Down:Connect(function()
 end)
 
 UICorner_24.Parent = KJ
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = KJ
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 clownvan.Name = "clown van"
 clownvan.Parent = ScrollingFrame
@@ -1583,18 +1979,6 @@ clownvan.TextWrapped = true
 clownvan.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_25.Parent = clownvan
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = clownvan
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 Felipe.Name = "Felipe"
 Felipe.Parent = ScrollingFrame
@@ -1613,18 +1997,6 @@ end)
 
 UICorner_26.Parent = Felipe
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Felipe
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 AmongUs.Name = "AmongUs"
 AmongUs.Parent = ScrollingFrame
 AmongUs.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1636,43 +2008,8 @@ AmongUs.TextColor3 = Color3.fromRGB(255, 255, 255)
 AmongUs.TextSize = 20.000
 AmongUs.TextWrapped = true
 AmongUs.TextXAlignment = Enum.TextXAlignment.Left
-AmongUs.MouseButton1Down:Connect(function()
-if game.Players.LocalPlayer.Character.Head:FindFirstChild("BillboardGui") then
-game.Players.LocalPlayer.Character.Head:FindFirstChild("BillboardGui"):Remove()	
-end
-plr = game.Players.LocalPlayer.Name
-y = Instance.new("BillboardGui")
-y.Size = UDim2.new(0,100,0,150)
-y.StudsOffset = Vector3.new(0,1,0)
-y.Parent = game.Players[plr].Character.Head
-y.Adornee = game.Players[plr].Character.Head
-f = Instance.new("TextLabel")
-f.Parent = y
-f.BackgroundTransparency = 1
-f.Position = UDim2.new(0,0,0,-50)
-f.Size = UDim2.new(0,100,0,100)
-f.Font = ("Arial")
-f.FontSize = ("Size48")
-f.Text = game.Players.LocalPlayer.Name
-f.TextStrokeColor3 = Color3.new(0,0,0)
-f.TextColor3 = Color3.new(90/255, 90/255, 90/255)
-f.TextStrokeTransparency = 0
-f.TextYAlignment = "Bottom"
-end)
 
 UICorner_27.Parent = AmongUs
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = AmongUs
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 ServerAdmin.Name = "ServerAdmin"
 ServerAdmin.Parent = ScrollingFrame
@@ -1691,18 +2028,6 @@ end)
 
 UICorner_28.Parent = ServerAdmin
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = ServerAdmin
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 Sniper.Name = "Sniper"
 Sniper.Parent = ScrollingFrame
 Sniper.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1716,18 +2041,6 @@ Sniper.TextWrapped = true
 Sniper.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_29.Parent = Sniper
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Sniper
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 ElioBlasio.Name = "ElioBlasio"
 ElioBlasio.Parent = ScrollingFrame
@@ -1746,18 +2059,6 @@ end)
 
 UICorner_30.Parent = ElioBlasio
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = ElioBlasio
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 DarthVader.Name = "Darth Vader"
 DarthVader.Parent = ScrollingFrame
 DarthVader.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1775,18 +2076,6 @@ end)
 
 UICorner_31.Parent = DarthVader
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = DarthVader
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 BanHammer.Name = "BanHammer"
 BanHammer.Parent = ScrollingFrame
 BanHammer.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1800,18 +2089,6 @@ BanHammer.TextWrapped = true
 BanHammer.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_32.Parent = BanHammer
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = BanHammer
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 Caducus.Name = "Caducus"
 Caducus.Parent = ScrollingFrame
@@ -1827,18 +2104,6 @@ Caducus.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_33.Parent = Caducus
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Caducus
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 AK47.Name = "AK47"
 AK47.Parent = ScrollingFrame
 AK47.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1852,18 +2117,6 @@ AK47.TextWrapped = true
 AK47.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_34.Parent = AK47
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = AK47
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 Car.Name = "Car"
 Car.Parent = ScrollingFrame
@@ -1879,18 +2132,6 @@ Car.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_35.Parent = Car
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Car
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 Chillingo.Name = "Chillingo"
 Chillingo.Parent = ScrollingFrame
 Chillingo.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1904,18 +2145,6 @@ Chillingo.TextWrapped = true
 Chillingo.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_36.Parent = Chillingo
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Chillingo
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 MLG.Name = "MLG"
 MLG.Parent = ScrollingFrame
@@ -1931,18 +2160,6 @@ MLG.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_37.Parent = MLG
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = MLG
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 Demon.Name = "Pen"
 Demon.Parent = ScrollingFrame
 Demon.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1956,18 +2173,6 @@ Demon.TextWrapped = true
 Demon.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_38.Parent = Demon
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Demon
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 FZ.Name = "FZ"
 FZ.Parent = ScrollingFrame
@@ -1983,18 +2188,6 @@ FZ.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_39.Parent = FZ
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = FZ
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 Memeus.Name = "Memeus"
 Memeus.Parent = ScrollingFrame
 Memeus.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -2008,18 +2201,6 @@ Memeus.TextWrapped = true
 Memeus.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_40.Parent = Memeus
-
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Memeus
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
 
 Chrono.Name = "Chrono"
 Chrono.Parent = ScrollingFrame
@@ -2035,21 +2216,9 @@ Chrono.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_41.Parent = Chrono
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Chrono
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 Disasters.Name = "Disasters"
 Disasters.Parent = ScrollingFrame
-Disasters.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+Disasters.BackgroundColor3 = Color3.fromRGB(119, 221, 119)
 Disasters.Position = UDim2.new(0.00934579782, 0, 0.687452972, 0)
 Disasters.Size = UDim2.new(0, 419, 0, 36)
 Disasters.Font = Enum.Font.SourceSansBold
@@ -2203,19 +2372,43 @@ end)
 
 UICorner_42.Parent = Disasters
 
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = Disasters
+newTag.BackgroundColor3 = Color3.fromRGB(4, 179, 7)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "GUI"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 25
+newTag.BorderSizePixel = 0
+
 GUI.Name = "GUI's"
 GUI.Parent = ScrollingFrame
-GUI.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+GUI.BackgroundColor3 = Color3.fromRGB(119, 221, 119)
 GUI.Position = UDim2.new(0.00934579782, 0, 0.642485082, 0)
 GUI.Size = UDim2.new(0, 419, 0, 36)
 GUI.Font = Enum.Font.SourceSansBold
-GUI.Text = "    Graphical User Interfaces"
+GUI.Text = "    Graphical User Interface"
 GUI.TextColor3 = Color3.fromRGB(255, 255, 255)
 GUI.TextSize = 20.000
 GUI.TextWrapped = true
 GUI.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_43.Parent = GUI
+
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = GUI
+newTag.BackgroundColor3 = Color3.fromRGB(4, 179, 7)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "GUI"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 25
+newTag.BorderSizePixel = 0
 
 Zeroith.Name = "Zeroith"
 Zeroith.Parent = ScrollingFrame
@@ -2231,88 +2424,205 @@ Zeroith.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_44.Parent = Zeroith
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = Zeroith
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
+ChatHax.Name = "ChatHax"
+ChatHax.Parent = ScrollingFrame
+ChatHax.BackgroundColor3 = Color3.fromRGB(119, 221, 119)
+ChatHax.Position = UDim2.new(0.00934579782, 0, 0.657831252, 0)
+ChatHax.Size = UDim2.new(0, 419, 0, 36)
+ChatHax.Font = Enum.Font.SourceSansBold
+ChatHax.Text = "    Chat Hax"
+ChatHax.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatHax.TextSize = 20.000
+ChatHax.TextWrapped = true
+ChatHax.TextXAlignment = Enum.TextXAlignment.Left
+ChatHax.MouseButton1Down:Connect(function()
+local UTGDisasters = Instance.new("ScreenGui")
+UTGDisasters.Name = "UTGDisasters"
+UTGDisasters.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UTGDisasters.ResetOnSpawn = true
 
-FencingRestore.Name = "Fencing Restore"
-FencingRestore.Parent = ScrollingFrame
-FencingRestore.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
-FencingRestore.Position = UDim2.new(0.00934579782, 0, 0.657831252, 0)
-FencingRestore.Size = UDim2.new(0, 419, 0, 36)
-FencingRestore.Font = Enum.Font.SourceSansBold
-FencingRestore.Text = "    Fencing Restore"
-FencingRestore.TextColor3 = Color3.fromRGB(255, 255, 255)
-FencingRestore.TextSize = 20.000
-FencingRestore.TextWrapped = true
-FencingRestore.TextXAlignment = Enum.TextXAlignment.Left
-FencingRestore.MouseButton1Down:Connect(function()
-function X(ws)
-for _, v in pairs(ws:GetChildren()) do
-v.Archivable = true
-if v.Name ~= "UClear" and v.Name ~= "Terrain" and game.Players:GetPlayerFromCharacter(v)==nil and v~=game.Workspace.CurrentCamera then
-if v:IsA("Script") or v:IsA("LocalScript") then
-v.Disabled = true
-v:remove()
-else
-v:remove()
+local Frame = Instance.new("Frame")
+Frame.Name = "MainFrame"
+Frame.Parent = UTGDisasters
+Frame.Size = UDim2.new(0, 410, 0, 310)
+Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.BorderSizePixel = 0
+Frame.BackgroundTransparency = 0
+
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(0, 18)
+UICorner.Parent = Frame
+
+local UIGradient = Instance.new("UIGradient")
+UIGradient.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(137, 0, 254)),
+    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(223, 0, 255))
+}
+UIGradient.Parent = Frame
+
+local TitleShadow = Instance.new("TextLabel")
+TitleShadow.Name = "TitleShadow"
+TitleShadow.Parent = Frame
+TitleShadow.Position = UDim2.new(0, 1, 0, 1)
+TitleShadow.Size = UDim2.new(1, 0, 0, 50)
+TitleShadow.BackgroundTransparency = 1
+TitleShadow.Text = "UTG CHAT HAX"
+TitleShadow.TextSize = 42
+TitleShadow.Font = Enum.Font.SourceSansBold
+TitleShadow.TextColor3 = Color3.fromRGB(0, 0, 0)
+TitleShadow.TextTransparency = 0.4
+TitleShadow.TextStrokeTransparency = 1
+TitleShadow.ZIndex = 1
+
+local Title = Instance.new("TextLabel")
+Title.Name = "Title"
+Title.Parent = Frame
+Title.Position = UDim2.new(0, 0, 0, 0)
+Title.Size = UDim2.new(1, 0, 0, 50)
+Title.BackgroundTransparency = 1
+Title.Text = "UTG CHAT HAX"
+Title.TextSize = 40
+Title.Font = Enum.Font.SourceSansBold
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextWrapped = true
+Title.ZIndex = 2
+
+local TextBox = Instance.new("TextBox", Frame)
+TextBox.Name = "DisasterList"
+TextBox.Size = UDim2.new(0, 270, 0, 70)
+TextBox.AnchorPoint = Vector2.new(0.5, 0)
+TextBox.Position = UDim2.new(0.5, 0, 0, 55)
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextColor3 = Color3.new(0, 0, 0)
+TextBox.TextSize = 18
+TextBox.ClearTextOnFocus = true
+TextBox.Text = "Chat"
+TextBox.Font = Enum.Font.SourceSansBold
+TextBox.BorderSizePixel = 0
+
+Instance.new("UICorner", TextBox).CornerRadius = UDim.new(0, 15)
+
+local TextBox2 = Instance.new("TextBox", Frame)
+TextBox2.Name = "DisasterList"
+TextBox2.Size = UDim2.new(0, 270, 0, 70)
+TextBox2.AnchorPoint = Vector2.new(0.5, 0)
+TextBox2.Position = UDim2.new(0.5, 0, 0, 130)
+TextBox2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox2.TextColor3 = Color3.new(0, 0, 0)
+TextBox2.TextSize = 18
+TextBox2.ClearTextOnFocus = true
+TextBox2.Text = "Player"
+TextBox2.Font = Enum.Font.SourceSansBold
+TextBox2.BorderSizePixel = 0
+
+Instance.new("UICorner", TextBox2).CornerRadius = UDim.new(0, 15)
+
+local ChatButton = Instance.new("TextButton", Frame)
+ChatButton.Name = "DisasterList"
+ChatButton.Size = UDim2.new(0, 230, 0, 70)
+ChatButton.AnchorPoint = Vector2.new(0.5, 0)
+ChatButton.Position = UDim2.new(0.5, 0, 0, 210)
+ChatButton.BackgroundColor3 = Color3.fromRGB(137, 0, 254)
+ChatButton.TextColor3 = Color3.new(0, 0, 0)
+ChatButton.TextSize = 18
+ChatButton.Text = "Chat Player"
+ChatButton.Font = Enum.Font.SourceSansBold
+ChatButton.BorderSizePixel = 0
+ChatButton.MouseButton1Click:Connect(function()
+local targetName = "SomePlayerName"
+local player = Players:FindFirstChild(targetName)
+
+if player and player.Character and player.Character:FindFirstChild("Head") then
+	for i, msg in ipairs(messages) do
+		local color = colors[(i - 1) % #colors + 1]
+		ChatService:Chat(player.Character.Head, msg, color)
+		wait(1)
+	end
 end
-end
-if game.Workspace:findFirstChild("Base") ~= nil then
-else
-local Base=Instance.new("Part",game.Workspace) 
-Base.Name="Base" 
-Base.Size=Vector3.new(1000,1,1000) 
-Base.BrickColor=BrickColor.new("Earth green") 
-Base.Anchored=true 
-Base.Locked=true 
-Base.TopSurface="Universal" 
-Base.CFrame=CFrame.new(Vector3.new(0,0,0)) 
-local Spawn=Instance.new("SpawnLocation",game.Workspace)
-Spawn.Name="lol"
-Spawn.Size=Vector3.new(6,1,6)
-Spawn.Transparency=1
-Spawn.CanCollide=false
-Spawn.Anchored=true
-Spawn.Locked=true
-Spawn.CFrame=CFrame.new(Vector3.new(0,1,0))
-end
-end
-end
-X(game.Workspace)
-X(game.Teams)
-X(game.StarterGui)
-wait()
-game.Workspace:InsertContent("rbxassetid://118791953")
-wait()
-game.workspace.Base:Destroy()
-wait()
-game.workspace.lol:Destroy()
-wait()
-game.Lighting.Ambient = Color3.new(255,255,255)
-game.Lighting.TimeOfDay = 12
-game.Lighting.Brightness = 0.5
-game.Lighting.FogEnd = 100000
-game.Lighting.GlobalShadows = false
-game.Lighting.Sky:Destroy()
-game.Lighting.FogEnd = 100000
-game.Lighting.Brightness = 1
-game.Workspace.Terrain:clear()
 end)
 
-UICorner_45.Parent = FencingRestore
+Instance.new("UICorner", ChatButton).CornerRadius = UDim.new(0, 15)
+
+local X = Instance.new("TextButton")
+X.Name = "X"
+X.Parent = Frame
+X.BackgroundColor3 = Color3.fromRGB(247, 114, 99)
+X.Position = UDim2.new(0.93569845, 0, -0.0337078646, 0)
+X.Size = UDim2.new(0, 50, 0, 50)
+X.Font = Enum.Font.SourceSansBold
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 255, 255)
+X.TextScaled = true
+X.TextSize = 14
+X.TextWrapped = true
+X.MouseButton1Down:Connect(function()
+	UTGDisasters:Destroy()
+end)
+
+local UICorner2 = Instance.new("UICorner")
+UICorner2.CornerRadius = UDim.new(1, 0)
+UICorner2.Parent = X
+
+local UIS = game:GetService("UserInputService")
+local dragging
+local dragInput
+local dragStart
+local startPos
+
+local function update(input)
+	local delta = input.Position - dragStart
+	Frame.Position = UDim2.new(
+		startPos.X.Scale, startPos.X.Offset + delta.X,
+		startPos.Y.Scale, startPos.Y.Offset + delta.Y
+	)
+end
+
+Title.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = Frame.Position
+
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+Title.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+
+UIS.InputChanged:Connect(function(input)
+	if input == dragInput and dragging then
+		update(input)
+	end
+end)
+end)
+
+UICorner_45.Parent = ChatHax
+
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = ChatHax
+newTag.BackgroundColor3 = Color3.fromRGB(4, 179, 7)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "GUI"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 25
+newTag.BorderSizePixel = 0
 
 InsanityPowers.Name = "InsanityPowers"
 InsanityPowers.Parent = ScrollingFrame
-InsanityPowers.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+InsanityPowers.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 InsanityPowers.Position = UDim2.new(0.00934579782, 0, 0.718145311, 0)
 InsanityPowers.Size = UDim2.new(0, 419, 0, 36)
 InsanityPowers.Font = Enum.Font.SourceSansBold
@@ -2326,7 +2636,7 @@ UICorner_46.Parent = InsanityPowers
 
 ModelInserter.Name = "ModelInserter"
 ModelInserter.Parent = ScrollingFrame
-ModelInserter.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+ModelInserter.BackgroundColor3 = Color3.fromRGB(119, 221, 119)
 ModelInserter.Position = UDim2.new(0.00934579782, 0, 0.672106802, 0)
 ModelInserter.Size = UDim2.new(0, 419, 0, 36)
 ModelInserter.Font = Enum.Font.SourceSansBold
@@ -2490,6 +2800,18 @@ end)
 
 UICorner_47.Parent = ModelInserter
 
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = ModelInserter
+newTag.BackgroundColor3 = Color3.fromRGB(4, 179, 7)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "GUI"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 25
+newTag.BorderSizePixel = 0
+
 Rokudayne.Name = "Rokudayne"
 Rokudayne.Parent = ScrollingFrame
 Rokudayne.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -2504,23 +2826,35 @@ Rokudayne.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_48.Parent = Rokudayne
 
-RussainKick.Name = "RussainKick"
-RussainKick.Parent = ScrollingFrame
-RussainKick.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
-RussainKick.Position = UDim2.new(0.00934579782, 0, 0.702799141, 0)
-RussainKick.Size = UDim2.new(0, 419, 0, 36)
-RussainKick.Font = Enum.Font.SourceSansBold
-RussainKick.Text = "    Russain Kick"
-RussainKick.TextColor3 = Color3.fromRGB(255, 255, 255)
-RussainKick.TextSize = 20.000
-RussainKick.TextWrapped = true
-RussainKick.TextXAlignment = Enum.TextXAlignment.Left
+AnimationGUI.Name = "AnimationGUI"
+AnimationGUI.Parent = ScrollingFrame
+AnimationGUI.BackgroundColor3 = Color3.fromRGB(119, 221, 119)
+AnimationGUI.Position = UDim2.new(0.00934579782, 0, 0.702799141, 0)
+AnimationGUI.Size = UDim2.new(0, 419, 0, 36)
+AnimationGUI.Font = Enum.Font.SourceSansBold
+AnimationGUI.Text = "    Animation gui"
+AnimationGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+AnimationGUI.TextSize = 20.000
+AnimationGUI.TextWrapped = true
+AnimationGUI.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_49.Parent = RussainKick
+UICorner_49.Parent = AnimationGUI
+
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = AnimationGUI
+newTag.BackgroundColor3 = Color3.fromRGB(4, 179, 7)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "GUI"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 25
+newTag.BorderSizePixel = 0
 
 Pillow.Name = "Pillow"
 Pillow.Parent = ScrollingFrame
-Pillow.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+Pillow.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 Pillow.Position = UDim2.new(0.00934579782, 0, 0.764183879, 0)
 Pillow.Size = UDim2.new(0, 419, 0, 36)
 Pillow.Font = Enum.Font.SourceSansBold
@@ -2534,7 +2868,7 @@ UICorner_50.Parent = Pillow
 
 Kara.Name = "Kara"
 Kara.Parent = ScrollingFrame
-Kara.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+Kara.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 Kara.Position = UDim2.new(0.00934579782, 0, 0.779530048, 0)
 Kara.Size = UDim2.new(0, 419, 0, 36)
 Kara.Font = Enum.Font.SourceSansBold
@@ -2543,12 +2877,15 @@ Kara.TextColor3 = Color3.fromRGB(255, 255, 255)
 Kara.TextSize = 20.000
 Kara.TextWrapped = true
 Kara.TextXAlignment = Enum.TextXAlignment.Left
+Kara.MouseButton1Down:Connect(function()
+	loadstring(Game:GetObjects("rbxassetid://5970744588")[1].Source)()
+end)
 
 UICorner_51.Parent = Kara
 
 BlackHole.Name = "BlackHole"
 BlackHole.Parent = ScrollingFrame
-BlackHole.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+BlackHole.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 BlackHole.Position = UDim2.new(0.00934579782, 0, 0.839844108, 0)
 BlackHole.Size = UDim2.new(0, 419, 0, 36)
 BlackHole.Font = Enum.Font.SourceSansBold
@@ -2562,7 +2899,7 @@ UICorner_52.Parent = BlackHole
 
 Baldi.Name = "Baldi"
 Baldi.Parent = ScrollingFrame
-Baldi.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+Baldi.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 Baldi.Position = UDim2.new(0.00934579782, 0, 0.85554719, 0)
 Baldi.Size = UDim2.new(0, 419, 0, 36)
 Baldi.Font = Enum.Font.SourceSansBold
@@ -2684,7 +3021,7 @@ UICorner_53.Parent = Baldi
 
 bbc.Name = "British Broadcasting Channel"
 bbc.Parent = ScrollingFrame
-bbc.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+bbc.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 bbc.Position = UDim2.new(0.00934579782, 0, 0.915861249, 0)
 bbc.Size = UDim2.new(0, 419, 0, 36)
 bbc.Font = Enum.Font.SourceSansBold
@@ -2698,7 +3035,7 @@ UICorner_54.Parent = bbc
 
 TouchKill.Name = "TouchKill"
 TouchKill.Parent = ScrollingFrame
-TouchKill.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+TouchKill.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 TouchKill.Position = UDim2.new(0.00934579782, 0, 0.809151709, 0)
 TouchKill.Size = UDim2.new(0, 419, 0, 36)
 TouchKill.Font = Enum.Font.SourceSansBold
@@ -2712,7 +3049,7 @@ UICorner_55.Parent = TouchKill
 
 TakeTheL.Name = "TakeTheL"
 TakeTheL.Parent = ScrollingFrame
-TakeTheL.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+TakeTheL.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 TakeTheL.Position = UDim2.new(0.00934579782, 0, 0.824497938, 0)
 TakeTheL.Size = UDim2.new(0, 419, 0, 36)
 TakeTheL.Font = Enum.Font.SourceSansBold
@@ -2726,7 +3063,7 @@ UICorner_56.Parent = TakeTheL
 
 Grabknife.Name = "Grab Knife"
 Grabknife.Parent = ScrollingFrame
-Grabknife.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+Grabknife.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 Grabknife.Position = UDim2.new(0.00934579782, 0, 0.886239529, 0)
 Grabknife.Size = UDim2.new(0, 419, 0, 36)
 Grabknife.Font = Enum.Font.SourceSansBold
@@ -2740,7 +3077,7 @@ UICorner_57.Parent = Grabknife
 
 Rtx.Name = "Rtx"
 Rtx.Parent = ScrollingFrame
-Rtx.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+Rtx.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 Rtx.Position = UDim2.new(0.00934579782, 0, 0.901585698, 0)
 Rtx.Size = UDim2.new(0, 419, 0, 36)
 Rtx.Font = Enum.Font.SourceSansBold
@@ -2754,7 +3091,7 @@ UICorner_58.Parent = Rtx
 
 RainbowKing.Name = "RainbowKing"
 RainbowKing.Parent = ScrollingFrame
-RainbowKing.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+RainbowKing.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 RainbowKing.Position = UDim2.new(0.00934579782, 0, 0.79380554, 0)
 RainbowKing.Size = UDim2.new(0, 419, 0, 36)
 RainbowKing.Font = Enum.Font.SourceSansBold
@@ -2768,7 +3105,7 @@ UICorner_59.Parent = RainbowKing
 
 Gun.Name = "Gun"
 Gun.Parent = ScrollingFrame
-Gun.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+Gun.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 Gun.Position = UDim2.new(0.00934579782, 0, 0.931207418, 0)
 Gun.Size = UDim2.new(0, 419, 0, 36)
 Gun.Font = Enum.Font.SourceSansBold
@@ -2782,7 +3119,7 @@ UICorner_60.Parent = Gun
 
 PixelCar.Name = "PixelCar"
 PixelCar.Parent = ScrollingFrame
-PixelCar.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+PixelCar.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 PixelCar.Position = UDim2.new(0.00934579782, 0, 0.961899757, 0)
 PixelCar.Size = UDim2.new(0, 419, 0, 36)
 PixelCar.Font = Enum.Font.SourceSansBold
@@ -2796,7 +3133,7 @@ UICorner_61.Parent = PixelCar
 
 HellRobotics.Name = "HellRobotics"
 HellRobotics.Parent = ScrollingFrame
-HellRobotics.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+HellRobotics.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 HellRobotics.Position = UDim2.new(0.00934579782, 0, 0.748837709, 0)
 HellRobotics.Size = UDim2.new(0, 419, 0, 36)
 HellRobotics.Font = Enum.Font.SourceSansBold
@@ -2810,7 +3147,7 @@ UICorner_62.Parent = HellRobotics
 
 Titain.Name = "Titain"
 Titain.Parent = ScrollingFrame
-Titain.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+Titain.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 Titain.Position = UDim2.new(0.00934579782, 0, 0.946553588, 0)
 Titain.Size = UDim2.new(0, 419, 0, 36)
 Titain.Font = Enum.Font.SourceSansBold
@@ -2824,7 +3161,7 @@ UICorner_63.Parent = Titain
 
 Neko.Name = "Neko"
 Neko.Parent = ScrollingFrame
-Neko.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+Neko.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 Neko.Position = UDim2.new(0.00934579782, 0, 0.870893359, 0)
 Neko.Size = UDim2.new(0, 419, 0, 36)
 Neko.Font = Enum.Font.SourceSansBold
@@ -2838,7 +3175,7 @@ UICorner_64.Parent = Neko
 
 Zen.Name = "Zen"
 Zen.Parent = ScrollingFrame
-Zen.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+Zen.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 Zen.Position = UDim2.new(0.00934579782, 0, 0.73349148, 0)
 Zen.Size = UDim2.new(0, 419, 0, 36)
 Zen.Font = Enum.Font.SourceSansBold
@@ -2977,21 +3314,9 @@ end)
 
 UICorner_66.Parent = BaseballBat
 
-local newTag = Instance.new("TextLabel")
-newTag.Name = "NewTag"
-newTag.Parent = BaseballBat
-newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
-newTag.Size = UDim2.new(0, 55, 0, 29)
-newTag.Text = "NEW"
-newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-newTag.Font = Enum.Font.SourceSansBold
-newTag.TextSize = 20
-newTag.BorderSizePixel = 0
-
 Eggdog.Name = "Eggdog"
 Eggdog.Parent = ScrollingFrame
-Eggdog.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+Eggdog.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
 Eggdog.Position = UDim2.new(0.00934579782, 0, 0.977602839, 0)
 Eggdog.Size = UDim2.new(0, 419, 0, 36)
 Eggdog.Font = Enum.Font.SourceSansBold
@@ -3010,7 +3335,7 @@ Credits.BorderSizePixel = 0
 Credits.Position = UDim2.new(0.0223718882, 0, 0.834973812, 0)
 Credits.Size = UDim2.new(0, 428, 0, 36)
 Credits.Font = Enum.Font.SourceSans
-Credits.Text = "Created by YepImSirPwnsAlot and Fartman42121cool"
+Credits.Text = "Created by Lord_Pr0Pwnz0r (YepImSirPwnsAlot)"
 Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credits.TextSize = 23
 Credits.TextWrapped = true
@@ -3027,40 +3352,16 @@ Respawn.Font = Enum.Font.SourceSansBold
 Respawn.Text = "Respawn"
 Respawn.TextColor3 = Color3.fromRGB(0, 128, 0)
 Respawn.TextSize = 30
-Respawn.MouseButton1Click:Connect(function()
-	respawn()
-end)
-
-function respawn()
-	local char = game.Players.LocalPlayer.Character
-	if char:FindFirstChildOfClass("Humanoid") then char:FindFirstChildOfClass("Humanoid"):ChangeState(2) end
-	char:ClearAllChildren()
-	local newChar = Instance.new("Model")
-	newChar.Parent = workspace
-	game.Players.LocalPlayer.Character = newChar
-	wait()
-	game.Players.LocalPlayer.Character = char
-	newChar:Destroy()
+Respawn.MouseButton1Down:Connect(function()
+for _, player in pairs(game.Players:GetPlayers()) do
+	if player.Character then
+		player.Character:BreakJoints()
+	end
 end
+end)
 
 UICorner_69.CornerRadius = UDim.new(0, 15)
 UICorner_69.Parent = Respawn
-
-Netless.Name = "Netless"
-Netless.Parent = Main
-Netless.BackgroundColor3 = Color3.fromRGB(119, 221, 119)
-Netless.Position = UDim2.new(0.63, 0, 0.915730357, 0)
-Netless.Size = UDim2.new(0, 50, 0, 36)
-Netless.Font = Enum.Font.SourceSansBold
-Netless.Text = ""
-Netless.TextColor3 = Color3.fromRGB(0,128,0)
-Netless.TextScaled = true
-Netless.TextSize = 14.000
-Netless.TextWrapped = true
-Netless.Visible = false
-
-UICorner_70.CornerRadius = UDim.new(1, 0)
-UICorner_70.Parent = Netless
 
 AntiFling.Name = "AntiFling"
 AntiFling.Parent = Main
@@ -3169,6 +3470,8 @@ local function update(input)
 		startPos.Y.Scale, startPos.Y.Offset + delta.Y
 	)
 end
+
+AntiFling.Text = game.Players.LocalPlayer.Name
 
 Title.InputBegan:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
